@@ -1,0 +1,97 @@
+@use "../../variables.scss";
+
+.header {
+	position: sticky;
+}
+
+.block {
+	height: 94px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.navigation {
+	width: 402px;
+	display: flex;
+	justify-content: space-between;
+
+	.navigation_link {
+		font-family: variables.$font-family-abel;
+		font-weight: variables.$regular;
+		color: variables.$color-dark;
+		font-size: 20px;
+		line-height: 38px;
+		text-transform: uppercase;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			color: variables.$color-accent;
+		}
+	}
+
+}
+
+.logo {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	.logo_icon {
+		width: 300px;
+		height: 54px;
+	}
+}
+
+.links {
+	width: 585px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link_phone {
+	font-family: variables.$font-family-cygre, sans-serif;
+	font-weight: variables.$bold;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 38px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: variables.$color-accent;
+	}
+}
+
+.link_social {
+	color: variables.$color-dark;
+	transition: all .2s ease-in-out;
+}
+
+.link_social_whatsapp {
+	&:hover {
+		color: #40C351;
+	}
+}
+
+.link_social_telegram {
+	&:hover {
+		color: #29B6F6;
+	}
+}
+
+.button {
+	font-family: variables.$font-family-cygre, sans-serif;
+	color: white;
+	font-size: 20px;
+	line-height: 38px;
+	background-color: variables.$color-accent;
+	border-radius: 46px;
+	padding: 9px 47px;
+
+	&:active {
+		background-color: variables.$color-dark;
+	}
+}

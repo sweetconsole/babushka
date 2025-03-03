@@ -1,0 +1,88 @@
+@use "../../variables.scss";
+
+.intro {
+	margin-top: 70px;
+}
+
+.block {
+	height: 566px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+}
+
+.title {
+	width: 1070px;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	font-size: 70px;
+	line-height: 120%;
+	text-transform: uppercase;
+
+	.title_arrow {
+		width: 321px;
+		height: 54px;
+		display: inline-block;
+		margin-right: 80px;
+	}
+}
+
+.block_application {
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+
+	&:hover .block_application_text {
+		background-image: url("../../assets/images/input_hover.svg");
+	}
+
+	&:hover .block_application_button {
+		transform: rotate(135deg);
+	}
+}
+
+.block_application_text {
+	width: 542px;
+	height: 72px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 30px;
+	padding-left: 40px;
+	background-image: url("../../assets/images/input.svg");
+	background-repeat: no-repeat;
+	transition: all .2s ease-in-out;
+}
+
+.block_application_button {
+	width: 72px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin-left: -5px;
+	border: none;
+	border-radius: 100%;
+	background-color: variables.$color-accent;
+	transition: all .2s ease-in-out;
+}
+
+.block_application_button_icon {
+	width: 31px;
+	height: 31px;
+}
+
+.image {
+	width: 754px;
+	height: 566px;
+	position: absolute;
+	right: -28px;
+	top: 0;
+	bottom: 0;
+}

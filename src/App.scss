@@ -1,0 +1,77 @@
+@font-face {
+	font-family: "Abel";
+	src: url("./assets/fonts/abel.woff2") format("woff2"),
+	url("./assets/fonts/abel.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Abraxas";
+	src: url("./assets/fonts/abraxas.woff2") format("woff2"),
+	url("./assets/fonts/abraxas.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "AKONY";
+	src: url("./assets/fonts/akony.woff2") format("woff2"),
+	url("./assets/fonts/akony.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("./assets/fonts/bebas-neue.woff2") format("woff2"),
+	url("./assets/fonts/bebas-neue.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cy Grotesk Grand";
+	src: url("./assets/fonts/cy-grotesk-grand.woff2") format("woff2"),
+	url("./assets/fonts/cy-grotesk-grand.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cygre";
+	src: url("./assets/fonts/сygre-regular.woff2") format("woff2"),
+	url("./assets/fonts/сygre-regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cygre";
+	src: url("./assets/fonts/сygre-bold.woff2") format("woff2"),
+	url("./assets/fonts/сygre-bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cygre";
+	src: url("./assets/fonts/cygre-book.woff2") format("woff2"),
+	url("./assets/fonts/cygre-book.woff") format("woff");
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+}
+
+.container {
+	width: 100%;
+	max-width: 1780px;
+	margin: 0 auto;
+}
