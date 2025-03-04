@@ -13,7 +13,7 @@ const App: FC = () => {
       <Header />
 
       <Routes>
-        <Route path="/"  element={<HomePage />} />
+        <Route path="babushka/dist/"  element={<HomePage />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
