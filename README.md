@@ -1,15 +1,17 @@
-# React + TypeScript + Vite
+# Babushka
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Верстка многостраничного сайта на React TypeScript при помощи сборщика Vite. Тематика сайта разработка сайтов и сервисов для ресторанов и баров, а также их продвижение и SEO оптимизация. Сайт включает в себя главную страницу, страницы проектов, блогов, 4 статьи и 6 кейсов, а также страницу 404. 
+В качестве пакетного менеджера использовался bun.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<div id="steck">
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="30" height="30" alt="Vite" />
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" width="30" height="30" alt="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="30" height="30" alt="Type Script"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" width="30" height="30" alt="SASS SCSS"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg" width="30" height="30" alt="Bun"/>
+</div>
 
 ```js
 export default tseslint.config({
