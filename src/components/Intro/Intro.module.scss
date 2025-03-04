@@ -1,11 +1,11 @@
-@use "../../variables.scss";
+@use "../../styles/variables.scss";
 
 .intro {
 	margin-top: 70px;
 }
 
 .block {
-	height: 566px;
+	height: 574px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -15,15 +15,35 @@
 
 .title {
 	width: 1070px;
-	font-family: variables.$font-family-akony;
+	font-family: variables.$font-family-abel;
 	font-weight: variables.$regular;
 	font-size: 70px;
 	line-height: 120%;
 	text-transform: uppercase;
+	position: relative;
+
+	&:after, &:before {
+		font-family: variables.$font-family-cygre;
+		font-weight: 100;
+		color: variables.$color-accent;
+		display: inline-block;
+	}
+
+	&:after {
+		content: "]";
+		margin-left: 15px;
+	}
+
+	&:before {
+		content: "[";
+		position: absolute;
+		top: 2px;
+		left: -35px;
+	}
 
 	.title_arrow {
-		width: 321px;
-		height: 54px;
+		width: 325px;
+		height: 60px;
 		display: inline-block;
 		margin-right: 80px;
 	}
@@ -79,8 +99,8 @@
 }
 
 .image {
-	width: 754px;
-	height: 566px;
+	width: 756px;
+	height: 574px;
 	position: absolute;
 	right: -28px;
 	top: 0;

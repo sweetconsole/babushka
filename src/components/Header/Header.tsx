@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import WhatsAppIcon from "./WhatsAppIcon.tsx"
-import Logo from "../../assets/images/logo.svg"
+import Logo from "../../assets/images/logos/logo.svg"
 import TelegramIcon from "./TelegramIcon.tsx"
 import styles from "./Header.module.scss"
 import {FC} from "react";
@@ -23,10 +23,18 @@ const Header: FC = () => {
 
           <div className={styles.links}>
             <a className={styles.link_phone} href="tel:+79629518898">+7 962 951 88 98</a>
-            <a className={[styles.link_social, styles.link_social_whatsapp].join(" ")} href="https://telegram.org/" target="_blank" rel="noreferrer">
+            <a className={[styles.link_social, styles.link_social_whatsapp].join(" ")}
+               href="https://telegram.org/"
+               target="_blank"
+               aria-label="Ссылка на Telegram"
+               rel="noreferrer">
               <WhatsAppIcon />
             </a>
-            <a className={[styles.link_social, styles.link_social_telegram].join(" ")}href="https://web.whatsapp.com/" target="_blank" rel="noreferrer">
+            <a className={[styles.link_social, styles.link_social_telegram].join(" ")}
+               href="https://web.whatsapp.com/"
+               target="_blank"
+               aria-label="Ссылка на WhatsApp"
+               rel="noreferrer">
               <TelegramIcon />
             </a>
 

@@ -1,7 +1,7 @@
 import {FC} from "react"
-import ArrowTitle from "../../assets/images/arrow_intro_title.png"
+import ArrowTitle from "../../assets/images/arrow_intro_title.webp"
 import Arrow from "../../assets/images/arrow.svg"
-import Image from "../../assets/images/intro_image.png"
+import Image from "../../assets/images/intro_image.webp"
 import styles from "./Intro.module.scss"
 
 const Intro: FC = () => {
@@ -16,7 +16,7 @@ const Intro: FC = () => {
 
           <div className={styles.block_application}>
             <div className={styles.block_application_text}>оставить заявку</div>
-            <a className={styles.block_application_button} type="submit">
+            <a className={styles.block_application_button} type="submit" aria-label="Ссылка на форму для отправления заявки">
               <img className={styles.block_application_button_icon} src={Arrow} alt="Перейти к заявке" />
             </a>
           </div>

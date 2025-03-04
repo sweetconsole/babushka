@@ -1,11 +1,4 @@
-@font-face {
-	font-family: "Abel";
-	src: url("./assets/fonts/abel.woff2") format("woff2"),
-	url("./assets/fonts/abel.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
+@use "./styles/variables.scss";
 
 @font-face {
 	font-family: "Abraxas";
@@ -43,35 +36,15 @@
 	font-display: swap;
 }
 
-@font-face {
-	font-family: "Cygre";
-	src: url("./assets/fonts/сygre-regular.woff2") format("woff2"),
-	url("./assets/fonts/сygre-regular.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: "Cygre";
-	src: url("./assets/fonts/сygre-bold.woff2") format("woff2"),
-	url("./assets/fonts/сygre-bold.woff") format("woff");
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Cygre";
-	src: url("./assets/fonts/cygre-book.woff2") format("woff2"),
-	url("./assets/fonts/cygre-book.woff") format("woff");
-	font-style: normal;
-	font-weight: 100;
-	font-display: swap;
-}
 
 :root {
 	color-scheme: light;
+}
+
+*::selection {
+	background-color: variables.$color-accent;
+	color: white;
 }
 
 .container {

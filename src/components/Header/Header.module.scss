@@ -1,4 +1,4 @@
-@use "../../variables.scss";
+@use "../../styles/variables.scss";
 
 .header {
 	position: sticky;
@@ -53,8 +53,8 @@
 }
 
 .link_phone {
-	font-family: variables.$font-family-cygre, sans-serif;
-	font-weight: variables.$bold;
+	font-family: variables.$font-family-abel, sans-serif;
+	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;
 	line-height: 38px;
@@ -83,7 +83,8 @@
 }
 
 .button {
-	font-family: variables.$font-family-cygre, sans-serif;
+	font-family: variables.$font-family-abel, sans-serif;
+	font-weight: variables.$regular;
 	color: white;
 	font-size: 20px;
 	line-height: 38px;
