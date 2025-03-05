@@ -47,7 +47,7 @@ const Features: FC = () => {
 					<div className={styles.features}>
 						<img className={styles.tangle} src={Tangle} alt="Декоративный элемент" />
 
-						<h3 className={styles.title}>Разработка оригинальных сайтов под ключ для ресторанов, баров, кафе и сервисов доставки</h3>
+						<h2 className={styles.title}>Разработка оригинальных сайтов под ключ для ресторанов, баров, кафе и сервисов доставки</h2>
 
 						<ul className={styles.features__list}>
 							{featuresData.map(({id, icon, description}: FeatureType) => {
