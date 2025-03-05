@@ -10,15 +10,16 @@
 
 .title {
 	font-family: variables.$font-family-abel;
-	font-weight: variables.$bold;
+	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 50px;
 	line-height: 120%;
+	text-transform: uppercase;
 }
 
 .description {
 	font-family: variables.$font-family-abel;
-	font-weight: variables.$bold;
+	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;
 	line-height: 120%;
@@ -28,4 +29,41 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 60px;
+}
+
+.link {
+	width: 573px;
+	height: 776px;
+	position: relative;
+	border-radius: 30px;
+	background-color: variables.$color-dark;
+	padding: 40px 20px;
+}
+
+.link__title {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 50px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
+.link__image {
+	width: 554px;
+	height: 163px;
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	transform: translateY(-80%);
+}
+
+.link__button {
+	width: 533px;
+	height: 73px;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
 }
