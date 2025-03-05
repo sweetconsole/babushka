@@ -1,10 +1,11 @@
 import {FC} from "react"
 import styles from "./Cases.module.scss"
 import Case from "./Case.tsx";
-import Tangle from "../../assets/images/tangle_2.svg"
+import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
 import {casesPreviewData, casePreviewType} from "./cases.ts";
 import {Link} from "react-router-dom";
+import Container from "../Container/Container.tsx";
 
 const CasesPreview: FC = () => {
   const pickRandomItems = <T,> (arr: Iterable<T>, n: number): T[] => {
@@ -14,9 +15,9 @@ const CasesPreview: FC = () => {
 
 	return (
     <section className={styles.block}>
-      <div className="container">
+      <Container>
         <div className={styles.content}>
-          <p className={styles.title}>Главное — это не только внешний вид, но и удобство</p>
+          <h2 className={styles.title}>Главное — это не только внешний вид, но и удобство</h2>
           <p className={styles.description}>Мы делаем фокус не просто на красоте, а на сайтах, которые «живут» и приносят пользу. Бабушка знает, как это важно, и заботится о каждом сайте, как о своем доме.</p>
 
           <div className={styles.cases}>
@@ -33,7 +34,7 @@ const CasesPreview: FC = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
 	)
 }

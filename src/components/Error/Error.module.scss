@@ -1,0 +1,55 @@
+@use "../../styles/variables.scss";
+
+.block {
+	margin-top: 20px;
+}
+
+.content {
+	height: calc(100vh - 114px);
+	position: relative;
+}
+
+.title {
+	font-family: variables.$font-family-rubik;
+	font-weight: variables.$extra-bold;
+	color: variables.$color-dark;
+	font-size: 447px;
+	line-height: 530px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+
+	&:after {
+		content: "четыреста четыре";
+		display: block;
+		font-family: variables.$font-family-cygre;
+		font-weight: variables.$bold;
+		font-size: 86px;
+		line-height: 120%;
+		text-transform: lowercase;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.image {
+	width: 1100px;
+	height: 268px;
+	position: absolute;
+	bottom: 20px;
+	left: 49%;
+	transform: translateX(-51%);
+}
+
+.text {
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+	position: absolute;
+	left: 0;
+	bottom: 86px;
+}

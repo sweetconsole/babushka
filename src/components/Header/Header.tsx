@@ -4,11 +4,12 @@ import Logo from "../../assets/images/logos/logo.svg"
 import TelegramIcon from "./TelegramIcon.tsx"
 import styles from "./Header.module.scss"
 import {FC} from "react";
+import Container from "../Container/Container.tsx"
 
 const Header: FC = () => {
 	return (
     <header className={styles.header}>
-      <div className="container">
+      <Container>
         <div className={styles.block}>
           <nav className={styles.navigation}>
             <Link className={styles.navigation_link} to="babushka/dist/">Кейсы</Link>
@@ -22,7 +23,7 @@ const Header: FC = () => {
           </Link>
 
           <div className={styles.links}>
-            <a className={styles.link_phone} href="tel:+79629518898">+7 962 951 88 98</a>
+            <a className={styles.link_phone} href="tel:+79629518899">+7 962 951 88 99</a>
             <a className={[styles.link_social, styles.link_social_whatsapp].join(" ")}
                href="https://telegram.org/"
                target="_blank"
@@ -41,7 +42,7 @@ const Header: FC = () => {
             <a className={styles.button} href="/">написать бабушке</a>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
 	)
 }

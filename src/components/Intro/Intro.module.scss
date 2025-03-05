@@ -55,7 +55,7 @@
 	margin-top: 60px;
 
 	&:hover .block_application_text {
-		background-image: url("../../assets/images/input_hover.svg");
+		background-image: url("../../assets/images/link_background-hover.svg");
 	}
 
 	&:hover .block_application_button {
@@ -74,7 +74,7 @@
 	color: white;
 	font-size: 30px;
 	padding-left: 40px;
-	background-image: url("../../assets/images/input.svg");
+	background-image: url("../../assets/images/link_background.svg");
 	background-repeat: no-repeat;
 	transition: all .2s ease-in-out;
 }

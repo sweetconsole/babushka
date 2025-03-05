@@ -10,6 +10,11 @@
 	padding-left: 30px;
 	padding-top: 30px;
 	padding-right: 50px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.01);
+	}
 }
 
 .type {

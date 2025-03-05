@@ -1,7 +1,7 @@
 import {FC} from "react"
 import styles from "./Features.module.scss"
 import Feature from "./Feature.tsx";
-import Tangle from "../../assets/images/tangle_1.svg"
+import Tangle from "../../assets/images/tangles/tangle_1.svg"
 import Thread from "../../assets/images/thread_1.svg"
 import GlobeIcon from "../../assets/images/icons/globe.svg"
 import ComputerIcon from "../../assets/images/icons/computer.svg"
@@ -11,7 +11,7 @@ import OjahriLogo from "../../assets/images/logos/ojahri.svg"
 import ChiefTomorrowLogo from "../../assets/images/logos/chief_tomorrow.svg"
 import ToucheLogo from "../../assets/images/logos/touche.svg"
 import LeMenuLogo from "../../assets/images/logos/le_menu_logo.svg"
-
+import Container from "../Container/Container.tsx";
 
 
 type FeatureType = {
@@ -41,7 +41,7 @@ const featuresData: Array<FeatureType> = [
 const Features: FC = () => {
 	return (
 		<section className={styles.block}>
-			<div className="container">
+			<Container>
 				<div className={styles.content}>
 
 					<div className={styles.features}>
@@ -68,7 +68,7 @@ const Features: FC = () => {
 
 					<p className={styles.description}>Если тут кого-то нет, это не значит, что мы с ними не работали, это значит мы не понаслышке знаем, что такое NDA</p>
 				</div>
-			</div>
+			</Container>
 		</section>
 	)
 }
