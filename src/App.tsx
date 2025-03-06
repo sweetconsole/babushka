@@ -15,6 +15,7 @@ const App: FC = () => {
       <Routes>
         <Route path="babushka/dist/"  element={<HomePage />} />
 
+        <Route path="babushka/dist/404" element={<ErrorPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

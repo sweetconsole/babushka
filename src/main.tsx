@@ -11,6 +11,8 @@ import "./assets/fonts/сygre-bold.woff"
 import "./assets/fonts/сygre-bold.woff2"
 import "./assets/fonts/cygre-book.woff"
 import "./assets/fonts/cygre-book.woff2"
+import "./assets/fonts/rubik.woff"
+import "./assets/fonts/rubik.woff2"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
