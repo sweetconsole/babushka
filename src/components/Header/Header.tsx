@@ -13,7 +13,7 @@ const Header: FC = () => {
         <div className={styles.block}>
           <nav className={styles.navigation}>
             <Link className={styles.navigation_link} to="babushka/dist/">Кейсы</Link>
-            <Link className={styles.navigation_link} to="babushka/dist/">Услуги</Link>
+            <Link className={styles.navigation_link} to="babushka/dist/404">Услуги</Link>
             <Link className={styles.navigation_link} to="babushka/dist/">Процесс</Link>
             <Link className={styles.navigation_link} to="babushka/dist/">Блог</Link>
           </nav>
