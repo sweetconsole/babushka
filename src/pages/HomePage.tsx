@@ -3,7 +3,7 @@ import Intro from "../components/Intro/Intro.tsx";
 import Features from "../components/Features/Features.tsx";
 import CasesPreview from "../components/Cases/CasesPreview.tsx";
 import AboutUs from "../components/AboutUs/AboutUs.tsx";
-import Prices from "../components/Prices/Prices.tsx";
+import Services from "../components/Prices/Services.tsx";
 
 const HomePage: FC = () => {
   return (
@@ -12,7 +12,7 @@ const HomePage: FC = () => {
       <Features />
       <CasesPreview />
       <AboutUs />
-      <Prices />
+      <Services />
     </main>
   )
 }

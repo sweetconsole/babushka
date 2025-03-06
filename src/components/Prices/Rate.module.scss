@@ -1,0 +1,79 @@
+@use "../../styles/variables.scss";
+
+.rate {
+	width: 880px;
+	height: 544px;
+	color: variables.$color-dark;
+	background-image: url("../../assets/images/price_block_1.webp");
+	position: relative;
+	transform: rotate(2.5deg);
+	padding: 30px 20px;
+}
+
+.rate__name {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.link__block {
+	width: 834px;
+	height: 73px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&:hover .link__button {
+		background-color: variables.$color-accent;
+		transform: rotate(132.5deg);
+	}
+
+	&:hover .link__text {
+		background-image: url("../../assets/images/price_application_background-hover.svg");
+	}
+}
+
+.link__text {
+	width: 769px;
+	height: 73px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 30px;
+	line-height: 100%;
+	text-transform: lowercase;
+	transition: all .2s ease-in-out;
+
+	background-image: url("../../assets/images/price_application_background.svg");
+	padding-left: 35px;
+}
+
+.link__button {
+	width: 73px;
+	height: 73px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: variables.$color-dark;
+	border-radius: 100%;
+	transform: rotate(-2.5deg);
+	transition: all .2s ease-in-out;
+}
+
+.link__arrow {
+	width: 31px;
+	height: 31px;
+}

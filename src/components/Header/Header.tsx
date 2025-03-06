@@ -12,10 +12,9 @@ const Header: FC = () => {
       <Container>
         <div className={styles.block}>
           <nav className={styles.navigation}>
-            <Link className={styles.navigation_link} to="babushka/dist/">Кейсы</Link>
-            <Link className={styles.navigation_link} to="babushka/dist/404">Услуги</Link>
-            <Link className={styles.navigation_link} to="babushka/dist/">Процесс</Link>
+            <Link className={styles.navigation_link} to="babushka/dist/">Проекты</Link>
             <Link className={styles.navigation_link} to="babushka/dist/">Блог</Link>
+            <a className={styles.navigation_link} href="#">Частые Вопросы</a>
           </nav>
 
           <Link className={styles.logo} to="babushka/dist/">
