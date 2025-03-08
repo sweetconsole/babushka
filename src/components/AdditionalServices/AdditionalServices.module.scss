@@ -37,8 +37,14 @@
 	&:hover .service__text {
 		background-image: url("../../assets/images/link_additional_services-hover.svg");
 	}
+}
 
-	&:hover .service__link {
+.service_active {
+	.service__text {
+		background-image: url("../../assets/images/link_additional_services-hover.svg");
+	}
+
+	.service__link {
 		transform: rotate(-45deg);
 	}
 }
@@ -76,5 +82,105 @@
 }
 
 .service__link_arrow {
+	width: 31px;
+	height: 31px;
+}
 
+
+/* Info */
+.info {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 30px;
+	background-color: variables.$color-dark;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+.info_active {
+	display: flex;
+}
+
+.info__content {
+	width: 1309px;
+}
+
+.info__description {
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 30px;
+	line-height: 100%;
+	white-space: pre-line;
+	margin-bottom: 40px;
+}
+
+.info__tags {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.info__tag {
+	height: 34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 18px;
+	line-height: 27px;
+	border-radius: 84px;
+	background-color: white;
+	padding: 10px 30px;
+}
+
+.info__tag:not(:first-of-type) {
+	margin-left: 30px;
+}
+
+.info__link {
+	width: 604px;
+	position: relative;
+
+	&:hover .info__link_button {
+		transform: rotate(135deg);
+	}
+}
+
+.info__link_text {
+	width: 539px;
+	height: 73px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 30px;
+	line-height: 100%;
+	background-image: url("../../assets/images/service_application_background.svg");
+	padding-left: 60px;
+}
+
+.info__link_button {
+	width: 73px;
+	height: 73px;
+	border-radius: 100%;
+	border: 4px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transition: all .2s ease-in-out;
+}
+
+.info__image {
+	width: 381px;
+	height: 238px;
+	border-radius: 10px;
 }
