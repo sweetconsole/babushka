@@ -9,7 +9,7 @@ const App: FC = () => {
 
 
   return (
-    <div>
+    <>
       <Header />
 
       <Routes>
@@ -18,7 +18,7 @@ const App: FC = () => {
         <Route path="babushka/dist/404" element={<ErrorPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </div>
+    </>
   )
 }
 

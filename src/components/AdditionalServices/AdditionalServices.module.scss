@@ -1,7 +1,7 @@
-@use "../../styles/variables.scss";
+@use "../../assets/styles/variables.scss";
 
 .block {
-	margin-top: 90px;
+	margin-top: 100px;
 }
 
 .content {
@@ -10,24 +10,13 @@
 	line-height: 120%;
 }
 
-.title {
-	font-weight: variables.$regular;
-	font-size: 50px;
-	text-transform: uppercase;
-}
-
-.description {
-	font-weight: variables.$regular;
-	font-size: 20px;
-	margin-top: 20px;
-}
-
 .services {
 	height: 72px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 60px;
+	user-select: none;
 }
 
 .service {
@@ -119,7 +108,7 @@
 .info__tags {
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .info__tag {

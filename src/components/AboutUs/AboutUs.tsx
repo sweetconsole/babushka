@@ -4,6 +4,8 @@ import Container from "../Container/Container.tsx";
 import Tangle from "../../assets/images/tangles/tangle_3.svg"
 import Cup from "../../assets/images/cup.webp"
 import Teapot from "../../assets/images/teapot.webp"
+import Title from "../Title/Title.tsx";
+import SubTitle from "../SubTitle/SubTitle.tsx";
 
 
 const AboutUs: FC = () => {
@@ -11,8 +13,8 @@ const AboutUs: FC = () => {
 		<section className={styles.block}>
       <Container>
         <div className={styles.content}>
-          <h2 className={styles.title}>Создание проектов для ресторанов и horeca</h2>
-          <p className={styles.description}>BABUSHKA разрабатывает сайты для ресторанов и сервисы с любым функционалом. Команда разработчиков, дизайнеров и менеджеров может реализовать проект с нуля: от бизнес исследования, разработки бренда и фирменного стиля до построения, реализации и поддержки сайта или веб-сервиса.</p>
+          <Title text="Создание проектов для ресторанов и horeca" />
+          <SubTitle text="BABUSHKA разрабатывает сайты для ресторанов и сервисы с любым функционалом. Команда разработчиков, дизайнеров и менеджеров может реализовать проект с нуля: от бизнес исследования, разработки бренда и фирменного стиля до построения, реализации и поддержки сайта или веб-сервиса." />
 
           <ul className={styles.features}>
             <li className={styles.feature}>

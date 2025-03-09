@@ -1,4 +1,4 @@
-@use "../../styles/variables.scss";
+@use "../../assets/styles/variables.scss";
 
 .block {
 	margin-top: 90px;
@@ -8,30 +8,13 @@
 	position: relative;
 }
 
-.title {
-	font-family: variables.$font-family-abel;
-	font-weight: variables.$regular;
-	color: variables.$color-dark;
-	font-size: 50px;
-	line-height: 120%;
-	text-transform: uppercase;
-}
-
-.description {
-	font-family: variables.$font-family-abel;
-	font-weight: variables.$regular;
-	color: variables.$color-dark;
-	font-size: 20px;
-	line-height: 120%;
-	margin-bottom: 30px;
-}
-
 .features {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	list-style: none;
+	margin-top: 30px;
 }
 
 .feature {

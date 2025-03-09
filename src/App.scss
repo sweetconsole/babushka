@@ -1,48 +1,27 @@
-@use "./styles/variables.scss";
-
-@font-face {
-	font-family: "Abraxas";
-	src: url("./assets/fonts/abraxas.woff2") format("woff2"),
-	url("./assets/fonts/abraxas.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "AKONY";
-	src: url("./assets/fonts/akony.woff2") format("woff2"),
-	url("./assets/fonts/akony.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Bebas Neue";
-	src: url("./assets/fonts/bebas-neue.woff2") format("woff2"),
-	url("./assets/fonts/bebas-neue.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Cy Grotesk Grand";
-	src: url("./assets/fonts/cy-grotesk-grand.woff2") format("woff2"),
-	url("./assets/fonts/cy-grotesk-grand.woff") format("woff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-}
-
-
+@use "assets/styles/variables.scss";
 
 :root {
 	color-scheme: light;
+}
+
+* {
+	user-select: none;
 }
 
 *::selection {
 	background-color: variables.$color-accent;
 	color: white;
 }
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+body::-webkit-scrollbar-track {
+	background: variables.$color-dark;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: variables.$color-accent;
+	border-radius: 20px;
+	border: 3px solid variables.$color-dark;
+}
+

@@ -1,4 +1,4 @@
-@use "../../styles/variables.scss";
+@use "../../assets/styles/variables.scss";
 
 .case {
 	width: 573px;
@@ -15,6 +15,10 @@
 	&:hover {
 		transform: scale(1.01);
 	}
+
+	&:hover .title{
+		font-size: 34px;
+	}
 }
 
 .type {
@@ -30,4 +34,5 @@
 	font-weight: variables.$regular;
 	font-size: 30px;
 	line-height: 100%;
+	transition: all .2s ease-in-out;
 }

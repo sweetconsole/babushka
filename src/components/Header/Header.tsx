@@ -3,12 +3,23 @@ import WhatsAppIcon from "./WhatsAppIcon.tsx"
 import Logo from "../../assets/images/logos/logo.svg"
 import TelegramIcon from "./TelegramIcon.tsx"
 import styles from "./Header.module.scss"
-import {FC} from "react";
+import {FC, useEffect, useState} from "react";
 import Container from "../Container/Container.tsx"
 
 const Header: FC = () => {
+
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+  })
+
 	return (
-    <header className={styles.header}>
+    <header className={scroll != 0 ? [styles.header, styles.header_active].join(" ") : styles.header}>
       <Container>
         <div className={styles.block}>
           <nav className={styles.navigation}>

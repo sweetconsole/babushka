@@ -4,33 +4,38 @@ import Arrow from "../../assets/images/arrow.svg";
 import Container from "../Container/Container.tsx";
 import {MouseEvent} from "react";
 import {additionalServices, additionalServiceType} from "./AdditionalServicesData.ts";
+import Title from "../Title/Title.tsx";
+import SubTitle from "../SubTitle/SubTitle.tsx";
 
 
 const AdditionalServices: FC = () => {
 
 	const [service, setService] = useState(0)
-	const [active, setActive] = useState(true)
+	const [active, setActive] = useState(false)
 
 	const selectService = (event: MouseEvent<HTMLDivElement>) => {
-		const id: number = Number(event.currentTarget.getAttribute("number"))
+		const id: number = Number(event.currentTarget.getAttribute("data-value"))
 
 		if (id != service) {
-			setService((id))
+			setActive(true)
+		} else {
+			setActive(!active)
 		}
+
+		setService(id)
 	}
 
 	return (
 		<section className={styles.block}>
 			<Container>
 				<div className={styles.content}>
-					<h2 className={styles.title}>Дополнительные услуги</h2>
-					<p className={styles.description}>BABUSHKA делает не только красивые сайты, но дизайн, рекламу и SEO-продвижение для ресторанов, баров. кафе и сервисов доставки. </p>
+					<Title text="Дополнительные услуги" />
+					<SubTitle text="BABUSHKA делает не только красивые сайты, но дизайн, рекламу и SEO-продвижение для ресторанов, баров. кафе и сервисов доставки." />
 
 					<div className={styles.services}>
-
 						{additionalServices.map(({id, name}: additionalServiceType) => {
 							return (
-								<div className={styles.service} key={id} onClick={selectService} number={id}>
+								<div className={active && service === id ? [styles.service, styles.service_active].join(" ") : styles.service} key={id} onClick={selectService} data-value={id}>
 									<div className={styles.service__text}>{name}</div>
 									<div className={styles.service__link}>
 										<img className={styles.service__link_arrow} src={Arrow} alt="Подробнее..." />

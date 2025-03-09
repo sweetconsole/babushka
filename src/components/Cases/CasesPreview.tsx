@@ -6,6 +6,8 @@ import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
 import {casesPreviewData, casePreviewType} from "./cases.ts";
 import {Link} from "react-router-dom";
 import Container from "../Container/Container.tsx";
+import Title from "../Title/Title.tsx";
+import SubTitle from "../SubTitle/SubTitle.tsx";
 
 const CasesPreview: FC = () => {
   const pickRandomItems = <T,> (arr: Iterable<T>, n: number): T[] => {
@@ -17,8 +19,8 @@ const CasesPreview: FC = () => {
     <section className={styles.block}>
       <Container>
         <div className={styles.content}>
-          <h2 className={styles.title}>Главное — это не только внешний вид, но и удобство</h2>
-          <p className={styles.description}>Мы делаем фокус не просто на красоте, а на сайтах, которые «живут» и приносят пользу. Бабушка знает, как это важно, и заботится о каждом сайте, как о своем доме.</p>
+          <Title text="Главное — это не только внешний вид, но и удобство" />
+          <SubTitle text="Мы делаем фокус не просто на красоте, а на сайтах, которые «живут» и приносят пользу. Бабушка знает, как это важно, и заботится о каждом сайте, как о своем доме." />
 
           <div className={styles.cases}>
             {pickRandomItems(casesPreviewData, 2).map(({id, icon, title, link, color}: casePreviewType) => {

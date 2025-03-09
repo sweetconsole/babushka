@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import "./styles/fonts.scss"
-import './styles/reset.scss'
+import "./assets/styles/fonts.scss"
+import './assets/styles/reset.scss'
 import App from './App.tsx'
 import {BrowserRouter} from "react-router-dom";
 
