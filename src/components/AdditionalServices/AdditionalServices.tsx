@@ -35,7 +35,7 @@ const AdditionalServices: FC = () => {
 					<div className={styles.services}>
 						{additionalServices.map(({id, name}: additionalServiceType) => {
 							return (
-								<div className={active && service === id ? [styles.service, styles.service_active].join(" ") : styles.service} key={id} onClick={selectService} data-value={id}>
+								<div key={id} className={active && service === id ? [styles.service, styles.service_active].join(" ") : styles.service} onClick={selectService} data-value={id}>
 									<div className={styles.service__text}>{name}</div>
 									<div className={styles.service__link}>
 										<img className={styles.service__link_arrow} src={Arrow} alt="Подробнее..." />
@@ -51,7 +51,7 @@ const AdditionalServices: FC = () => {
 
 							<div className={styles.info__tags}>
 								{additionalServices[service].tags.map((tag: string) => {
-									return <div className={styles.info__tag}>{tag}</div>
+									return <div key={tag} className={styles.info__tag}>{tag}</div>
 								})}
 							</div>
 

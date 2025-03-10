@@ -1,17 +1,22 @@
 import {FC} from "react"
 import styles from "./BlogPreview.module.scss"
-import Title from "../Title/Title.tsx";
-import Container from "../Container/Container.tsx";
+import Arrow from "../../assets/images/arrow.svg"
+import {Link} from "react-router-dom"
+import {BlogPreviewType} from "./blogs.ts";
 
-const BlogPreview: FC = () => {
+const BlogPreview: FC<BlogPreviewType> = ({link, image, title, description, date}) => {
 	return (
-		<section className={styles.block}>
-      <Container>
-        <div className={styles.content}>
-          <Title text="Блог" />
-        </div>
-      </Container>
-    </section>
+		<article className={styles.block}>
+			<img className={styles.image} src={image} alt="Изображение" />
+			<p className={styles.title}>{title}</p>
+			<p className={styles.description}>{description}</p>
+			<p className={styles.date}>{date}</p>
+			<Link to={`./blog/${link}`}>
+				<div className={styles.link}>
+					<img className={styles.link__arrow} src={Arrow} alt="Перейти"/>
+				</div>
+			</Link>
+    </article>
 	)
 }
 

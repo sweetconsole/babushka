@@ -6,7 +6,7 @@ import AboutUs from "../components/AboutUs/AboutUs.tsx";
 import Services from "../components/Services/Services.tsx";
 import AdditionalServices from "../components/AdditionalServices/AdditionalServices.tsx";
 import HowWork from "../components/HowWork/HowWork.tsx";
-import BlogPreview from "../components/Blog/BlogPreview.tsx";
+import BlogPreview from "../components/Blog/BlogsPreview.tsx";
 
 const HomePage: FC = () => {
   return (

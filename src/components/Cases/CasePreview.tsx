@@ -9,15 +9,15 @@ interface CaseProps {
 	color: string,
 }
 
-const Case: FC<CaseProps> = ({icon, title, link, color}) => {
+const CasePreview: FC<CaseProps> = ({icon, title, link, color}) => {
 	return (
 		<Link to={link}>
-			<div className={styles.case} style={{backgroundImage: `url(${icon})`, color: color}}>
+			<article className={styles.case} style={{backgroundImage: `url(${icon})`, color: color}}>
 				<p className={styles.type}>кейс</p>
 				<p className={styles.title}>{title}</p>
-			</div>
+			</article>
 		</Link>
 	)
 }
 
-export default Case
+export default CasePreview

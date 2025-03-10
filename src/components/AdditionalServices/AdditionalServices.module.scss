@@ -22,6 +22,7 @@
 .service {
 	width: 568px;
 	position: relative;
+	cursor: pointer;
 
 	&:hover .service__text {
 		background-image: url("../../assets/images/link_additional_services-hover.svg");

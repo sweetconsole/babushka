@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./Cases.module.scss"
-import Case from "./Case.tsx";
+import CasePreview from "./CasePreview.tsx";
 import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
 import {casesPreviewData, casePreviewType} from "./cases.ts";
@@ -24,7 +24,7 @@ const CasesPreview: FC = () => {
 
           <div className={styles.cases}>
             {pickRandomItems(casesPreviewData, 2).map(({id, icon, title, link, color}: casePreviewType) => {
-              return <Case key={id} icon={icon} title={title} link={link} color={color} />
+              return <CasePreview key={id} icon={icon} title={title} link={link} color={color} />
             })}
 
             <Link to="">

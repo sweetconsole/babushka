@@ -33,7 +33,7 @@ const HowWork: FC = () => {
           <div className={active && descriptionId > 3 ? [styles.how_works, styles.how_works_active].join(" ") : styles.how_works}>
             {howWorkList.map(({id, name, description}: howWorkType) => {
               return (
-                <div className={active && descriptionId === id ? [styles.how_work, styles.how_work_active].join(" ") : styles.how_work}
+                <div key={id} className={active && descriptionId === id ? [styles.how_work, styles.how_work_active].join(" ") : styles.how_work}
                      onClick={viewDescription}
                      data-value={id}>
                   <div className={styles.how_work__content}>
