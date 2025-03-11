@@ -1,23 +1,6 @@
 @use "../../assets/styles/variables.scss";
 
 .block {
-	margin-top: 90px;
-}
-
-.content {
-	position: relative;
-}
-
-.features {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	list-style: none;
-	margin-top: 30px;
-}
-
-.feature {
 	width: 424px;
 	height: 269px;
 	border-radius: 30px;
@@ -37,9 +20,7 @@
 	}
 }
 
-
-
-.feature__title {
+.title {
 	font-family: variables.$font-family-abel;
 	font-weight: variables.$regular;
 	color: variables.$color-accent;
@@ -49,7 +30,7 @@
 	margin-bottom: 15px;
 }
 
-.feature__description {
+.description {
 	font-family: variables.$font-family-abel;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
@@ -60,31 +41,4 @@
 .empty {
 	width: 424px;
 	height: 269px;
-}
-
-.tangle {
-	width: 1380px;
-	height: 380px;
-	position: absolute;
-	top: 152px;
-	right: 13px;
-	z-index: 1;
-}
-
-.cup {
-	width: 110px;
-	height: 78px;
-	position: absolute;
-	top: 511px;
-	left: 250px;
-	transform: rotate(29deg);
-}
-
-.teapot {
-	width: 182px;
-	height: 195px;
-	position: absolute;
-	top: 540px;
-	right: 100px;
-	transform: rotate(-25deg);
 }

@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 60px;
 }
 
 .button {
@@ -29,11 +30,16 @@
 	height: 42px;
 }
 
-.link__block {
+.link {
 	width: 608px;
+	display: block;
+	margin: 60px auto 0;
+}
+
+.link__block {
+	width: 100%;
 	display: flex;
 	position: relative;
-	margin: 60px auto 0;
 
 	&:hover .link__text {
 		background-image: url("../../assets/images/link_background-hover.svg");

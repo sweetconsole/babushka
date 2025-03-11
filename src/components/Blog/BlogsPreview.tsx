@@ -59,15 +59,15 @@ const BlogsPreview: FC = () => {
 						</button>
 					</div>
 
-					<Link to="./blogs/">
+					<Link className={styles.link} to="./blogs/">
 						<div className={styles.link__block}>
 							<div className={styles.link__text}>смотреть все статьи</div>
 							<button className={styles.link__button}>
 								<img className={styles.link__arrow} src={Arrow} alt="Перейти" />
 							</button>
 						</div>
-
 					</Link>
+
         </div>
       </Container>
     </section>

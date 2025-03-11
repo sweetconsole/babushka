@@ -1,0 +1,228 @@
+@use "../../assets/styles/variables.scss";
+
+.block {
+	margin-top: 90px;
+}
+
+.title {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 50px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
+.title__highlighting {
+	color: variables.$color-accent;
+}
+
+.form {
+	width: 1776px;
+	height: 687px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../../assets/images/piece_paper.png");
+	padding: 0 120px 0 170px;
+	margin-top: 60px;
+}
+
+.form__block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.from__inputs {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(2, 725px);
+	grid-template-rows: repeat(2, 55px);
+	margin-bottom: 30px;
+}
+
+.form__label {
+	display: flex;
+	flex-direction: column;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+
+	.form__input,
+	.form__textarea {
+		color: variables.$color-dark;
+		font-size: 20px;
+		line-height: 120%;
+		border: 1px solid transparent;
+		border-bottom-color: variables.$color-dark;
+		background: transparent;
+	}
+}
+
+.form__label_block {
+	width: 100%;
+}
+
+.form__error {
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$bold;
+	color: #ff2525;
+	font-size: 15px;
+	line-height: 100%;
+	margin-top: 5px;
+	text-transform: initial;
+}
+
+.form__input {
+	width: 725px;
+	height: 30px;
+	transition: all .2s ease-in-out;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.form__select {
+	outline: none;
+	color: variables.$color-dark;
+	line-height: 120%;
+	text-transform: lowercase;
+	border: 1px solid transparent;
+	border-bottom-color: variables.$color-dark;
+	background: transparent;
+}
+
+.form__select_value {
+	background-color: #F7FAFC;
+
+	&:checked {
+		color: variables.$color-accent;
+	}
+}
+
+.form__textarea {
+	resize: none;
+	margin-top: 5px;
+	transition: all .2s ease-in-out;
+	margin-bottom: 30px;
+
+	&::placeholder {
+		color: variables.$color-accent;
+	}
+
+	&:focus {
+		outline: none;
+		border: 1px solid variables.$color-dark;
+	}
+}
+
+.form__block_file {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 13px;
+}
+
+.form__input_file_name {
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	text-transform: initial;
+	margin-left: 28px;
+}
+
+.form__input_file_button {
+	display: flex;
+	align-items: center;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 20px;
+	line-height: 120%;
+	text-transform: initial;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color: variables.$color-dark;
+	padding: 10px 40px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background-color: variables.$color-accent;
+	}
+}
+
+.form__input_file_button_icon {
+	width: 19px;
+	height: 19px;
+	margin-left: 10px;
+}
+
+.form__input_file {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.button {
+	width: 602px;
+	height: 72px;
+	position: relative;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-top: 40px;
+
+	&:hover .button__text {
+		background-image: url("../../assets/images/link_background-hover.svg");
+	}
+
+	&:hover .button__arrow_block {
+		transform: rotate(45deg);
+	}
+}
+
+.button__text {
+	width: 542px;
+	height: 72px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-size: 30px;
+	line-height: 100%;
+	text-transform: lowercase;
+	background-image: url("../../assets/images/link_background.svg");
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	transition: all .2s ease-in-out;
+}
+
+.button__arrow_block {
+	width: 72px;
+	height: 72px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: variables.$color-accent;
+	transition: all .2s ease-in-out;
+}
+
+.button__arrow {
+	width: 27px;
+	height: 27px;
+}
