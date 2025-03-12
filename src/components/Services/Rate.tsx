@@ -31,7 +31,7 @@ const Rate: FC<servicesWebsiteType> = ({name, countPage, time, price, descriptio
 			<p className={styles.description}>{description}</p>
 			<p className={styles.correction}>*Окончательная цена и сроки определяются в зависимости от объема работы и технического задания заказчика.</p>
 
-			<a href="/">
+			<a href={"#feedback"}>
 				<div className={[styles.link__block, styleLink].join(" ")}>
 					<div className={styles.link__text}>оставить заявку</div>
 					<div className={[styles.link__button, styleButton].join(" ")}>

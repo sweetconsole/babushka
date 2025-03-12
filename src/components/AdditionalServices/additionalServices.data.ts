@@ -1,16 +1,10 @@
 import ServiceImageDesign from "../../assets/images/service_1.png";
 import ServiceImageAds from "../../assets/images/service_2.png";
 import ServiceImageSEO from "../../assets/images/service_3.png";
+import {AdditionalServicesType} from "./additionalServices.type.ts"
 
-export type additionalServiceType = {
-	id: number,
-	name: string,
-	description: string,
-	tags: string[],
-	image: string,
-}
 
-export const additionalServices: Array<additionalServiceType> = [
+export const additionalServices: Array<AdditionalServicesType> = [
 	{
 		id: 0,
 		name: "дизайн",

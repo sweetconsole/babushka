@@ -18,7 +18,7 @@ const Feedback: FC = () => {
 		if (!event.target.files) {
 			return;
 		}
-		
+
 		setFileName(event.target.files[0].name)
 	}
 
@@ -27,7 +27,7 @@ const Feedback: FC = () => {
 	}
 
 	return (
-		<section className={styles.block}>
+		<section className={styles.block} id="feedback">
 			<Container>
 				<div className={styles.content}>
 					<h2 className={styles.title}>Напиши <span className={styles.title__highlighting}>бабушке</span></h2>

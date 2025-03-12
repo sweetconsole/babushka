@@ -3,7 +3,8 @@ import styles from "./AdditionalServices.module.scss"
 import Arrow from "../../assets/images/arrow.svg";
 import Container from "../Container/Container.tsx";
 import {MouseEvent} from "react";
-import {additionalServices, additionalServiceType} from "./AdditionalServicesData.ts";
+import {additionalServices} from "./additionalServices.data.ts";
+import {AdditionalServicesType} from "./additionalServices.type.ts";
 import Title from "../Title/Title.tsx";
 import SubTitle from "../SubTitle/SubTitle.tsx";
 
@@ -33,7 +34,7 @@ const AdditionalServices: FC = () => {
 					<SubTitle text="BABUSHKA делает не только красивые сайты, но дизайн, рекламу и SEO-продвижение для ресторанов, баров. кафе и сервисов доставки." />
 
 					<div className={styles.services}>
-						{additionalServices.map(({id, name}: additionalServiceType) => {
+						{additionalServices.map(({id, name}: AdditionalServicesType) => {
 							return (
 								<div key={id} className={active && service === id ? [styles.service, styles.service_active].join(" ") : styles.service} onClick={selectService} data-value={id}>
 									<div className={styles.service__text}>{name}</div>
@@ -55,12 +56,14 @@ const AdditionalServices: FC = () => {
 								})}
 							</div>
 
-							<div className={styles.info__link}>
-								<div className={styles.info__link_text}>отправить заявку</div>
-								<div className={styles.info__link_button}>
-									<img className={styles.info__link_arrow} src={Arrow} alt="Перейти" />
+							<a href={"#feedback"}>
+								<div className={styles.info__link}>
+									<div className={styles.info__link_text}>отправить заявку</div>
+									<div className={styles.info__link_button}>
+										<img className={styles.info__link_arrow} src={Arrow} alt="Перейти" />
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 
 						<img className={styles.info__image} src={additionalServices[service].image} alt="Изображение" loading="lazy" />
