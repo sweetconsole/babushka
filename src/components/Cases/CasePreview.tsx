@@ -1,15 +1,10 @@
 import {FC} from "react"
 import styles from "./Case.module.scss"
 import {Link} from "react-router-dom";
+import {ICasePreview} from "./cases.interface.ts";
 
-interface CaseProps {
-	icon: string,
-	title: string,
-	link: string,
-	color: string,
-}
 
-const CasePreview: FC<CaseProps> = ({icon, title, link, color}) => {
+const CasePreview: FC<ICasePreview> = ({icon, title, link, color}) => {
 	return (
 		<Link to={link}>
 			<article className={styles.case} style={{backgroundImage: `url(${icon})`, color: color}}>

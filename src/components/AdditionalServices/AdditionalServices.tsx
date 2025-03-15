@@ -1,12 +1,12 @@
 import {FC, useState} from "react"
 import styles from "./AdditionalServices.module.scss"
 import Arrow from "../../assets/images/arrow.svg";
-import Container from "../Container/Container.tsx";
+import Container from "../UI/Container/Container.tsx";
 import {MouseEvent} from "react";
 import {additionalServices} from "./additionalServices.data.ts";
 import {AdditionalServicesType} from "./additionalServices.type.ts";
-import Title from "../Title/Title.tsx";
-import SubTitle from "../SubTitle/SubTitle.tsx";
+import Title from "../UI/Title/Title.tsx";
+import SubTitle from "../UI/SubTitle/SubTitle.tsx";
 
 
 const AdditionalServices: FC = () => {
@@ -58,7 +58,7 @@ const AdditionalServices: FC = () => {
 
 							<a href={"#feedback"}>
 								<div className={styles.info__link}>
-									<div className={styles.info__link_text}>отправить заявку</div>
+									<p className={styles.info__link_text}>отправить заявку</p>
 									<div className={styles.info__link_button}>
 										<img className={styles.info__link_arrow} src={Arrow} alt="Перейти" />
 									</div>

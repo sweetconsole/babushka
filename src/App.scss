@@ -4,10 +4,6 @@
 	color-scheme: light;
 }
 
-* {
-	user-select: none;
-}
-
 *::selection {
 	background-color: variables.$color-accent;
 	color: white;

@@ -1,0 +1,9 @@
+@use "../../../assets/styles/variables";
+
+.subtitle {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+}

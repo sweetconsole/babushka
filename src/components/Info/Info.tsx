@@ -8,7 +8,7 @@ import OjahriLogo from "../../assets/images/logos/ojahri.svg"
 import ChiefTomorrowLogo from "../../assets/images/logos/chief_tomorrow.svg"
 import ToucheLogo from "../../assets/images/logos/touche.svg"
 import LeMenuLogo from "../../assets/images/logos/le_menu_logo.svg"
-import Container from "../Container/Container.tsx";
+import Container from "../UI/Container/Container.tsx";
 import {infoData, InfoType} from "./infoData.ts";
 
 

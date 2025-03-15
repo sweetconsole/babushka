@@ -25,7 +25,12 @@
 	display: flex;
 	justify-content: space-between;
 
-	.navigation_link {
+	@media (max-width: 1800px) {
+		width: 350px;
+	}
+}
+
+.navigation_link {
 		font-family: variables.$font-family-abel;
 		font-weight: variables.$regular;
 		color: variables.$color-dark;
@@ -34,11 +39,14 @@
 		text-transform: uppercase;
 		transition: all .2s ease-in-out;
 
-		&:hover {
-			color: variables.$color-accent;
-		}
+	&:hover {
+		color: variables.$color-accent;
 	}
 
+	@media (max-width: 1800px) {
+		font-size: 14px;
+		line-height: 32px;
+	}
 }
 
 .logo {
@@ -50,6 +58,11 @@
 	.logo_icon {
 		width: 300px;
 		height: 54px;
+
+		@media (max-width: 1800px) {
+			width: 214px;
+			height: 39px;
+		}
 	}
 }
 
@@ -58,6 +71,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: 1800px) {
+		width: 400px;
+	}
 }
 
 .link_phone {
@@ -71,22 +88,22 @@
 	&:hover {
 		color: variables.$color-accent;
 	}
-}
 
-.link_social {
-	color: variables.$color-dark;
-	transition: all .2s ease-in-out;
-}
-
-.link_social_whatsapp {
-	&:hover {
-		color: #40C351;
+	@media (max-width: 1800px) {
+		font-size: 14px;
+		line-height: 32px;
 	}
 }
 
-.link_social_telegram {
-	&:hover {
-		color: #29B6F6;
+.link_social {
+	width: 23px;
+	height: 23px;
+	color: variables.$color-dark;
+	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 20px;
+		height: 20px;
 	}
 }
 
@@ -102,5 +119,11 @@
 
 	&:active {
 		background-color: variables.$color-dark;
+	}
+
+	@media (max-width: 1800px) {
+		font-size: 14px;
+		line-height: 32px;
+		padding: 2px 30px;
 	}
 }

@@ -1,6 +1,6 @@
-import ServiceImageDesign from "../../assets/images/service_1.png";
-import ServiceImageAds from "../../assets/images/service_2.png";
-import ServiceImageSEO from "../../assets/images/service_3.png";
+import ServiceImageDesign from "../../assets/images/service_1.webp";
+import ServiceImageAds from "../../assets/images/service_2.webp";
+import ServiceImageSEO from "../../assets/images/service_3.webp";
 import {AdditionalServicesType} from "./additionalServices.type.ts"
 
 

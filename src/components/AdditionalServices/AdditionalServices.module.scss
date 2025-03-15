@@ -135,7 +135,7 @@
 	width: 604px;
 	position: relative;
 
-	&:hover .info__link_button {
+	&:hover .info__link_arrow {
 		transform: rotate(135deg);
 	}
 }
@@ -166,6 +166,11 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+
+.info__link_arrow {
+	width: 31px;
+	height: 31px;
 	transition: all .2s ease-in-out;
 }
 

@@ -1,0 +1,10 @@
+@use "../../../assets/styles/variables.scss";
+
+.icon {
+	color: variables.$color-dark;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: #29B6F6;
+	}
+}

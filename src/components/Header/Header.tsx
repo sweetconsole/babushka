@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom"
-import WhatsAppIcon from "./WhatsAppIcon.tsx"
+import WhatsAppIcon from "../UI/WhatsAppIcon/WhatsAppIcon.tsx"
 import Logo from "../../assets/images/logos/logo.svg"
-import TelegramIcon from "./TelegramIcon.tsx"
+import TelegramIcon from "../UI/TelegramIcon/TelegramIcon.tsx"
 import styles from "./Header.module.scss"
 import {FC, useEffect, useState} from "react";
-import Container from "../Container/Container.tsx"
+import Container from "../UI/Container/Container.tsx"
 
 const Header: FC = () => {
 
@@ -25,7 +25,7 @@ const Header: FC = () => {
           <nav className={styles.navigation}>
             <Link className={styles.navigation_link} to="babushka/dist/projects">Проекты</Link>
             <Link className={styles.navigation_link} to="babushka/dist/blogs">Блог</Link>
-            <a className={styles.navigation_link} href="#">Частые Вопросы</a>
+            <a className={styles.navigation_link} href={"#faq"}>Частые Вопросы</a>
           </nav>
 
           <Link className={styles.logo} to="babushka/dist/">
@@ -49,7 +49,7 @@ const Header: FC = () => {
               <TelegramIcon />
             </a>
 
-            <a className={styles.button} href="/">написать бабушке</a>
+            <a className={styles.button} href={"#feedback"}>написать бабушке</a>
           </div>
         </div>
       </Container>

@@ -1,11 +1,11 @@
 import {FC, useState} from "react"
 import styles from "./BlogsPreview.module.scss"
-import Title from "../Title/Title.tsx";
-import Container from "../Container/Container.tsx";
+import Title from "../UI/Title/Title.tsx";
+import Container from "../UI/Container/Container.tsx";
 import ArrowDark from "../../assets/images/arrow_dark.svg"
 import Arrow from "../../assets/images/arrow.svg"
 import BlogPreview from "./BlogPreview.tsx";
-import {blogs} from "./blogs.ts";
+import {blogs} from "./blogs.data.ts";
 import {Link} from "react-router-dom";
 
 const BlogsPreview: FC = () => {
@@ -60,12 +60,10 @@ const BlogsPreview: FC = () => {
 					</div>
 
 					<Link className={styles.link} to="./blogs/">
-						<div className={styles.link__block}>
-							<div className={styles.link__text}>смотреть все статьи</div>
-							<button className={styles.link__button}>
-								<img className={styles.link__arrow} src={Arrow} alt="Перейти" />
-							</button>
-						</div>
+						<p className={styles.link__text}>смотреть все статьи</p>
+						<button className={styles.link__button}>
+							<img className={styles.link__arrow} src={Arrow} alt="Перейти" />
+						</button>
 					</Link>
 
         </div>

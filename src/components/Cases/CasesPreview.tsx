@@ -3,11 +3,12 @@ import styles from "./Cases.module.scss"
 import CasePreview from "./CasePreview.tsx";
 import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
-import {casesPreviewData, casePreviewType} from "./cases.ts";
+import {casesPreview} from "./cases.data.ts";
+import {casePreviewType} from "./cases.type.ts";
 import {Link} from "react-router-dom";
-import Container from "../Container/Container.tsx";
-import Title from "../Title/Title.tsx";
-import SubTitle from "../SubTitle/SubTitle.tsx";
+import Container from "../UI/Container/Container.tsx";
+import Title from "../UI/Title/Title.tsx";
+import SubTitle from "../UI/SubTitle/SubTitle.tsx";
 
 const CasesPreview: FC = () => {
   const pickRandomItems = <T,> (arr: Iterable<T>, n: number): T[] => {
@@ -23,11 +24,11 @@ const CasesPreview: FC = () => {
           <SubTitle text="Мы делаем фокус не просто на красоте, а на сайтах, которые «живут» и приносят пользу. Бабушка знает, как это важно, и заботится о каждом сайте, как о своем доме." />
 
           <div className={styles.cases}>
-            {pickRandomItems(casesPreviewData, 2).map(({id, icon, title, link, color}: casePreviewType) => {
+            {pickRandomItems(casesPreview, 2).map(({id, icon, title, link, color}: casePreviewType) => {
               return <CasePreview key={id} icon={icon} title={title} link={link} color={color} />
             })}
 
-            <Link to="">
+            <Link to="cases/">
               <div className={styles.link}>
                 <h3 className={styles.link__title}>смотреть<br/>еще кейсы</h3>
                 <img className={styles.link__image} src={Tangle} alt="Декоративный элемент" loading="lazy" />

@@ -1,0 +1,173 @@
+@use "../../assets/styles/variables.scss";
+
+.footer {
+	margin-top: 90px;
+	margin-bottom: 30px;
+}
+
+.content {
+
+}
+
+.hatch {
+	width: 1448px;
+	height: 305px;
+	margin: 0 auto;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.copyright {
+	font-family: variables.$font-family-rubik;
+	font-weight: variables.$extra-bold;
+	color: variables.$color-dark;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.navigation {
+	width: 480px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link_phone {
+	font-family: variables.$font-family-rubik;
+	font-weight: variables.$extra-bold;
+	color: variables.$color-dark;
+	font-size: 42px;
+	line-height: 49px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: variables.$color-accent;
+	}
+}
+
+.link_social svg {
+	width: 37px;
+	height: 37px;
+}
+
+.block {
+	width: 100%;
+	height: 196px;
+	position: relative;
+	border-radius: 30px;
+	background-color: variables.$color-dark;
+	margin-top: 20px;
+}
+
+.links {
+	width: 390px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.link {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 20px;
+	line-height: 120%;
+	text-transform: lowercase;
+}
+
+.info {
+	width: 390px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+
+.text {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.link__write {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-accent;
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+	border-radius: 46px;
+	border: 2px solid variables.$color-accent;
+	background-color: white;
+	padding: 5px 75px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: white;
+		background-color: variables.$color-accent;
+	}
+}
+
+.processing {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: white;
+	font-size: 20px;
+	line-height: 120%;
+	text-transform: lowercase;
+	border-radius: 62px;
+	border: 2px solid white;
+	padding: 8px 24px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: variables.$color-dark;
+		background-color: white;
+	}
+}
+
+.images {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-top: 50px;
+}
+
+.image {
+
+}
+
+.title {
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: variables.$font-family-cygre;
+	font-weight: 100;
+	color: variables.$color-dark;
+	font-size: 70px;
+	line-height: 108px;
+}
+
+.title__highlighting {
+	color: variables.$color-accent;
+}

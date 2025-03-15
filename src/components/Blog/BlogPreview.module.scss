@@ -57,9 +57,14 @@
 	&:hover {
 		background-color: variables.$color-accent;
 	}
+
+	&:hover .link__arrow {
+		transform: rotate(45deg);
+	}
 }
 
 .link__arrow {
 	width: 31px;
 	height: 31px;
+	transition: all .2s ease-in-out;
 }
