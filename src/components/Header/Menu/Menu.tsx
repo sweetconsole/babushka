@@ -4,6 +4,8 @@ import CloseIcon from "../../../assets/images/menu_close.svg"
 import {IMenuProps} from "./menu.interface.ts";
 import {Link} from "react-router-dom";
 import Logo from "../../../assets/images/logos/logo.svg";
+import WhatsAppIcon from "../../UI/WhatsAppIcon/WhatsAppIcon.tsx";
+import TelegramIcon from "../../UI/TelegramIcon/TelegramIcon.tsx";
 
 const Menu: FC<IMenuProps> = ({active, setActive}) => {
 
@@ -27,6 +29,27 @@ const Menu: FC<IMenuProps> = ({active, setActive}) => {
 					<img className={styles.logo__icon} src={Logo} alt="BABUSHKA" />
 				</Link>
 			</nav>
+
+			<div className={styles.block}>
+				<div className={styles.socials}>
+					<a className={styles.link_phone} href="tel:+79629518899">+7 962 951 88 99</a>
+					<a className={styles.link_social}
+						 href="https://telegram.org/"
+						 target="_blank"
+						 aria-label="Ссылка на Telegram"
+						 rel="noreferrer">
+						<WhatsAppIcon />
+					</a>
+					<a className={styles.link_social}
+						 href="https://web.whatsapp.com/"
+						 target="_blank"
+						 aria-label="Ссылка на WhatsApp"
+						 rel="noreferrer">
+						<TelegramIcon />
+					</a>
+				</div>
+				<button className={styles.button}>написать бабушке</button>
+			</div>
 		</div>
 	)
 }
