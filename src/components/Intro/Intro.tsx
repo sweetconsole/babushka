@@ -11,12 +11,16 @@ const Intro: FC = () => {
       <Container>
         <div className={styles.block}>
           <h1 className={styles.title}>
-            Комплексная разработка сайтов и сервисов
-              <img className={styles.title_arrow} src={ArrowTitle} alt="Стрелочка" /> для ресторанов и баров
+            Комплексная
+            <span className={styles.title__decoration_one}></span>
+            разработка сайтов и сервисов
+            <img className={styles.title_arrow} src={ArrowTitle} alt="Стрелочка" />
+            <span className={styles.title__decoration_two}></span>
+            для ресторанов и баров
           </h1>
 
           <a className={styles.block_application} href={"#feedback"}>
-            <p className={styles.block_application_text}>оставить заявку</p>
+            <p className={styles.block_application_text}>Заказать консультацию</p>
             <button className={styles.block_application_button}>
               <img className={styles.block_application_button_icon} src={Arrow} alt="Перейти к заявке" />
             </button>

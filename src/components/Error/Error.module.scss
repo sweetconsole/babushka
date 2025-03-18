@@ -31,15 +31,26 @@
 		bottom: 10px;
 		left: 50%;
 		transform: translateX(-50%);
-
-		@media (max-width: 1800px) {
-			font-size: 48px;
-		}
 	}
 
 	@media (max-width: 1800px) {
 		font-size: 248px;
 		line-height: 293px;
+
+		&:after {
+			font-size: 48px;
+		}
+	}
+
+	@media (max-width: 1250px) {
+		font-size: 154px;
+		line-height: 183px;
+
+		&:after {
+			width: 250px;
+			font-size: 30px;
+			bottom: -40px;
+		}
 	}
 }
 
@@ -49,11 +60,17 @@
 	position: absolute;
 	bottom: 20px;
 	left: 49%;
+	z-index: -1;
 	transform: translateX(-51%);
 
 	@media (max-width: 1800px) {
 		width: 800px;
 		bottom: 80px;
+	}
+
+	@media (max-width: 1250px) {
+		width: 350px;
+		height: auto;
 	}
 }
 
@@ -70,5 +87,11 @@
 	@media (max-width: 1800px) {
 		font-size: 23px;
 		bottom: 35px;
+	}
+
+	@media (max-width: 1250px) {
+		font-size: 14px;
+		left: 15px;
+		bottom: 20px;
 	}
 }
