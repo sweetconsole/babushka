@@ -5,7 +5,7 @@
 	left: 0;
 	top: 0;
 	z-index: 10;
-	transition: all .5s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .header_active {
@@ -21,6 +21,7 @@
 
 	@media (max-width: 1250px) {
 		align-items: flex-end;
+		padding-bottom: 15px;
 	}
 }
 
