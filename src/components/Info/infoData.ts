@@ -1,13 +1,8 @@
 import GlobeIcon from "../../assets/images/icons/globe.svg";
 import ComputerIcon from "../../assets/images/icons/computer.svg";
 import AudioIcon from "../../assets/images/icons/audio.svg";
+import {InfoType} from "./info.type.ts";
 
-
-export type InfoType = {
-	id: number
-	icon: string
-	description: string
-}
 
 export const infoData: Array<InfoType> = [
 	{

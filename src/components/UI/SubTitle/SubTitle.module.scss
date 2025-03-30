@@ -6,4 +6,12 @@
 	color: variables.$color-dark;
 	font-size: 20px;
 	line-height: 120%;
+
+	@media (max-width: 1800px) {
+		font-size: 23px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+	}
 }

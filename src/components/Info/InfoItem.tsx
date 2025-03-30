@@ -2,12 +2,12 @@ import {FC} from "react"
 import styles from "./InfoItem.module.scss"
 import BracketLeft from "../../assets/images/square_brackets/square_bracket_left.svg"
 import BracketRight from "../../assets/images/square_brackets/square_bracket_right.svg"
-import {IFeature} from "./blog.interface.ts";
+import {IInfoProps} from "./info.interface.ts";
 
 
-const InfoItem: FC<IFeature> = ({icon, description}) => {
+const InfoItem: FC<IInfoProps> = ({icon, description}) => {
 	return (
-		<li className={styles.feature}>
+		<li className={styles.info}>
       <img className={[styles.bracket, styles.bracket_left].join(" ")}
            src={BracketLeft}
            alt="Декоративная скобочка"/>

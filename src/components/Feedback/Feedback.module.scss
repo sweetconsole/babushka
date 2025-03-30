@@ -52,16 +52,17 @@
 	font-size: 20px;
 	line-height: 25px;
 	text-transform: uppercase;
+}
 
-	.form__input,
-	.form__textarea {
-		color: variables.$color-dark;
-		font-size: 20px;
-		line-height: 120%;
-		border: 1px solid transparent;
-		border-bottom-color: variables.$color-dark;
-		background: transparent;
-	}
+.form__input,
+.form__textarea {
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+	border: 1px solid transparent;
+	border-bottom-color: variables.$color-dark;
+	background: transparent;
+	caret-color: variables.$color-accent;
 }
 
 .form__label_block {

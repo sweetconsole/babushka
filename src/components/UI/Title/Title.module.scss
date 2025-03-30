@@ -7,4 +7,12 @@
 	font-size: 50px;
 	line-height: 120%;
 	text-transform: uppercase;
+
+	@media (max-width: 1800px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 30px;
+	}
 }

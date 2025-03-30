@@ -3,22 +3,13 @@ import WhatsAppIcon from "../UI/WhatsAppIcon/WhatsAppIcon.tsx"
 import Logo from "../../assets/images/logos/logo.svg"
 import TelegramIcon from "../UI/TelegramIcon/TelegramIcon.tsx"
 import styles from "./Header.module.scss"
-import {FC, useEffect, useState} from "react";
+import {FC, useState} from "react";
 import Container from "../UI/Container/Container.tsx"
 import Menu from "./Menu/Menu.tsx";
 
 const Header: FC = () => {
 
   const [activeMenu, setActiveMenu] = useState(false)
-  const [scroll, setScroll] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScroll(window.scrollY)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-  }, [activeMenu])
 
   const OpenMenu = () => {
     setActiveMenu(true)
@@ -29,7 +20,7 @@ const Header: FC = () => {
     <>
       <Menu active={activeMenu} setActive={setActiveMenu} />
 
-      <header className={scroll != 0 ? [styles.header, styles.header_active].join(" ") : styles.header}>
+      <header className={styles.header}>
         <Container>
           <div className={styles.block}>
             <nav className={styles.navigation}>
@@ -38,7 +29,7 @@ const Header: FC = () => {
               <a className={styles.navigation_link} href={"#faq"}>Частые Вопросы</a>
             </nav>
 
-            <Link className={styles.logo} to="babushka/dist/">
+            <Link className={styles.logo} to="babushka/dist/" title="С помощью логотипа вы можете переместиться на главную страницу">
               <img className={styles.logo_icon} src={Logo} alt="BABUSHKA" />
             </Link>
 

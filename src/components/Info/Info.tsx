@@ -9,7 +9,8 @@ import ChiefTomorrowLogo from "../../assets/images/logos/chief_tomorrow.svg"
 import ToucheLogo from "../../assets/images/logos/touche.svg"
 import LeMenuLogo from "../../assets/images/logos/le_menu_logo.svg"
 import Container from "../UI/Container/Container.tsx";
-import {infoData, InfoType} from "./infoData.ts";
+import {infoData} from "./infoData.ts";
+import {InfoType} from "./info.type.ts";
 
 
 
@@ -19,12 +20,12 @@ const Info: FC = () => {
 			<Container>
 				<div className={styles.content}>
 
-					<div className={styles.features}>
+					<div className={styles.info}>
 						<img className={styles.tangle} src={Tangle} alt="Декоративный элемент" />
 
 						<h2 className={styles.title}>Разработка оригинальных сайтов под ключ для ресторанов, баров, кафе и сервисов доставки</h2>
 
-						<ul className={styles.features__list}>
+						<ul className={styles.list}>
 							{infoData.map(({id, icon, description}: InfoType) => {
 								return <InfoItem key={id} icon={icon} description={description} />
 							})}

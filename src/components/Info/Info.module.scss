@@ -8,14 +8,24 @@
 	background-color: variables.$color-dark;
 	border-radius: 40px;
 	padding: 30px;
+
+	@media (max-width: 1336px) {
+		padding: 10px;
+		border-radius: 20px;
+	}
 }
 
-.features {
+.info {
 	background-color: white;
 	border-radius: 20px;
 	padding: 30px;
 	margin-bottom: 60px;
 	position: relative;
+
+	@media (max-width: 1336px) {
+		padding: 40px 10px;
+		border-radius: 10px;
+	}
 }
 
 .title {
@@ -25,13 +35,26 @@
 	font-size: 30px;
 	line-height: 100%;
 	margin-bottom: 40px;
+
+	@media (max-width: 1800px) {
+		font-size: 23px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
 }
 
-.features__list {
+.list {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media (max-width: 1336px) {
+		flex-direction: column;
+	}
 }
 
 .tangle {
@@ -40,6 +63,14 @@
 	position: absolute;
 	top: -89px;
 	right: 125px;
+
+	@media (max-width: 1800px) {
+		right: 10px;
+	}
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
 }
 
 .thread {
@@ -48,6 +79,14 @@
 	position: absolute;
 	bottom: -62px;
 	right: 194px;
+
+	@media (max-width: 1800px) {
+		right: 80px;
+	}
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
 }
 
 .partners {
@@ -55,31 +94,63 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 40px;
+
+	@media (max-width: 1336px) {
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
 }
 
 .partners__logo_megobari {
 	width: 190px;
 	height: 41px;
+
+	@media (max-width: 1336px) {
+		width: 83px;
+		height: 18px;
+	}
 }
 
 .partners__logo_ojahri {
 	width: 192px;
 	height: 105px;
+
+	@media (max-width: 1336px) {
+		width: 83px;
+		height: 45px;
+	}
 }
 
 .partners__logo_chief_tomorrow {
 	width: 181px;
 	height: 81px;
+
+	@media (max-width: 1336px) {
+		width: 83px;
+		height: 37px;
+	}
 }
 
 .partners__logo_touche {
 	width: 145px;
 	height: 103px;
+
+	@media (max-width: 1336px) {
+		width: 70px;
+		height: 50px;
+		margin-top: 15px;
+	}
 }
 
 .partners__logo_le_menu {
 	width: 203px;
 	height: 101px;
+
+	@media (max-width: 1336px) {
+		width: 83px;
+		height: 41px;
+		margin-top: 15px;
+	}
 }
 
 .description {
@@ -89,4 +160,13 @@
 	font-size: 20px;
 	line-height: 120%;
 	text-align: center;
+
+	@media (max-width: 1800px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
 }
