@@ -24,8 +24,8 @@ const Header: FC = () => {
         <Container>
           <div className={styles.block}>
             <nav className={styles.navigation}>
-              <Link className={styles.navigation_link} to="babushka/dist/projects">Проекты</Link>
-              <Link className={styles.navigation_link} to="babushka/dist/blogs">Блог</Link>
+              <Link className={styles.navigation_link} to="babushka/dist/projects/">Проекты</Link>
+              <Link className={styles.navigation_link} to="babushka/dist/blogs/">Блог</Link>
               <a className={styles.navigation_link} href={"#faq"}>Частые Вопросы</a>
             </nav>
 

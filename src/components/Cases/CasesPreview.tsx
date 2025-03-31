@@ -28,7 +28,7 @@ const CasesPreview: FC = () => {
               return <CasePreview key={id} icon={icon} title={title} link={link} color={color} />
             })}
 
-            <Link to="cases/">
+            <Link to="projects/">
               <div className={styles.link}>
                 <h3 className={styles.link__title}>смотреть<br/>еще кейсы</h3>
                 <img className={styles.link__image} src={Tangle} alt="Декоративный элемент" loading="lazy" />

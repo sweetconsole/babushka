@@ -8,6 +8,34 @@
 	position: relative;
 }
 
+.titles_pc {
+	display: block;
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
+}
+
+.titles_mobile {
+	display: none;
+
+	@media (max-width: 1336px) {
+		display: block;
+	}
+}
+
+.title_mobile {
+	font-family: variables.$font-family-cygre;
+	font-weight: variables.$bold;
+	font-size: 30px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
+.title_highlighting {
+	color: variables.$color-accent;
+}
+
 .features {
 	display: flex;
 	justify-content: space-between;
@@ -15,6 +43,10 @@
 	flex-wrap: wrap;
 	list-style: none;
 	margin-top: 30px;
+
+	@media (max-width: 1336px) {
+		margin-top: 20px;
+	}
 }
 
 .tangle {
@@ -24,6 +56,17 @@
 	top: 152px;
 	right: 13px;
 	z-index: 1;
+
+	@media (max-width: 1800px) {
+		width: 877px;
+		height: 241px;
+		top: 190px;
+		right: 60px;
+	}
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
 }
 
 .cup {
@@ -33,6 +76,17 @@
 	top: 511px;
 	left: 250px;
 	transform: rotate(29deg);
+
+	@media (max-width: 1800px) {
+		width: 70px;
+		height: 50px;
+		top: 408px;
+		left: 200px;
+	}
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
 }
 
 .teapot {
@@ -42,4 +96,15 @@
 	top: 540px;
 	right: 100px;
 	transform: rotate(-25deg);
+
+	@media (max-width: 1800px) {
+		width: 116px;
+		height: 124px;
+		top: 420px;
+		right: 150px;
+	}
+
+	@media (max-width: 1336px) {
+		display: none;
+	}
 }

@@ -1,5 +1,5 @@
 import {FC} from "react"
-import styles from "./Case.module.scss"
+import styles from "./CasePreview.module.scss"
 import {Link} from "react-router-dom";
 import {ICasePreview} from "./cases.interface.ts";
 

@@ -16,8 +16,17 @@ const Experience: FC = () => {
 		<section className={styles.block}>
       <Container>
         <div className={styles.content}>
-          <Title text="Создание проектов для ресторанов и horeca" />
-          <SubTitle text="BABUSHKA разрабатывает сайты для ресторанов и сервисы с любым функционалом. Команда разработчиков, дизайнеров и менеджеров может реализовать проект с нуля: от бизнес исследования, разработки бренда и фирменного стиля до построения, реализации и поддержки сайта или веб-сервиса." />
+					<div className={styles.titles_pc}>
+						<Title text="Создание проектов для ресторанов и horeca" />
+						<SubTitle text="BABUSHKA разрабатывает сайты для ресторанов и сервисы с любым функционалом. Команда разработчиков, дизайнеров и менеджеров может реализовать проект с нуля: от бизнес исследования, разработки бренда и фирменного стиля до построения, реализации и поддержки сайта или веб-сервиса." />
+					</div>
+					<div className={styles.titles_mobile}>
+						<h2 className={styles.title_mobile}>
+							Почему
+							<span className={styles.title_highlighting}> бабушка?</span>
+						</h2>
+						<SubTitle text="Накрывай на стол, я расскажу какая бабушка классная" />
+					</div>
 
           <ul className={styles.features}>
             {experiences.map(({type, name, description}: ExperienceType) => {
