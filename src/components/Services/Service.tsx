@@ -16,7 +16,8 @@ const Service: FC<IServiceProps> = ({name, countPage, time, price, description, 
 				</div>
 
 				<div className={styles.scope}>
-					<p className={styles.scope__name}>время на разработку</p>
+					<p className={[styles.scope__name, styles.scope__time].join(" ")}
+						 title={"Окончательные определяются в зависимости от объема работы\nи технического задания заказчика"}>время на разработку*</p>
 					<p className={styles.scope__count}>{time}</p>
 				</div>
 			</div>
@@ -28,6 +29,7 @@ const Service: FC<IServiceProps> = ({name, countPage, time, price, description, 
 
 			<p className={styles.description}>{description}</p>
 			<p className={styles.correction}>*Окончательная цена и сроки определяются в зависимости от объема работы и технического задания заказчика.</p>
+			<p className={[styles.correction__mobile, styles.correction].join(" ")}>*время разработки может варьироваться в пределах недели</p>
 
 			<a className={[styles.link__block, styleLink].join(" ")} href={"#feedback"}>
 				<p className={styles.link__text}>оставить заявку</p>

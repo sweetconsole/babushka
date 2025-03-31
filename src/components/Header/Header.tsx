@@ -29,7 +29,7 @@ const Header: FC = () => {
               <a className={styles.navigation_link} href={"#faq"}>Частые Вопросы</a>
             </nav>
 
-            <Link className={styles.logo} to="babushka/dist/" title="С помощью логотипа вы можете переместиться на главную страницу">
+            <Link className={styles.logo} to="babushka/dist/" title={"С помощью логотипа вы можете \nпереместиться на главную страницу"}>
               <img className={styles.logo_icon} src={Logo} alt="BABUSHKA" />
             </Link>
 

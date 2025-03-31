@@ -12,4 +12,15 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 60px;
+
+	@media (max-width: 1800px) {
+		margin-top: 40px;
+		padding: 0 20px;
+	}
+
+	@media (max-width: 1336px) {
+		flex-direction: column;
+		margin-top: 20px;
+		padding: 0;
+	}
 }
