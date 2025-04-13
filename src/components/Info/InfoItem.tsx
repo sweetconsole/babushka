@@ -1,7 +1,7 @@
 import {FC} from "react"
 import styles from "./InfoItem.module.scss"
-import BracketLeft from "../../assets/images/square_brackets/square_bracket_left.svg"
-import BracketRight from "../../assets/images/square_brackets/square_bracket_right.svg"
+import BracketLeft from "../../assets/images/svg/square_brackets/square_bracket_left.svg"
+import BracketRight from "../../assets/images/svg/square_brackets/square_bracket_right.svg"
 import {IInfoProps} from "./info.interface.ts";
 
 

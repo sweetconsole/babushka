@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./BlogPreview.module.scss"
-import Arrow from "../../assets/images/arrow.svg"
+import Arrow from "../../assets/images/svg/arrow.svg"
 import {Link} from "react-router-dom"
 import {IBlogProps} from "./blogs.interface.ts";
 

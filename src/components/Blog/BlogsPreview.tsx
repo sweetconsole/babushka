@@ -2,8 +2,8 @@ import {FC, useState} from "react"
 import styles from "./BlogsPreview.module.scss"
 import Title from "../UI/Title/Title.tsx";
 import Container from "../UI/Container/Container.tsx";
-import ArrowDark from "../../assets/images/arrow_dark.svg"
-import Arrow from "../../assets/images/arrow.svg"
+import ArrowDark from "../../assets/images/svg/arrow_dark.svg"
+import Arrow from "../../assets/images/svg/arrow.svg"
 import BlogPreview from "./BlogPreview.tsx";
 import {blogs} from "./blogs.data.ts";
 import {Link} from "react-router-dom";

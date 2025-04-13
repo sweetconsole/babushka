@@ -7,6 +7,14 @@
 .content {
 	height: calc(100vh - 114px);
 	position: relative;
+
+	@media (max-width: 1800px) {
+		padding-top: 40px;
+	}
+	
+	@media (max-width: 1250px) {
+		padding-top: 75px;
+	}
 }
 
 .title {
@@ -58,19 +66,21 @@
 	width: 1100px;
 	height: 268px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 200px;
 	left: 49%;
 	z-index: -1;
 	transform: translateX(-51%);
 
 	@media (max-width: 1800px) {
-		width: 800px;
+		width: 1085px;
+		height: 464px;
 		bottom: 80px;
 	}
 
 	@media (max-width: 1250px) {
-		width: 350px;
-		height: auto;
+		width: 360px;
+		height: 479px;
+		bottom: 100px;
 	}
 }
 

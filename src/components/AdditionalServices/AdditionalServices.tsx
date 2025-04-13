@@ -1,6 +1,6 @@
 import {FC, useState} from "react"
 import styles from "./AdditionalServices.module.scss"
-import Arrow from "../../assets/images/arrow.svg";
+import Arrow from "../../assets/images/svg/arrow.svg";
 import Container from "../UI/Container/Container.tsx";
 import {MouseEvent} from "react";
 import {additionalServices} from "./additionalServices.data.ts";

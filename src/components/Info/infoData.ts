@@ -1,6 +1,6 @@
-import GlobeIcon from "../../assets/images/icons/globe.svg";
-import ComputerIcon from "../../assets/images/icons/computer.svg";
-import AudioIcon from "../../assets/images/icons/audio.svg";
+import GlobeIcon from "../../assets/images/svg/icons/globe.svg";
+import ComputerIcon from "../../assets/images/svg/icons/computer.svg";
+import AudioIcon from "../../assets/images/svg/icons/audio.svg";
 import {InfoType} from "./info.type.ts";
 
 

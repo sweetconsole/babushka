@@ -185,7 +185,7 @@
 	margin-top: 40px;
 
 	&:hover .button__text {
-		background-image: url("../../assets/images/link_background-hover.svg");
+		background-image: url("../../assets/images/svg/link_background-hover.svg");
 	}
 
 	&:hover .button__arrow_block {
@@ -203,7 +203,7 @@
 	font-size: 30px;
 	line-height: 100%;
 	text-transform: lowercase;
-	background-image: url("../../assets/images/link_background.svg");
+	background-image: url("../../assets/images/svg/link_background.svg");
 	background-repeat: no-repeat;
 	padding-left: 40px;
 	transition: all .2s ease-in-out;

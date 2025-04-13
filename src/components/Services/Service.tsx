@@ -1,7 +1,7 @@
 import {FC} from "react"
 import styles from "./Service.module.scss"
-import Arrow from "../../assets/images/arrow.svg";
-import StrokePanel from "../../assets/images/stroke_panel.svg"
+import Arrow from "../../assets/images/svg/arrow.svg";
+import StrokePanel from "../../assets/images/svg/stroke_panel.svg"
 import {IServiceProps} from "./services.interface.ts";
 
 const Service: FC<IServiceProps> = ({name, countPage, time, price, description, styleBlock, styleLink, styleButton}) => {

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import WhatsAppIcon from "../UI/WhatsAppIcon/WhatsAppIcon.tsx"
-import Logo from "../../assets/images/logos/logo.svg"
+import Logo from "../../assets/images/svg/logos/logo.svg"
 import TelegramIcon from "../UI/TelegramIcon/TelegramIcon.tsx"
 import styles from "./Header.module.scss"
 import {FC, useState} from "react";

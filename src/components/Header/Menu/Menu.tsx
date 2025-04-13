@@ -1,9 +1,9 @@
 import {FC} from "react"
 import styles from "./Menu.module.scss"
-import CloseIcon from "../../../assets/images/menu_close.svg"
+import CloseIcon from "../../../assets/images/svg/menu_close.svg"
 import {IMenuProps} from "./menu.interface.ts";
 import {Link} from "react-router-dom";
-import Logo from "../../../assets/images/logos/logo.svg";
+import Logo from "../../../assets/images/svg/logos/logo.svg";
 import WhatsAppIcon from "../../UI/WhatsAppIcon/WhatsAppIcon.tsx";
 import TelegramIcon from "../../UI/TelegramIcon/TelegramIcon.tsx";
 

@@ -3,8 +3,8 @@ import styles from  "./Feedback.module.scss"
 import Container from "../UI/Container/Container.tsx";
 import {SubmitHandler, useForm} from "react-hook-form";
 import SubTitle from "../UI/SubTitle/SubTitle.tsx";
-import Arrow from "../../assets/images/arrow.svg"
-import ArrowSmall from "../../assets/images/arrow_small.svg"
+import Arrow from "../../assets/images/svg/arrow.svg"
+import ArrowSmall from "../../assets/images/svg/arrow_small.svg"
 import {IFeedbackForm} from "./feedback.interface.ts";
 
 const Feedback: FC = () => {
