@@ -1,8 +1,8 @@
 import {FC} from "react"
 import styles from "./InfoItem.module.scss"
-import BracketLeft from "../../assets/images/square_brackets/square_bracket_left.svg"
-import BracketRight from "../../assets/images/square_brackets/square_bracket_right.svg"
-import {IInfoProps} from "./info.interface.ts";
+import BracketLeft from "../../../assets/images/square_brackets/square_bracket_left.svg"
+import BracketRight from "../../../assets/images/square_brackets/square_bracket_right.svg"
+import {IInfoProps} from "../info.interface.ts";
 
 
 const InfoItem: FC<IInfoProps> = ({icon, description}) => {

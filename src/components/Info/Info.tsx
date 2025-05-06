@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./Info.module.scss"
-import InfoItem from "./InfoItem.tsx";
+import InfoItem from "./InfoItem/InfoItem.tsx";
 import Tangle from "../../assets/images/tangles/tangle_1.svg"
 import Thread from "../../assets/images/thread_1.svg"
 import MeGoBariLogo from "../../assets/images/logos/megobari.svg"
@@ -8,7 +8,7 @@ import OjahriLogo from "../../assets/images/logos/ojahri.svg"
 import ChiefTomorrowLogo from "../../assets/images/logos/chief_tomorrow.svg"
 import ToucheLogo from "../../assets/images/logos/touche.svg"
 import LeMenuLogo from "../../assets/images/logos/le_menu_logo.svg"
-import Container from "../UI/Container/Container.tsx";
+import {Container} from "../UI";
 import {infoData} from "./infoData.ts";
 import {InfoType} from "./info.type.ts";
 
@@ -19,7 +19,6 @@ const Info: FC = () => {
 		<section className={styles.block}>
 			<Container>
 				<div className={styles.content}>
-
 					<div className={styles.info}>
 						<img className={styles.tangle} src={Tangle} alt="Декоративный элемент" />
 

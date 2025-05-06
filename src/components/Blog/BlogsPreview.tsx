@@ -1,10 +1,9 @@
 import {FC, useState} from "react"
+import {Title, Container} from "../UI";
 import styles from "./BlogsPreview.module.scss"
-import Title from "../UI/Title/Title.tsx";
-import Container from "../UI/Container/Container.tsx";
 import ArrowDark from "../../assets/images/arrow_dark.svg"
 import Arrow from "../../assets/images/arrow.svg"
-import BlogPreview from "./BlogPreview.tsx";
+import BlogPreview from "./BlogPreview/BlogPreview.tsx";
 import {blogs} from "./blogs.data.ts";
 import {Link} from "react-router-dom";
 
@@ -14,21 +13,15 @@ const BlogsPreview: FC = () => {
 	const nextBlog = () => {
 		const blogId: number = numberBlog[1] + 1
 
-		if (blogId < 4) {
-			setNumberBlog([numberBlog[1], blogId])
-		} else {
-			setNumberBlog([numberBlog[1], 0])
-		}
+		if (blogId < 4) setNumberBlog([numberBlog[1], blogId])
+		else setNumberBlog([numberBlog[1], 0])
 	}
 
 	const backBlog = () => {
 		const blogId: number = numberBlog[0] - 1
 
-		if (blogId >= 0) {
-			setNumberBlog([blogId, numberBlog[0]])
-		} else {
-			setNumberBlog([3, numberBlog[0]])
-		}
+		if (blogId >= 0) setNumberBlog([blogId, numberBlog[0]])
+		else setNumberBlog([3, numberBlog[0]])
 	}
 
 	return (

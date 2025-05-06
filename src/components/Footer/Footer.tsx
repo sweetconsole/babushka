@@ -1,12 +1,11 @@
 import {FC} from "react"
 import styles from "./Footer.module.scss"
-import Container from "../UI/Container/Container.tsx";
 import Hatch from "../../assets/images/hatch.webp"
-import WhatsAppIcon from "../UI/WhatsAppIcon/WhatsAppIcon.tsx";
-import TelegramIcon from "../UI/TelegramIcon/TelegramIcon.tsx";
 import ShelfLeft from "../../assets/images/shelf_1.webp"
 import ShelfRight from "../../assets/images/shelf_2.webp"
 import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+import {ScrollLink, SocialLink, Container, WhatsAppIcon, TelegramIcon} from "../UI";
 
 const Footer: FC = () => {
 	return (
@@ -20,12 +19,15 @@ const Footer: FC = () => {
 
 						<nav className={styles.navigation}>
 							<a className={styles.link_phone} href="tel:+79629518899">+7 962 951 88 99</a>
-							<a className={styles.link_social} href="https://telegram.org/" target="_blank" rel="noreferrer">
-								<WhatsAppIcon />
-							</a>
-							<a className={styles.link_social} href="https://web.whatsapp.com/" target="_blank" rel="noreferrer">
-								<TelegramIcon />
-							</a>
+
+							<SocialLink link={"https://telegram.org/"}
+													label={"Ссылка на Telegram"}
+													icon={<WhatsAppIcon />}
+													style={styles.link_social} />
+							<SocialLink link={"https://web.whatsapp.com/"}
+													label={"Ссылка на WhatsApp"}
+													icon={<TelegramIcon />}
+													style={styles.link_social} />
 						</nav>
 					</div>
 
@@ -33,7 +35,8 @@ const Footer: FC = () => {
 						<nav className={styles.links}>
 							<Link className={styles.link} to="babushka/dist/projects">Проекты</Link>
 							<Link className={styles.link} to="babushka/dist/blogs">Блог</Link>
-							<a className={styles.link} href={"#faq"}>Частые Вопросы</a>
+
+							<ScrollLink link={"faq"} style={styles.link} text="Частые Вопросы" />
 						</nav>
 
 						<div className={styles.info}>
@@ -41,19 +44,24 @@ const Footer: FC = () => {
 							<p className={styles.text}>ИНН: 327842422</p>
 						</div>
 
-						<a className={styles.link__write} href={"#feedback"}>написать бабушке</a>
+
+						<ScrollLink link={"feedback"} style={styles.link__write} text="написать бабушке" />
 
 						<a className={styles.processing} href="#">обработка персональных данных</a>
 					</div>
 
-					<div className={styles.images}>
+					<motion.div className={styles.images}
+											viewport={{once: true}}
+											initial={{opacity: 0}}
+											whileInView={{opacity: 1}}
+											transition={{delay: 0.4}}>
 						<img className={styles.image} src={ShelfLeft} alt="Левая полочка с баночками"/>
 						<p className={styles.title}>
 							здесь о тебе по
 							<span className={styles.title__highlighting}>заботятся</span>
 						</p>
 						<img className={styles.image} src={ShelfRight} alt="Правая полочка с баночками"/>
-					</div>
+					</motion.div>
 				</div>
 			</Container>
 		</footer>

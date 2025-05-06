@@ -1,12 +1,10 @@
 import {FC, useState} from "react"
 import styles from "./AdditionalServices.module.scss"
 import Arrow from "../../assets/images/arrow.svg";
-import Container from "../UI/Container/Container.tsx";
 import {MouseEvent} from "react";
 import {additionalServices} from "./additionalServices.data.ts";
 import {AdditionalServicesType} from "./additionalServices.type.ts";
-import Title from "../UI/Title/Title.tsx";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
+import {SubTitle, Title, Container, ScrollLink} from "../UI"
 
 
 const AdditionalServices: FC = () => {
@@ -17,11 +15,8 @@ const AdditionalServices: FC = () => {
 	const selectService = (event: MouseEvent<HTMLDivElement>) => {
 		const id: number = Number(event.currentTarget.getAttribute("data-value"))
 
-		if (id != service) {
-			setActive(true)
-		} else {
-			setActive(!active)
-		}
+		if (id != service) setActive(true)
+		else setActive(!active)
 
 		setService(id)
 	}
@@ -56,14 +51,14 @@ const AdditionalServices: FC = () => {
 								})}
 							</div>
 
-							<a href={"#feedback"}>
+							<ScrollLink link="feedback">
 								<div className={styles.info__link}>
 									<p className={styles.info__link_text}>отправить заявку</p>
 									<div className={styles.info__link_button}>
 										<img className={styles.info__link_arrow} src={Arrow} alt="Перейти" />
 									</div>
 								</div>
-							</a>
+							</ScrollLink>
 						</div>
 
 						<img className={styles.info__image} src={additionalServices[service].image} alt="Изображение" loading="lazy" />

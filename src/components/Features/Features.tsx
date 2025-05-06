@@ -1,11 +1,9 @@
 import {FC} from "react"
 import styles from "./Features.module.scss"
-import Container from "../UI/Container/Container.tsx";
-import Title from "../UI/Title/Title.tsx";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
+import {Container, Title, SubTitle} from "../UI";
 import {features} from "./features.data.ts";
 import {FeatureType} from "./features.type.ts";
-import Feature from "./Feature.tsx";
+import Feature from "./Feature/Feature.tsx";
 
 const Features: FC = () => {
 	return (

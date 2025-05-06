@@ -1,11 +1,10 @@
 import {ChangeEvent, FC, useState} from "react"
 import styles from  "./Feedback.module.scss"
-import Container from "../UI/Container/Container.tsx";
-import {SubmitHandler, useForm} from "react-hook-form";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
+import {SubmitHandler, useForm} from "react-hook-form"
+import {Container, SubTitle} from "../UI"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
-import {IFeedbackForm} from "./feedback.interface.ts";
+import {IFeedbackForm} from "./feedback.interface.ts"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
@@ -15,9 +14,7 @@ const Feedback: FC = () => {
 	const phoneError = formState.errors["phone"]?.message
 
 	const onChangeFile = (event: ChangeEvent<HTMLInputElement>) => {
-		if (!event.target.files) {
-			return;
-		}
+		if (!event.target.files) return
 
 		setFileName(event.target.files[0].name)
 	}
@@ -74,7 +71,7 @@ const Feedback: FC = () => {
 									способ связи
 									<select className={styles.form__select} {...register("connection")}>
 										<option className={styles.form__select_value} value="звонок">Звонок</option>
-										<option className={styles.form__select_value}value="сообщение">Сообщение</option>
+										<option className={styles.form__select_value} value="сообщение">сообщение</option>
 									</select>
 								</label>
 							</div>

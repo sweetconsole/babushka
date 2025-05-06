@@ -1,5 +1,5 @@
 import {FC} from "react"
-import Error from "../components/Error/Error.tsx"
+import {Error} from "../components"
 
 const ErrorPage: FC = () => {
 	return (

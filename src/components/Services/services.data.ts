@@ -1,4 +1,4 @@
-import styles from "./Service.module.scss";
+import styles from "./Service/Service.module.scss";
 import {serviceType} from "./services.type.ts";
 
 export const services: Array<serviceType> = [

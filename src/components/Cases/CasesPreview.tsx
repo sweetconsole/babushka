@@ -1,14 +1,12 @@
 import {FC} from "react"
 import styles from "./Cases.module.scss"
-import CasePreview from "./CasePreview.tsx";
+import CasePreview from "./CasePreview/CasePreview.tsx";
 import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
+import {Title, Container, SubTitle} from "../UI";
 import {casesPreview} from "./cases.data.ts";
 import {casePreviewType} from "./cases.type.ts";
 import {Link} from "react-router-dom";
-import Container from "../UI/Container/Container.tsx";
-import Title from "../UI/Title/Title.tsx";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
 
 const CasesPreview: FC = () => {
   const pickRandomItems = <T,> (arr: Iterable<T>, n: number): T[] => {

@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./ExperienceItem.module.scss"
-import {IExperienceProps} from "./experience.interface.ts";
+import {IExperienceProps} from "../experience.interface.ts";
 
 const ExperienceItem: FC<IExperienceProps> = ({type, name, description}) => {
 	return (

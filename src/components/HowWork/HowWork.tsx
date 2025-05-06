@@ -1,8 +1,6 @@
 import {FC, useState} from "react"
 import styles from "./HowWork.module.scss"
-import Container from "../UI/Container/Container.tsx";
-import Title from "../UI/Title/Title.tsx";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
+import {Container, Title, SubTitle} from "../UI";
 import {MouseEvent} from "react";
 import {howWorkType} from "./howWork.type.ts";
 import {howWorkList} from "./howWork.data.ts"
@@ -15,11 +13,8 @@ const HowWork: FC = () => {
   const viewDescription = (event: MouseEvent<HTMLDivElement>) => {
     const id: number =Number(event.currentTarget.getAttribute("data-value"))
 
-    if (id != descriptionId) {
-      setActive(true)
-    } else {
-      setActive(!active)
-    }
+    if (id != descriptionId) setActive(true)
+    else setActive(!active)
 
     setDescriptionId(id)
   }

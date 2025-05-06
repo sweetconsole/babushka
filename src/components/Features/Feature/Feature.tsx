@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./Feature.module.scss"
-import {IFeatureProps} from "./features.interface.ts";
+import {IFeatureProps} from "../features.interface.ts";
 
 const Feature: FC<IFeatureProps> = ({text}) => {
 	return (

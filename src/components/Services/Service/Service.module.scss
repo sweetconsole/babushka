@@ -1,4 +1,4 @@
-@use "../../assets/styles/variables.scss";
+@use "../../../assets/styles/variables";
 
 .rate {
 	color: variables.$color-dark;
@@ -20,7 +20,7 @@
 .rate__landing_page {
 	width: 880px;
 	height: 544px;
-	background-image: url("../../assets/images/price_blocks/price_block_1.webp");
+	background-image: url("../../../assets/images/price_blocks/price_block_1.webp");
 	transform: rotate(2.5deg);
 	transform-origin: bottom left;
 
@@ -33,7 +33,7 @@
 	@media (max-width: 1336px) {
 		width: 333px;
 		height: 399px;
-		background-image: url("../../assets/images/price_blocks/price_block_mobile_1.png");
+		background-image: url("../../../assets/images/price_blocks/price_block_mobile_1.png");
 		transform: rotate(-1.6deg);
 		margin-top: 20px;
 	}
@@ -42,7 +42,7 @@
 .rate__website {
 	width: 880px;
 	height: 588px;
-	background-image: url("../../assets/images/price_blocks/price_block_2.webp");
+	background-image: url("../../../assets/images/price_blocks/price_block_2.webp");
 	transform: rotate(-2.5deg);
 	transform-origin: bottom right;
 	margin-top: 10px;
@@ -50,7 +50,7 @@
 	@media (max-width: 1800px) {
 		width: 598px;
 		height: 399px;
-		background-image: url("../../assets/images/price_blocks/price_block_1.webp");
+		background-image: url("../../../assets/images/price_blocks/price_block_1.webp");
 		transform: rotate(2.5deg);
 		margin-top: 5px;
 	}
@@ -58,7 +58,7 @@
 	@media (max-width: 1336px) {
 		width: 333px;
 		height: 440px;
-		background-image: url("../../assets/images/price_blocks/price_block_mobile_2.png");
+		background-image: url("../../../assets/images/price_blocks/price_block_mobile_2.png");
 		transform: rotate(1.6deg);
 		margin-top: 20px;
 	}
@@ -261,7 +261,7 @@
 	}
 
 	&:hover .link__text {
-		background-image: url("../../assets/images/price_application_backgrounds/price_application_background-hover.svg");
+		background-image: url("../../../assets/images/price_application_backgrounds/price_application_background-hover.svg");
 	}
 
 	@media (max-width: 1800px) {
@@ -270,7 +270,7 @@
 		bottom: 35px;
 
 		&:hover .link__text {
-			background-image: url("../../assets/images/price_application_backgrounds/price_application_background_tablet_hover.svg");
+			background-image: url("../../../assets/images/price_application_backgrounds/price_application_background_tablet_hover.svg");
 		}
 	}
 
@@ -280,7 +280,7 @@
 		bottom: 20px;
 
 		&:hover .link__text {
-			background-image: url("../../assets/images/price_application_backgrounds/price_application_background_mobile-hover.svg");
+			background-image: url("../../../assets/images/price_application_backgrounds/price_application_background_mobile-hover.svg");
 		}
 	}
 }
@@ -313,7 +313,7 @@
 	text-transform: lowercase;
 	transition: all .2s ease-in-out;
 
-	background-image: url("../../assets/images/price_application_backgrounds/price_application_background.svg");
+	background-image: url("../../../assets/images/price_application_backgrounds/price_application_background.svg");
 	background-position: center;
 	background-size: cover;
 	padding-left: 35px;
@@ -322,14 +322,14 @@
 		width: 532px;
 		height: 43px;
 		font-size: 20px;
-		background-image: url("../../assets/images/price_application_backgrounds/price_application_background_tablet.svg");
+		background-image: url("../../../assets/images/price_application_backgrounds/price_application_background_tablet.svg");
 	}
 
 	@media (max-width: 1336px) {
 		width: 276px;
 		height: 37px;
 		font-size: 20px;
-		background-image: url("../../assets/images/price_application_backgrounds/price_application_background_mobile.svg");
+		background-image: url("../../../assets/images/price_application_backgrounds/price_application_background_mobile.svg");
 		padding-left: 20px;
 		padding-bottom: 3px;
 	}

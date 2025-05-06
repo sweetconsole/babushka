@@ -1,12 +1,10 @@
 import {FC} from "react"
 import styles from "./Experience.module.scss"
-import Container from "../UI/Container/Container.tsx";
+import {Container, Title, SubTitle} from "../UI";
 import Tangle from "../../assets/images/tangles/tangle_3.svg"
 import Cup from "../../assets/images/cup.webp"
 import Teapot from "../../assets/images/teapot.webp"
-import Title from "../UI/Title/Title.tsx";
-import SubTitle from "../UI/SubTitle/SubTitle.tsx";
-import ExperienceItem from "./ExperienceItem.tsx";
+import ExperienceItem from "./ExperienceItem/ExperienceItem.tsx";
 import {experiences} from "./experience.data.ts";
 import {ExperienceType} from "./experience.type.ts";
 
