@@ -4,10 +4,11 @@ import Arrow from "../../../assets/images/arrow.svg";
 import StrokePanel from "../../../assets/images/stroke_panel.svg"
 import {IServiceProps} from "../services.interface.ts";
 import {ScrollLink} from "../../UI";
+import {motion} from "framer-motion";
 
-const Service: FC<IServiceProps> = ({name, countPage, time, price, description, styleBlock, styleLink, styleButton}) => {
+const Service: FC<IServiceProps> = ({name, countPage, time, price, description, styleBlock, styleLink, styleButton, delay, rotate}) => {
 	return (
-		<div className={[styles.rate, styleBlock].join(" ")}>
+		<motion.div className={[styles.rate, styleBlock].join(" ")} viewport={{once: true}} initial={{opacity: 0, scale: 1.5, rotate: rotate}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.5, delay: delay, ease: "easeIn"}}>
 			<h3 className={styles.title}>{name}</h3>
 
 			<div className={styles.scopes}>
@@ -38,7 +39,7 @@ const Service: FC<IServiceProps> = ({name, countPage, time, price, description, 
 					<img className={styles.link__arrow} src={Arrow} alt="Ссылка" />
 				</div>
 			</ScrollLink>
-		</div>
+		</motion.div>
 	)
 }
 

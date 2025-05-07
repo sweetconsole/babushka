@@ -9,12 +9,18 @@
 	color: white;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
 	width: 12px;
 }
+
 body::-webkit-scrollbar-track {
 	background: variables.$color-dark;
 }
+
 body::-webkit-scrollbar-thumb {
 	background-color: variables.$color-accent;
 	border-radius: 20px;

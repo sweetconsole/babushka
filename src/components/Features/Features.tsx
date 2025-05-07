@@ -10,8 +10,8 @@ const Features: FC = () => {
 		<section className={styles.block}>
       <Container>
         <div className={styles.content}>
-          <Title text="преимущества разработки сайта с babuska" />
-          <SubTitle text="Заказывайте создание и продвижение сайта  для ресторана по разумной цене в web-студии Babushka. Мы умеем найти эффективные решения даже для нестандартных идей." />
+          <Title text="преимущества разработки сайта с babuska" animate />
+          <SubTitle text="Заказывайте создание и продвижение сайта  для ресторана по разумной цене в web-студии Babushka. Мы умеем найти эффективные решения даже для нестандартных идей." animate />
 
 					<div className={styles.features}>
 						{features.map(({text}: FeatureType) => {

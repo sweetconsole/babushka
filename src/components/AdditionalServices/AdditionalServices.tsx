@@ -25,8 +25,8 @@ const AdditionalServices: FC = () => {
 		<section className={styles.block}>
 			<Container>
 				<div className={styles.content}>
-					<Title text="Дополнительные услуги" />
-					<SubTitle text="BABUSHKA делает не только красивые сайты, но дизайн, рекламу и SEO-продвижение для ресторанов, баров. кафе и сервисов доставки." />
+					<Title text="Дополнительные услуги" animate />
+					<SubTitle text="BABUSHKA делает не только красивые сайты, но дизайн, рекламу и SEO-продвижение для ресторанов, баров. кафе и сервисов доставки." animate />
 
 					<div className={styles.services}>
 						{additionalServices.map(({id, name}: AdditionalServicesType) => {

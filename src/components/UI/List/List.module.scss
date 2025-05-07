@@ -1,0 +1,20 @@
+@use "../../../assets/styles/variables";
+
+.list {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	margin-left: 16px;
+}
+
+.list_item {
+	margin-bottom: 8px;
+
+	&::marker {
+		color: variables.$color-accent
+	}
+}
+
+.highlight {
+	font-weight: variables.$bold;
+	color: variables.$color-accent;
+}

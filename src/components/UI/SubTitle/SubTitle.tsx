@@ -8,7 +8,6 @@ interface SubTitleProps {
 }
 
 const SubTitle: FC<SubTitleProps> = ({text, animate}) => {
-	animate = true
 	return (
 		<>
 			{animate ? (

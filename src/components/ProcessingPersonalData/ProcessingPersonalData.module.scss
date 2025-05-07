@@ -1,0 +1,31 @@
+@use "../../assets/styles/variables";
+
+.block {
+	margin-top: 90px;
+}
+
+.content {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	font-size: 18px;
+	line-height: 120%;
+}
+
+.title {
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 30px;
+	line-height: 35px;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+.text {
+	color: variables.$color-dark;
+	margin-bottom: 8px;
+}
+
+.text_highlight {
+	font-weight: variables.$bold;
+	color: variables.$color-accent;
+}

@@ -28,27 +28,18 @@ const BlogsPreview: FC = () => {
 		<section className={styles.block}>
       <Container>
         <div className={styles.content}>
-          <Title text="Блог" />
+          <Title text="Блог" animate />
 
 					<div className={styles.blogs}>
 						<button className={styles.button} onClick={backBlog}>
 							<img className={styles.button_arrow} src={ArrowDark} alt="Назад" />
 						</button>
 
-						<BlogPreview link={blogs[numberBlog[0]].link}
-												 image={blogs[numberBlog[0]].image}
-												 title={blogs[numberBlog[0]].title}
-												 description={blogs[numberBlog[0]].description}
-												 date={blogs[numberBlog[0]].date} />
-
-						<BlogPreview link={blogs[numberBlog[1]].link}
-												 image={blogs[numberBlog[1]].image}
-												 title={blogs[numberBlog[1]].title}
-												 description={blogs[numberBlog[1]].description}
-												 date={blogs[numberBlog[1]].date} />
+						<BlogPreview {...blogs[numberBlog[0]]} />
+						<BlogPreview {...blogs[numberBlog[1]]} />
 
 						<button className={[styles.button, styles.button_turn].join(" ")} onClick={nextBlog}>
-							<img className={styles.button_arrow} src={ArrowDark} alt="Назад" />
+							<img className={styles.button_arrow} src={ArrowDark} alt="Вперёд" />
 						</button>
 					</div>
 

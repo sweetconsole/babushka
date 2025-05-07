@@ -5,27 +5,28 @@ import Title from "../UI/Title/Title.tsx";
 import {answers} from "./FAQ.data.ts";
 import {AnswerType} from "./FAQ.type.ts";
 import {MouseEvent} from "react";
+import {useLocation} from "react-router-dom";
+import {pageConfig} from "../../config/pages.config.ts";
 
 const FAQ: FC = () => {
 	const [answerActiveId, setAnswerActiveId] = useState(0)
 	const [activeAnswer, setActiveAnswer] = useState(false)
 
+	const pathname = useLocation().pathname
+
 	const openAnswer = (event: MouseEvent<HTMLParagraphElement>) => {
 		const targetId = Number(event.currentTarget.getAttribute("data-value"))
 		setAnswerActiveId(targetId)
 
-		if (activeAnswer && answerActiveId === targetId) {
-			setActiveAnswer(false)
-		} else {
-			setActiveAnswer(true)
-		}
+		if (activeAnswer && answerActiveId === targetId) setActiveAnswer(false)
+		else setActiveAnswer(true)
 	}
 
 	return (
 		<section className={styles.block} id="faq">
 			<Container>
 				<div className={styles.content}>
-					<Title text="Частые вопросы к Бабушке:" />
+					<Title text="Частые вопросы к Бабушке:" animate={pathname !== pageConfig.faq && pathname !== pageConfig.processing_personal_data} />
 
 					{answers.map(({id, question, answer}: AnswerType) => {
 						return (

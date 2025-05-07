@@ -10,8 +10,8 @@ const HomePage: FC = () => {
       <main>
         <Intro />
         <Info />
-        <CasesPreview />
         <Experience />
+        <CasesPreview />
         <Services />
 
         <AdditionalServices />

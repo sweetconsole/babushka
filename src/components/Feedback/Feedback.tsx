@@ -5,6 +5,7 @@ import {Container, SubTitle} from "../UI"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
 import {IFeedbackForm} from "./feedback.interface.ts"
+import {motion} from "framer-motion";
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
@@ -27,8 +28,14 @@ const Feedback: FC = () => {
 		<section className={styles.block} id="feedback">
 			<Container>
 				<div className={styles.content}>
-					<h2 className={styles.title}>Напиши <span className={styles.title__highlighting}>бабушке</span></h2>
-					<SubTitle text="Бабушка всегда на связи, заварим чая, обкашляем вопросики!" />
+					<motion.h2 className={styles.title}
+							viewport={{once: true}}
+							initial={{opacity: 0, y: 100}}
+							whileInView={{opacity: 1, y:0}}
+							transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.2}}>
+						Напиши <span className={styles.title__highlighting}>бабушке</span>
+					</motion.h2>
+					<SubTitle text="Бабушка всегда на связи, заварим чая, обкашляем вопросики!" animate />
 
 					<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 						<div className={styles.form__block}>

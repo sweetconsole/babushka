@@ -8,4 +8,6 @@ export interface IServiceProps {
 	styleBlock: string
 	styleLink: string
 	styleButton: string
+	delay: number
+	rotate: number
 }
