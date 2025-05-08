@@ -5,4 +5,5 @@ export interface IBlogProps {
 	title: string,
 	description: string,
 	date: string,
+	delay: number,
 }

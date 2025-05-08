@@ -31,13 +31,18 @@ const Feedback: FC = () => {
 					<motion.h2 className={styles.title}
 							viewport={{once: true}}
 							initial={{opacity: 0, y: 100}}
-							whileInView={{opacity: 1, y:0}}
+							whileInView={{opacity: 1, y: 0}}
 							transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.2}}>
 						Напиши <span className={styles.title__highlighting}>бабушке</span>
 					</motion.h2>
 					<SubTitle text="Бабушка всегда на связи, заварим чая, обкашляем вопросики!" animate />
 
-					<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+					<motion.form className={styles.form}
+											 onSubmit={handleSubmit(onSubmit)}
+											 viewport={{once: true}}
+											 initial={{opacity: 0, y: 100}}
+											 whileInView={{opacity: 1, y: 0}}
+											 transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.6}}>
 						<div className={styles.form__block}>
 							<div className={styles.from__inputs}>
 								<label className={styles.form__label}>
@@ -109,7 +114,7 @@ const Feedback: FC = () => {
 								</div>
 							</button>
 						</div>
-					</form>
+					</motion.form>
 				</div>
 			</Container>
 		</section>

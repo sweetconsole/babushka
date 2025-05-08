@@ -16,18 +16,37 @@
 }
 
 .button {
+	width: 64px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
 	background: none;
 	border: none;
 	cursor: pointer;
-}
+	transition: transform 0.8s ease-in-out,background-color 0.4s ease-in-out;
+	margin-left: -22px;
 
-.button_turn {
-	transform: rotate(180deg);
+	&:hover {
+		background-color: variables.$color-accent;
+		transform: rotate(360deg);
+	}
 }
 
 .button_arrow {
 	width: 42px;
 	height: 42px;
+}
+
+.button_turn {
+	transform: rotate(180deg);
+	margin-left: 0;
+	margin-right: -22px;
+
+	&:hover {
+		transform: rotate(-180deg);
+	}
 }
 
 .link {

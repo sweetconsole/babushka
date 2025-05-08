@@ -14,8 +14,8 @@ const Features: FC = () => {
           <SubTitle text="Заказывайте создание и продвижение сайта  для ресторана по разумной цене в web-студии Babushka. Мы умеем найти эффективные решения даже для нестандартных идей." animate />
 
 					<div className={styles.features}>
-						{features.map(({text}: FeatureType) => {
-							return <Feature key={text} text={text} />
+						{features.map((data: FeatureType) => {
+							return <Feature key={data.delay} {...data} />
 						})}
 					</div>
         </div>

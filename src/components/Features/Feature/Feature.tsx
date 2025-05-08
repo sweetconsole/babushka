@@ -1,13 +1,17 @@
 import {FC} from "react"
 import styles from "./Feature.module.scss"
 import {IFeatureProps} from "../features.interface.ts";
+import {motion} from "framer-motion";
 
-const Feature: FC<IFeatureProps> = ({text}) => {
+const Feature: FC<IFeatureProps> = ({text, delay}) => {
 	return (
-		<div className={styles.block}>
-      <div className={styles.shadow}></div>
+		<motion.div className={styles.block}
+								viewport={{once: true}}
+								initial={{opacity: 0}}
+								whileInView={{opacity: 1}}
+								transition={{duration: 0.4, delay: delay}}>
       <p className={styles.text}>{text}</p>
-    </div>
+    </motion.div>
 	)
 }
 

@@ -3,16 +3,11 @@ import styles from "./Info.module.scss"
 import InfoItem from "./InfoItem/InfoItem.tsx";
 import Tangle from "../../assets/images/tangles/tangle_1.svg"
 import Thread from "../../assets/images/thread_1.svg"
-import MeGoBariLogo from "../../assets/images/logos/megobari.svg"
-import OjahriLogo from "../../assets/images/logos/ojahri.svg"
-import ChiefTomorrowLogo from "../../assets/images/logos/chief_tomorrow.svg"
-import ToucheLogo from "../../assets/images/logos/touche.svg"
-import LeMenuLogo from "../../assets/images/logos/le_menu_logo.svg"
 import {Container} from "../UI";
-import {infoData} from "./infoData.ts";
-import {InfoType} from "./info.type.ts";
-
-
+import {services, partners} from "./info.data.ts";
+import {ServiceType, PartnerType} from "./info.type.ts";
+import {motion} from "framer-motion";
+import {SlideLeft} from "../../utility/animation.ts";
 
 const Info: FC = () => {
 	return (
@@ -25,7 +20,7 @@ const Info: FC = () => {
 						<h2 className={styles.title}>Разработка оригинальных сайтов под ключ для ресторанов, баров, кафе и сервисов доставки</h2>
 
 						<ul className={styles.list}>
-							{infoData.map(({id, icon, description}: InfoType) => {
+							{services.map(({id, icon, description}: ServiceType) => {
 								return <InfoItem key={id} icon={icon} description={description} />
 							})}
 						</ul>
@@ -34,11 +29,16 @@ const Info: FC = () => {
 					</div>
 
 	 				<div className={styles.partners}>
-						<img className={styles.partners__logo_megobari} src={MeGoBariLogo} alt="MeGoBari" />
-						<img className={styles.partners__logo_ojahri} src={OjahriLogo} alt="Оджахури Грузинская лавка" />
-						<img className={styles.partners__logo_chief_tomorrow} src={ChiefTomorrowLogo} alt="Завтрак Шефа" />
-						<img className={styles.partners__logo_touche} src={ToucheLogo} alt="Touche" />
-						<img className={styles.partners__logo_le_menu} src={LeMenuLogo} alt="le menu" />
+						{partners.map(({logo, style, name, delay}: PartnerType) => {
+							return <motion.img key={name}
+																 className={style}
+																 src={logo}
+																 viewport={{once: true}}
+																 variants={SlideLeft(delay)}
+																 initial="initial"
+																 whileInView={"animate"}
+																 alt={name} />
+						})}
 					</div>
 
 					<p className={styles.description}>Если тут кого-то нет, это не значит, что мы с ними не работали, это значит мы не понаслышке знаем, что такое NDA</p>

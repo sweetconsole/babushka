@@ -1,20 +1,21 @@
-import {FC, JSX} from "react"
+import { FC, JSX } from "react"
 
 interface IProps {
   link: string
   label: string
-	icon: JSX.Element
 	style: string
+	icon?: JSX.Element
+	children?: JSX.Element
 }
 
-const SocialLink:FC <IProps> = ({link, label, icon, style}) => {
+const SocialLink:FC <IProps> = ({link, label, icon, style, children}) => {
 	return (
     <a className={style}
        href={link}
        target="_blank"
        aria-label={label}
        rel="noreferrer">
-			{icon}
+			{icon}{children}
     </a>
 	)
 }

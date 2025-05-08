@@ -37,11 +37,11 @@
 1. git clone https://github.com/sweetconsole/babushka.git
 ```
 2. Установить зависимости:<br>
-```npm install```
-```yarn install```
-```bun install```
+```
+npm install
+```
 
 3. Запустить проект:<br>
-```npm start```
-```yarn start```
-```bun run dev```
+```
+npm start
+```

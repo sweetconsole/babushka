@@ -4,4 +4,5 @@ export interface ICasePreview {
 	title: string,
 	link: string,
 	color: string,
+	delay: number
 }

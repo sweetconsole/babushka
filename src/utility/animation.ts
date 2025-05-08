@@ -1,23 +1,51 @@
 
-
-export const AppearanceItem = {
-	visible: {
-		transition: {
-			type: "spring",
-			stiffness: 150,
-			damping: 10,
-			ease: "easeInOut",
+export const SlideLeft = (delay: number) => {
+	return {
+		initial: {
+			x: 50,
+			opacity: 0,
+		},
+		animate: {
+			x: 0,
+			opacity: 1,
+			transition: {
+				duration: 0.5,
+				delay: delay
+			},
 		}
 	}
 }
 
-export const AppearanceContainer = {
-	hidden: { opacity: 1 },
-	visible: {
-		opacity: 1,
-		transition: {
-			delay: 0.6,
-			staggerChildren: 0.4
+export const SlideUp = (delay: number) => {
+	return {
+		initial: {
+			y: 100,
+			opacity: 0,
 		},
-	},
+		animate: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 0.5,
+				delay: delay
+			},
+		}
+	}
+}
+
+export const SlideBottom = (delay: number) => {
+	return {
+		initial: {
+			y: -50,
+			opacity: 0,
+		},
+		animate: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 0.4,
+				delay: delay
+			}
+		}
+	}
 }

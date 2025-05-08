@@ -1,11 +1,14 @@
-import {FC, useState} from "react"
-import {Title, Container} from "../UI";
+import { FC, useState } from "react"
+import { Container, Title } from "../UI"
 import styles from "./BlogsPreview.module.scss"
 import ArrowDark from "../../assets/images/arrow_dark.svg"
 import Arrow from "../../assets/images/arrow.svg"
-import BlogPreview from "./BlogPreview/BlogPreview.tsx";
-import {blogs} from "./blogs.data.ts";
-import {Link} from "react-router-dom";
+import BlogPreview from "./BlogPreview/BlogPreview.tsx"
+import { blogs } from "./blogs.data.ts"
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
+import { pageConfig } from "../../config/pages.config.ts"
+import { SlideUp } from "../../utility/animation.ts"
 
 const BlogsPreview: FC = () => {
 	const [numberBlog, setNumberBlog] = useState([1, 2])
@@ -31,23 +34,40 @@ const BlogsPreview: FC = () => {
           <Title text="Блог" animate />
 
 					<div className={styles.blogs}>
-						<button className={styles.button} onClick={backBlog}>
+						<motion.button className={styles.button}
+													 onClick={backBlog}
+													 viewport={{once: true}}
+													 initial={{opacity: 0}}
+													 whileInView={{opacity: 1}}
+													 transition={{duration: 1, delay: 0.6}}>
 							<img className={styles.button_arrow} src={ArrowDark} alt="Назад" />
-						</button>
+						</motion.button>
 
-						<BlogPreview {...blogs[numberBlog[0]]} />
-						<BlogPreview {...blogs[numberBlog[1]]} />
+						<BlogPreview {...blogs[numberBlog[0]]} delay={0.2} />
+						<BlogPreview {...blogs[numberBlog[1]]} delay={0.4} />
 
-						<button className={[styles.button, styles.button_turn].join(" ")} onClick={nextBlog}>
-							<img className={styles.button_arrow} src={ArrowDark} alt="Вперёд" />
-						</button>
+						<motion.button className={[styles.button, styles.button_turn].join(" ")}
+													 onClick={nextBlog}
+													 viewport={{once: true}}
+													 initial={{opacity: 0}}
+													 whileInView={{opacity: 1}}
+													 transition={{duration: 1, delay: 0.6}}>
+							<img className={styles.button_arrow} src={ArrowDark} alt="Назад" />
+						</motion.button>
 					</div>
 
-					<Link className={styles.link} to="./blogs/">
-						<p className={styles.link__text}>смотреть все статьи</p>
-						<button className={styles.link__button}>
-							<img className={styles.link__arrow} src={Arrow} alt="Перейти" />
-						</button>
+					<Link to={pageConfig.blogs}>
+						<motion.div className={styles.link}
+												viewport={{once: true}}
+												variants={SlideUp(0.8)}
+												initial="initial"
+												whileInView={"animate"}>
+							<p className={styles.link__text}>смотреть все статьи</p>
+							<button className={styles.link__button}>
+								<img className={styles.link__arrow} src={Arrow} alt="Перейти" />
+							</button>
+
+						</motion.div>
 					</Link>
 
         </div>

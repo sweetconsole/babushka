@@ -27,8 +27,8 @@ const Experience: FC = () => {
 					</div>
 
           <ul className={styles.features}>
-            {experiences.map(({type, name, description}: ExperienceType) => {
-              return <ExperienceItem key={name} type={type} name={name} description={description} />
+            {experiences.map((data: ExperienceType) => {
+              return <ExperienceItem key={data.name} {...data} />
             })}
           </ul>
 

@@ -37,7 +37,7 @@ const HowWork: FC = () => {
                             viewport={{once: true}}
                             initial={{opacity: 0}}
                             whileInView={{opacity: 1}}
-                            transition={{duration: 1, delay: 0.3 * id, ease: "easeIn"}}>
+                            transition={{duration: 0.6, delay: 0.2 * id, ease: "easeIn"}}>
                   <div className={styles.how_work__content}>
                     <div className={styles.how_work__info}>
                       <p className={styles.how_work__name}>{name}</p>

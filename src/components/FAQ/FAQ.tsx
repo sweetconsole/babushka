@@ -7,6 +7,8 @@ import {AnswerType} from "./FAQ.type.ts";
 import {MouseEvent} from "react";
 import {useLocation} from "react-router-dom";
 import {pageConfig} from "../../config/pages.config.ts";
+import {motion} from "framer-motion";
+import {SlideUp} from "../../utility/animation.ts";
 
 const FAQ: FC = () => {
 	const [answerActiveId, setAnswerActiveId] = useState(0)
@@ -30,7 +32,13 @@ const FAQ: FC = () => {
 
 					{answers.map(({id, question, answer}: AnswerType) => {
 						return (
-							<div className={activeAnswer && answerActiveId === id ? [styles.faq_active, styles.faq].join(" ") : styles.faq} key={id}>
+							<motion.div key={id}
+													className={activeAnswer && answerActiveId === id ? [styles.faq_active, styles.faq].join(" ") : styles.faq}
+													viewport={{once: true}}
+													variants={SlideUp(0.2 * (id + 1))}
+													initial="initial"
+													whileInView={"animate"}>
+
 								<div className={styles.cross__block} onClick={openAnswer} data-value={id} >
 									<svg className={styles.cross__icon} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<line x1="14" y1="3" x2="14" y2="25" stroke="currentColor" stroke-width="2"/>
@@ -42,7 +50,7 @@ const FAQ: FC = () => {
 									<p className={styles.question} onClick={openAnswer} data-value={id}>{question}</p>
 									<p className={styles.answer}>{answer}</p>
 								</div>
-							</div>
+							</motion.div>
 						)
 					})}
 				</div>

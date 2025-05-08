@@ -1,12 +1,18 @@
-import {FC} from "react"
+import { FC } from "react"
 import styles from "./BlogPreview.module.scss"
 import Arrow from "../../../assets/images/arrow.svg"
-import {Link} from "react-router-dom"
-import {IBlogProps} from "../blogs.interface.ts";
+import { Link } from "react-router-dom"
+import { IBlogProps } from "../blogs.interface.ts"
+import { motion } from "framer-motion"
+import { SlideUp } from "../../../utility/animation.ts"
 
-const BlogPreview: FC<IBlogProps> = ({link, image, title, description, date}) => {
+const BlogPreview: FC<IBlogProps> = ({link, image, title, description, date, delay}) => {
 	return (
-		<article className={styles.block}>
+		<motion.article className={styles.block}
+										viewport={{once: true}}
+										variants={SlideUp(delay)}
+										initial="initial"
+										whileInView={"animate"} >
 			<img className={styles.image} src={image} alt="Изображение" />
 			<p className={styles.title}>{title}</p>
 			<p className={styles.description}>{description}</p>
@@ -14,7 +20,7 @@ const BlogPreview: FC<IBlogProps> = ({link, image, title, description, date}) =>
 			<Link className={styles.link} to={`./blog/${link}`}>
 					<img className={styles.link__arrow} src={Arrow} alt="Перейти"/>
 			</Link>
-    </article>
+    </motion.article>
 	)
 }
 
