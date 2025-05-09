@@ -3,7 +3,7 @@ import styles from "./Info.module.scss"
 import InfoItem from "./InfoItem/InfoItem.tsx";
 import Tangle from "../../assets/images/tangles/tangle_1.svg"
 import Thread from "../../assets/images/thread_1.svg"
-import {Container} from "../UI";
+import {Container} from "../ui";
 import {services, partners} from "./info.data.ts";
 import {ServiceType, PartnerType} from "./info.type.ts";
 import {motion} from "framer-motion";

@@ -65,18 +65,20 @@
 	height: 163px;
 	position: absolute;
 	top: 50%;
-	left: -20px;
-	transform: translateY(-80%);
+	left: -28px;
+	transform: translateY(-80%) scale(0.9);
 
 	@media (max-width: 1800px) {
 		width: 330px;
 		height: 110px;
+		left: -17px;
 		top: 60%;
 	}
 
 	@media (max-width: 1336px) {
 		width: 280px;
 		height: 100px;
+		left: -15px;
 	}
 }
 

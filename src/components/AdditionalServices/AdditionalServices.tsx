@@ -4,7 +4,7 @@ import Arrow from "../../assets/images/arrow.svg";
 import {MouseEvent} from "react";
 import {additionalServices} from "./additionalServices.data.ts";
 import {AdditionalServicesType} from "./additionalServices.type.ts";
-import {SubTitle, Title, Container, ScrollLink} from "../UI"
+import {SubTitle, Title, Container, ScrollLink} from "../ui"
 
 
 const AdditionalServices: FC = () => {

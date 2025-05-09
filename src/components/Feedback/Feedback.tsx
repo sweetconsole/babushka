@@ -1,15 +1,19 @@
-import {ChangeEvent, FC, useState} from "react"
-import styles from  "./Feedback.module.scss"
-import {SubmitHandler, useForm} from "react-hook-form"
-import {Container, SubTitle} from "../UI"
+import { ChangeEvent, FC, useState } from "react"
+import styles from "./Feedback.module.scss"
+import { SubmitHandler, useForm } from "react-hook-form"
+import { Container, SubTitle } from "../ui"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
-import {IFeedbackForm} from "./feedback.interface.ts"
-import {motion} from "framer-motion";
+import { IFeedbackForm } from "./feedback.interface.ts"
+import { motion } from "framer-motion"
+import { useNavigate } from "react-router"
+import { pageConfig } from "../../config/pages.config.ts"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
 	const {register, handleSubmit, formState} = useForm<IFeedbackForm>({mode: "onChange"})
+
+	const navigate = useNavigate()
 
 	const nameError = formState.errors["name"]?.message
 	const phoneError = formState.errors["phone"]?.message
@@ -22,6 +26,8 @@ const Feedback: FC = () => {
 
 	const onSubmit: SubmitHandler<IFeedbackForm> = data => {
 		console.log(data)
+
+		navigate(pageConfig.thanks)
 	}
 
 	return (
@@ -51,8 +57,11 @@ const Feedback: FC = () => {
 												 type="text"
 												 {...register("name", {
 													 required: "Это поле обязательное",
-													 pattern: {value: /^[A-Za-zА-Яа-яЁё\s]{1,15}$/, message: "Можно использовать только пробелы, русские и латинские символы"}
-												 })}/>
+													 pattern: {
+														 value: /^[A-Za-zА-Яа-яЁё\s]{1,15}$/,
+														 message: "Можно использовать только пробелы, русские и латинские символы",
+													 },
+												 })} />
 									{nameError && <p className={styles.form__error}>{nameError}</p>}
 								</label>
 
@@ -63,7 +72,10 @@ const Feedback: FC = () => {
 												 type="tel"
 												 {...register("phone", {
 													 required: "Это поле обязательное",
-													 pattern: {value: /^[+]7[0-9]{10}$/, message: "Можно использовать только цифры и номер должен начинаться с +7"}
+													 pattern: {
+														 value: /^[+]7[0-9]{10}$/,
+														 message: "Можно использовать только цифры и номер должен начинаться с +7",
+													 },
 												 })} />
 									{phoneError && <p className={styles.form__error}>{phoneError}</p>}
 								</label>
@@ -72,7 +84,8 @@ const Feedback: FC = () => {
 									Услуга
 									<select className={styles.form__select} {...register("service")}>
 										<option className={styles.form__select_value} value="лендинг">Лендинг</option>
-										<option className={styles.form__select_value} value="многостраничный сайт">Многостраничный сайт</option>
+										<option className={styles.form__select_value} value="многостраничный сайт">Многостраничный сайт
+										</option>
 										<option className={styles.form__select_value} value="дизайн">Дизайн</option>
 										<option className={styles.form__select_value} value="реклама">Реклама</option>
 										<option className={styles.form__select_value} value="seo-продвижение">SEO-продвижение</option>
@@ -90,7 +103,8 @@ const Feedback: FC = () => {
 
 							<label className={[styles.form__label, styles.form__label_block].join(" ")}>
 								Опиши задачу, ну или не пиши
-								<textarea className={styles.form__textarea} rows={3} placeholder="Мы специализируемся на создании уникального контента для социальных сетей, рекламы, e-commerce и брендов, включая предметную, рекламную и lifestyle-фотографию, а также видеосъемку различной сложности. Наша команда экспертов воплощает идеи в жизнь, от разработки концепции до финальной ретуши и монтажа." />
+								<textarea className={styles.form__textarea} rows={3}
+													placeholder="Мы специализируемся на создании уникального контента для социальных сетей, рекламы, e-commerce и брендов, включая предметную, рекламную и lifestyle-фотографию, а также видеосъемку различной сложности. Наша команда экспертов воплощает идеи в жизнь, от разработки концепции до финальной ретуши и монтажа." />
 							</label>
 
 							<label className={[styles.form__label, styles.form__label_block].join(" ")}>

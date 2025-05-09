@@ -1,6 +1,4 @@
 @use "../../assets/styles/variables.scss";
-@use "sass:list";
-@use "sass:math";
 
 .block {
 	margin-top: 90px;
@@ -13,12 +11,12 @@
 .faq {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	margin-top: 60px;
 	margin-bottom: 30px;
 }
 
 .faq_active {
-
 	.cross__icon {
 		color: variables.$color-accent;
 		transform: rotate(135deg);
@@ -37,6 +35,17 @@
 	width: 28px;
 	height: 28px;
 	cursor: pointer;
+	
+	@media (max-width: 1800px) {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	@media (max-width: 1336px) {
+		left: auto;
+		right: 0;
+	}
 }
 
 .cross__icon {
@@ -60,6 +69,11 @@
 		bottom: -10px;
 		background-color: variables.$color-dark;
 	}
+
+	@media (max-width: 1800px) {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 .question {
@@ -75,6 +89,19 @@
 	&:hover {
 		color: variables.$color-accent;
 	}
+
+	@media (max-width: 1800px) {
+		font-size: 20px;
+		line-height: 24px;
+		margin-left: 100px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		line-height: 100%;
+		margin-left: 0;
+		margin-right: 30px;
+	}
 }
 
 .answer {
@@ -85,4 +112,17 @@
 	font-size: 20px;
 	line-height: 120%;
 	margin-top: 16px;
+
+	@media (max-width: 1800px) {
+		font-size: 14px;
+		line-height: 120%;
+		margin-left: 100px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		line-height: 120%;
+		margin-left: 0;
+		margin-right: 30px;
+	}
 }

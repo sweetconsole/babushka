@@ -1,6 +1,6 @@
 import {FC, useState} from "react"
 import styles from "./HowWork.module.scss"
-import {Container, Title, SubTitle} from "../UI";
+import {Container, Title, SubTitle} from "../ui";
 import {MouseEvent} from "react";
 import {howWorkType} from "./howWork.type.ts";
 import {howWorkList} from "./howWork.data.ts"

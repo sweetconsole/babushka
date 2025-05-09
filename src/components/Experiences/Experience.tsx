@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./Experience.module.scss"
-import {Container, Title, SubTitle} from "../UI";
+import {Container, Title, SubTitle} from "../ui";
 import Tangle from "../../assets/images/tangles/tangle_3.svg"
 import Cup from "../../assets/images/cup.webp"
 import Teapot from "../../assets/images/teapot.webp"

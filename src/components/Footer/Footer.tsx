@@ -5,7 +5,7 @@ import ShelfLeft from "../../assets/images/shelf_1.webp"
 import ShelfRight from "../../assets/images/shelf_2.webp"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../UI"
+import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
 import { socialConfig } from "../../config/social.config.ts"
 import { pageConfig } from "../../config/pages.config.ts"
 

@@ -1,5 +1,5 @@
 import { FC, useState } from "react"
-import { Container, Title } from "../UI"
+import { Container, Title } from "../ui"
 import styles from "./BlogsPreview.module.scss"
 import ArrowDark from "../../assets/images/arrow_dark.svg"
 import Arrow from "../../assets/images/arrow.svg"

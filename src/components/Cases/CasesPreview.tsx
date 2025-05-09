@@ -3,7 +3,7 @@ import styles from "./Cases.module.scss"
 import CasePreview from "./CasePreview/CasePreview.tsx";
 import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
-import {Title, Container, SubTitle} from "../UI";
+import {Title, Container, SubTitle} from "../ui";
 import {casesPreview} from "./cases.data.ts";
 import {Link} from "react-router-dom";
 import {pickRandomItems} from "../../utility/pickRandomItems.ts";

@@ -1,20 +1,15 @@
 import {FC, useState} from "react"
 import styles from "./FAQ.module.scss"
-import Container from "../UI/Container/Container.tsx";
-import Title from "../UI/Title/Title.tsx";
 import {answers} from "./FAQ.data.ts";
 import {AnswerType} from "./FAQ.type.ts";
 import {MouseEvent} from "react";
-import {useLocation} from "react-router-dom";
-import {pageConfig} from "../../config/pages.config.ts";
 import {motion} from "framer-motion";
+import {Title, Container} from "../ui"
 import {SlideUp} from "../../utility/animation.ts";
 
 const FAQ: FC = () => {
 	const [answerActiveId, setAnswerActiveId] = useState(0)
 	const [activeAnswer, setActiveAnswer] = useState(false)
-
-	const pathname = useLocation().pathname
 
 	const openAnswer = (event: MouseEvent<HTMLParagraphElement>) => {
 		const targetId = Number(event.currentTarget.getAttribute("data-value"))
@@ -28,7 +23,7 @@ const FAQ: FC = () => {
 		<section className={styles.block} id="faq">
 			<Container>
 				<div className={styles.content}>
-					<Title text="Частые вопросы к Бабушке:" animate={pathname !== pageConfig.faq && pathname !== pageConfig.processing_personal_data} />
+					<Title text="Частые вопросы к Бабушке:" animate />
 
 					{answers.map(({id, question, answer}: AnswerType) => {
 						return (

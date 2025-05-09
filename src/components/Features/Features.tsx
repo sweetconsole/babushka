@@ -1,6 +1,6 @@
 import {FC} from "react"
 import styles from "./Features.module.scss"
-import {Container, Title, SubTitle} from "../UI";
+import {Container, Title, SubTitle} from "../ui";
 import {features} from "./features.data.ts";
 import {FeatureType} from "./features.type.ts";
 import Feature from "./Feature/Feature.tsx";

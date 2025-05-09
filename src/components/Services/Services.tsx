@@ -2,7 +2,7 @@ import {FC} from "react"
 import styles from "./Services.module.scss"
 import Service from "./Service/Service.tsx";
 import {services} from "./services.data.ts";
-import {Container, Title} from "../UI";
+import {Container, Title} from "../ui";
 
 const Services: FC = () => {
 	return (

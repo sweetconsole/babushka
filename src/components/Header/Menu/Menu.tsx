@@ -5,7 +5,7 @@ import { IMenuProps } from "./menu.interface.ts"
 import { Link } from "react-router-dom"
 import Logo from "../../../assets/images/logos/logo.svg"
 import { pageConfig } from "../../../config/pages.config.ts"
-import { TelegramIcon, WhatsAppIcon } from "../../UI"
+import { TelegramIcon, WhatsAppIcon } from "../../ui"
 import { socialConfig } from "../../../config/social.config.ts"
 
 const Menu: FC<IMenuProps> = ({active, setActive}) => {

@@ -11,7 +11,7 @@ export const services: Array<serviceType> = [
 		styleBlock: styles.rate__landing_page,
 		styleLink: styles.link__block_negative_rotate,
 		styleButton: styles.link__button_negative_rotate,
-		delay: 0.3,
+		delay: 0.4,
 		rotate: 2.5
 	},
 	{
@@ -23,7 +23,7 @@ export const services: Array<serviceType> = [
 		styleBlock: styles.rate__website,
 		styleLink: styles.link__block_positive_rotate,
 		styleButton: styles.link__button_positive_rotate,
-		delay: 0.6,
+		delay: 0.8,
 		rotate: -2.5
 	},
 ]
