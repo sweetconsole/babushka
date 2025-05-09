@@ -1,13 +1,13 @@
-import {FC} from "react"
+import { FC } from "react"
 import styles from "./Footer.module.scss"
 import Hatch from "../../assets/images/hatch.webp"
 import ShelfLeft from "../../assets/images/shelf_1.webp"
 import ShelfRight from "../../assets/images/shelf_2.webp"
-import {Link} from "react-router-dom";
-import {motion} from "framer-motion";
-import {ScrollLink, SocialLink, Container, WhatsAppIcon, TelegramIcon} from "../UI";
-import {socialConfig} from "../../config/social.config.ts";
-import {pageConfig} from "../../config/pages.config.ts";
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
+import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../UI"
+import { socialConfig } from "../../config/social.config.ts"
+import { pageConfig } from "../../config/pages.config.ts"
 
 const Footer: FC = () => {
 	return (
@@ -49,7 +49,7 @@ const Footer: FC = () => {
 
 						<ScrollLink link={"feedback"} style={styles.link__write} text="написать бабушке" />
 
-						<a className={styles.processing} href={pageConfig.processing_personal_data}>обработка персональных данных</a>
+						<Link className={styles.processing} to={pageConfig.processing_personal_data}>обработка персональных данных</Link>
 					</div>
 
 					<motion.div className={styles.images}
