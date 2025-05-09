@@ -1,12 +1,12 @@
-import {FC} from "react"
+import { FC } from "react"
 import styles from "./Menu.module.scss"
 import CloseIcon from "../../../assets/images/menu_close.svg"
-import {IMenuProps} from "./menu.interface.ts";
-import {Link} from "react-router-dom";
-import Logo from "../../../assets/images/logos/logo.svg";
-import {pageConfig} from "../../../config/pages.config.ts";
-import {TelegramIcon, WhatsAppIcon} from "../../UI";
-import {socialConfig} from "../../../config/social.config.ts";
+import { IMenuProps } from "./menu.interface.ts"
+import { Link } from "react-router-dom"
+import Logo from "../../../assets/images/logos/logo.svg"
+import { pageConfig } from "../../../config/pages.config.ts"
+import { TelegramIcon, WhatsAppIcon } from "../../UI"
+import { socialConfig } from "../../../config/social.config.ts"
 
 const Menu: FC<IMenuProps> = ({active, setActive}) => {
 
@@ -23,7 +23,7 @@ const Menu: FC<IMenuProps> = ({active, setActive}) => {
 
 			<nav className={styles.navigation}>
 				<Link className={styles.link} to={pageConfig.projects} onClick={CloseMenu}>Проекты</Link>
-				<Link className={styles.link} to={pageConfig.blogs} onClick={CloseMenu}>Блог</Link>
+				<Link className={styles.link} to={pageConfig.blog} onClick={CloseMenu}>Блог</Link>
 				<a className={styles.link} href={"#faq"} onClick={CloseMenu}>Частые Вопросы</a>
 
 				<Link className={styles.logo} to={pageConfig.home} onClick={CloseMenu}>

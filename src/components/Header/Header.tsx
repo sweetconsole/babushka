@@ -32,7 +32,7 @@ const Header: FC = () => {
                   Проекты
                 </motion.div>
               </Link>
-              <Link className={styles.navigation_link} to={pageConfig.projects}>
+              <Link className={styles.navigation_link} to={pageConfig.blog}>
                 <motion.div viewport={{once: true}} variants={SlideBottom(0.4)} initial="initial" whileInView={"animate"}>
                   Блог
                 </motion.div>
