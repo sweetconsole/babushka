@@ -15,10 +15,8 @@ const App: FC = () => {
 				<Route path={pageConfig.home} element={<HomePage />} />
 				<Route path={pageConfig.faq} element={<FaqPage />} />
 				<Route path={pageConfig.projects} element={<ErrorPage />} />
-				{/*<Route path={pageConfig.blogs} element={<ErrorPage />} />*/}
-				<Route path={pageConfig.blogs} element={<ProcessingPersonalDataPage />} />
-				<Route path="/babushka/dist/processing_of_personal_data/" element={<ProcessingPersonalDataPage />} />
-				<Route path="/babushka/dist/processing_personal_data/" element={<ProcessingPersonalDataPage />} />
+				<Route path={pageConfig.blogs} element={<ErrorPage />} />
+				<Route path={pageConfig.processing_personal_data} element={<ProcessingPersonalDataPage />} />
 
 				<Route path={pageConfig.error404} element={<ErrorPage />} />
 				<Route path="*" element={<Navigate to={pageConfig.error404} replace />} />
