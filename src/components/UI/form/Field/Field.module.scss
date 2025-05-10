@@ -1,0 +1,38 @@
+@use "../../../../assets/styles/variables";
+
+.label {
+	display: flex;
+	flex-direction: column;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.input {
+	width: 725px;
+	height: 30px;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+	border: 1px solid transparent;
+	border-bottom-color: variables.$color-dark;
+	background: transparent;
+	caret-color: variables.$color-accent;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.error {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$bold;
+	color: #ff2525;
+	font-size: 15px;
+	line-height: 100%;
+	margin-top: 5px;
+	text-transform: initial;
+}

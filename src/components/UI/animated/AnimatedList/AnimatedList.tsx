@@ -2,7 +2,7 @@ import {FC} from "react"
 import {IListProps} from "./animatedList.interface.ts";
 import { ListItem } from "./animatedList.ts"
 import {motion} from "framer-motion"
-import { SlideUp } from "../../../utility/animation.ts"
+import { SlideUp } from "../../../../utility/animation.ts"
 import styles from "./AnimatedList.module.scss"
 
 const AnimatedList: FC<IListProps> = ({data, definition}) => {

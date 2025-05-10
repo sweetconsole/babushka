@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { motion } from "framer-motion"
-import { SlideUp } from "../../../utility/animation.ts"
+import { SlideUp } from "../../../../utility/animation.ts"
 import { IAnimatedTitleProps } from "./animatedTitle.interface.ts"
 
 const AnimatedTitle: FC<IAnimatedTitleProps> = ({style, delay, text}) => {

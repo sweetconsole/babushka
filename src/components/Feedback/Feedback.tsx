@@ -1,13 +1,16 @@
 import { ChangeEvent, FC, useState } from "react"
 import styles from "./Feedback.module.scss"
 import { SubmitHandler, useForm } from "react-hook-form"
-import { Container, SubTitle } from "../ui"
+import { Container, Field, Select, SubTitle } from "../ui"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
 import { IFeedbackForm } from "./feedback.interface.ts"
 import { motion } from "framer-motion"
 import { useNavigate } from "react-router"
 import { pageConfig } from "../../config/pages.config.ts"
+import { randomName } from "../../utility/randomName.ts"
+import { validName, validPhone } from "../../config/valid.config.ts"
+import { connections, services } from "./feedback.data.ts"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
@@ -51,54 +54,30 @@ const Feedback: FC = () => {
 											 transition={{type: "spring", stiffness: 150, damping: 10, delay: 0.6}}>
 						<div className={styles.form__block}>
 							<div className={styles.from__inputs}>
-								<label className={styles.form__label}>
-									ваше имя
-									<input className={styles.form__input}
-												 type="text"
-												 {...register("name", {
-													 required: "Это поле обязательное",
-													 pattern: {
-														 value: /^[A-Za-zА-Яа-яЁё\s]{1,15}$/,
-														 message: "Можно использовать только пробелы, русские и латинские символы",
-													 },
-												 })} />
-									{nameError && <p className={styles.form__error}>{nameError}</p>}
-								</label>
+								<Field  label="ваше имя"
+												placeholder={randomName()}
+												type="text"
+												error={nameError}
+												{...register("name", {
+													required: "Это поле обязательное",
+													pattern: {
+														value: validName,
+														message: "Можно использовать только пробелы, русские и латинские символы",
+													}, })} />
 
-								<label className={styles.form__label}>
-									ваш номер телефона
-									<input className={styles.form__input}
-												 placeholder="+7"
-												 type="tel"
-												 {...register("phone", {
-													 required: "Это поле обязательное",
-													 pattern: {
-														 value: /^[+]7[0-9]{10}$/,
-														 message: "Можно использовать только цифры и номер должен начинаться с +7",
-													 },
-												 })} />
-									{phoneError && <p className={styles.form__error}>{phoneError}</p>}
-								</label>
-
-								<label className={styles.form__label}>
-									Услуга
-									<select className={styles.form__select} {...register("service")}>
-										<option className={styles.form__select_value} value="лендинг">Лендинг</option>
-										<option className={styles.form__select_value} value="многостраничный сайт">Многостраничный сайт
-										</option>
-										<option className={styles.form__select_value} value="дизайн">Дизайн</option>
-										<option className={styles.form__select_value} value="реклама">Реклама</option>
-										<option className={styles.form__select_value} value="seo-продвижение">SEO-продвижение</option>
-									</select>
-								</label>
-
-								<label className={styles.form__label}>
-									способ связи
-									<select className={styles.form__select} {...register("connection")}>
-										<option className={styles.form__select_value} value="звонок">Звонок</option>
-										<option className={styles.form__select_value} value="сообщение">сообщение</option>
-									</select>
-								</label>
+								<Field label="ваш номер телефона"
+											 placeholder="+7"
+											 type="tel"
+											 error={phoneError}
+											 {...register("phone", {
+												 required: "Это поле обязательное",
+												 pattern: {
+													 value: validPhone,
+													 message: "Можно использовать только цифры и номер должен начинаться с +7",
+												 }, })} />
+								
+								<Select label="Услуга" options={services} />
+								<Select label="способ связи" options={connections} />
 							</div>
 
 							<label className={[styles.form__label, styles.form__label_block].join(" ")}>

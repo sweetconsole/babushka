@@ -1,0 +1,30 @@
+@use "../../../../assets/styles/variables";
+
+.label {
+	display: flex;
+	flex-direction: column;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.select {
+	outline: none;
+	color: variables.$color-dark;
+	line-height: 120%;
+	text-transform: lowercase;
+	border: 1px solid transparent;
+	border-bottom-color: variables.$color-dark;
+	background: transparent;
+}
+
+.option {
+	background-color: #f8fafb;
+
+	&:checked {
+		color: variables.$color-accent;
+	}
+}

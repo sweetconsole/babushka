@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { motion } from "framer-motion"
-import { SlideUp } from "../../../utility/animation.ts"
+import { SlideUp } from "../../../../utility/animation.ts"
 import { IAnimatedTextProps } from "./animatedText.interface.ts"
 
 const AnimatedText: FC<IAnimatedTextProps> = ({style, delay, children}) => {

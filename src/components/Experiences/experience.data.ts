@@ -9,7 +9,7 @@ export const experiences: Array<ExperienceType> = [
 	},
 	{
 		type: "empty",
-		name: "",
+		name: "пустой 1",
 		description: "",
 	},
 	{
@@ -26,7 +26,7 @@ export const experiences: Array<ExperienceType> = [
 	},
 	{
 		type: "empty",
-		name: "",
+		name: "пустой 2",
 		description: "",
 	},
 	{
@@ -43,7 +43,7 @@ export const experiences: Array<ExperienceType> = [
 	},
 	{
 		type: "empty",
-		name: "",
+		name: "пустой 3",
 		description: "",
 	},
 ]

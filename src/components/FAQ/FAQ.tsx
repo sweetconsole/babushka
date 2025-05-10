@@ -36,8 +36,8 @@ const FAQ: FC = () => {
 
 								<div className={styles.cross__block} onClick={openAnswer} data-value={id} >
 									<svg className={styles.cross__icon} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<line x1="14" y1="3" x2="14" y2="25" stroke="currentColor" stroke-width="2"/>
-										<line x1="3" y1="14" x2="25" y2="14" stroke="currentColor" stroke-width="2"/>
+										<line x1="14" y1="3" x2="14" y2="25" stroke="currentColor" strokeWidth="2"/>
+										<line x1="3" y1="14" x2="25" y2="14" stroke="currentColor" strokeWidth="2"/>
 									</svg>
 								</div>
 
