@@ -38,7 +38,7 @@ const Shelf: FC<IShelfProps> = ({side}) => {
 			) : (
 				<>
 					<Jar style={styles.jar_1} image={JarFive} alt="" delay={2.0} />
-					<Jar style={styles.jar_2} image={JarSix} alt="" delay={1.8} />
+					<Jar style={styles.jar_6} image={JarSix} alt="" delay={1.8} />
 					<Jar style={styles.jar_3} image={JarSeven} alt="" delay={1.6} />
 					<Jar style={styles.jar_4} image={JarEight} alt="" delay={1.4} />
 				</>
