@@ -1,16 +1,16 @@
 import { ChangeEvent, FC, useState } from "react"
-import styles from "./Feedback.module.scss"
-import { SubmitHandler, useForm } from "react-hook-form"
-import { Container, Field, Select, SubTitle } from "../ui"
-import Arrow from "../../assets/images/arrow.svg"
-import ArrowSmall from "../../assets/images/arrow_small.svg"
-import { IFeedbackForm } from "./feedback.interface.ts"
 import { motion } from "framer-motion"
 import { useNavigate } from "react-router"
+import { SubmitHandler, useForm } from "react-hook-form"
+import Arrow from "../../assets/images/arrow.svg"
+import ArrowSmall from "../../assets/images/arrow_small.svg"
+import { Container, Field, Select, SubTitle } from "../ui"
 import { pageConfig } from "../../config/pages.config.ts"
-import { randomName } from "../../utility/randomName.ts"
 import { validName, validPhone } from "../../config/valid.config.ts"
+import { randomName } from "../../utility/randomName.ts"
 import { connections, services } from "./feedback.data.ts"
+import { IFeedbackForm } from "./feedback.interface.ts"
+import styles from "./Feedback.module.scss"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")

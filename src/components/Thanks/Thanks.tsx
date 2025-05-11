@@ -1,11 +1,11 @@
 import { FC } from "react"
-import Tangle from "../../assets/images/tangles/tangle_4.svg"
-import {motion} from "framer-motion"
-import styles from "./Thanks.module.scss"
 import {Link} from "react-router-dom"
+import {motion} from "framer-motion"
+import Tangle from "../../assets/images/tangles/tangle_4.svg"
 import Arrow from "../../assets/images/arrow.svg"
 import { pageConfig } from "../../config/pages.config.ts"
 import { Container } from "../ui"
+import styles from "./Thanks.module.scss"
 
 const Thanks: FC = () => {
 	return (

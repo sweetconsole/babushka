@@ -1,11 +1,10 @@
-import {FC, useState} from "react"
-import styles from "./FAQ.module.scss"
-import {answers} from "./FAQ.data.ts";
-import {AnswerType} from "./FAQ.type.ts";
-import {MouseEvent} from "react";
+import {FC, useState, MouseEvent} from "react"
 import {motion} from "framer-motion";
 import {Title, Container} from "../ui"
 import {SlideUp} from "../../utility/animation.ts";
+import {answers} from "./FAQ.data.ts";
+import {AnswerType} from "./FAQ.type.ts";
+import styles from "./FAQ.module.scss"
 
 const FAQ: FC = () => {
 	const [answerActiveId, setAnswerActiveId] = useState(0)
@@ -32,7 +31,7 @@ const FAQ: FC = () => {
 													viewport={{once: true}}
 													variants={SlideUp(0.2 * (id + 1))}
 													initial="initial"
-													whileInView={"animate"}>
+													whileInView="animate">
 
 								<div className={styles.cross__block} onClick={openAnswer} data-value={id} >
 									<svg className={styles.cross__icon} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">

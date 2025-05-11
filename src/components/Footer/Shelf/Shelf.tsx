@@ -19,7 +19,8 @@ const Shelf: FC<IShelfProps> = ({side}) => {
 		<div className={styles.block}>
 			<motion.img className={styles.shelf}
 									src={ShelfImage}
-									alt=""
+									alt="Полочка"
+									loading="lazy"
 									viewport={{once: true}}
 									initial={{opacity: 0}}
 									whileInView={{opacity: 1}}
@@ -30,17 +31,17 @@ const Shelf: FC<IShelfProps> = ({side}) => {
 
 			{side == SideShelf.LEFT ? (
 				<>
-					<Jar style={styles.jar_1} image={JarOne} alt="" delay={0.6} />
-					<Jar style={styles.jar_2} image={JarTwo} alt="" delay={0.8} />
-					<Jar style={styles.jar_3} image={JarThree} alt="" delay={1.0} />
-					<Jar style={styles.jar_4} image={JarFour} alt="" delay={1.2} />
+					<Jar style={styles.jar_1} image={JarOne} delay={0.6} />
+					<Jar style={styles.jar_2} image={JarTwo} delay={0.8} />
+					<Jar style={styles.jar_3} image={JarThree} delay={1.0} />
+					<Jar style={styles.jar_4} image={JarFour} delay={1.2} />
 				</>
 			) : (
 				<>
-					<Jar style={styles.jar_1} image={JarFive} alt="" delay={2.0} />
-					<Jar style={styles.jar_6} image={JarSix} alt="" delay={1.8} />
-					<Jar style={styles.jar_3} image={JarSeven} alt="" delay={1.6} />
-					<Jar style={styles.jar_4} image={JarEight} alt="" delay={1.4} />
+					<Jar style={styles.jar_1} image={JarFive} delay={2.0} />
+					<Jar style={styles.jar_6} image={JarSix} delay={1.8} />
+					<Jar style={styles.jar_3} image={JarSeven} delay={1.6} />
+					<Jar style={styles.jar_4} image={JarEight} delay={1.4} />
 				</>
 			)}
 		</div>

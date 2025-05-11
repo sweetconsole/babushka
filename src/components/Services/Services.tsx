@@ -1,8 +1,8 @@
 import {FC} from "react"
-import styles from "./Services.module.scss"
+import {Container, Title} from "../ui";
 import Service from "./Service/Service.tsx";
 import {services} from "./services.data.ts";
-import {Container, Title} from "../ui";
+import styles from "./Services.module.scss"
 
 const Services: FC = () => {
 	return (

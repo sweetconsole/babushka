@@ -1,6 +1,6 @@
 import {FC} from "react"
-import styles from "./Container.module.scss"
 import {IContainerProps} from "./container.interface.ts";
+import styles from "./Container.module.scss"
 
 const Container: FC<IContainerProps> = ({children}) => {
 	return (

@@ -1,7 +1,7 @@
 import {FC} from "react"
-import styles from "./ExperienceItem.module.scss"
-import {IExperienceProps} from "../experience.interface.ts";
 import {motion} from "framer-motion";
+import {IExperienceProps} from "../experience.interface.ts";
+import styles from "./ExperienceItem.module.scss"
 
 const ExperienceItem: FC<IExperienceProps> = ({type, name, description, delay}) => {
 	return (

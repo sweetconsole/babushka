@@ -1,11 +1,11 @@
 import {FC} from "react"
+import {motion} from "framer-motion"
+import {Link as ScrollLink} from "react-scroll"
 import ArrowTitle from "../../assets/images/arrow_intro_title.webp"
 import Arrow from "../../assets/images/arrow.svg"
 import Image from "../../assets/images/intro_image.webp"
-import styles from "./Intro.module.scss"
 import {Container} from "../ui"
-import {motion} from "framer-motion";
-import {Link as ScrollLink} from "react-scroll";
+import styles from "./Intro.module.scss"
 
 const Intro: FC = () => {
 	return (

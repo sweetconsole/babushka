@@ -1,11 +1,9 @@
-import {FC, useState} from "react"
-import styles from "./AdditionalServices.module.scss"
+import {FC, useState, MouseEvent} from "react"
 import Arrow from "../../assets/images/arrow.svg";
-import {MouseEvent} from "react";
+import {SubTitle, Title, Container, ScrollLink} from "../ui"
 import {additionalServices} from "./additionalServices.data.ts";
 import {AdditionalServicesType} from "./additionalServices.type.ts";
-import {SubTitle, Title, Container, ScrollLink} from "../ui"
-
+import styles from "./AdditionalServices.module.scss"
 
 const AdditionalServices: FC = () => {
 

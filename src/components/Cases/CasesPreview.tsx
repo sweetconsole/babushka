@@ -1,14 +1,14 @@
 import {FC} from "react"
-import styles from "./Cases.module.scss"
-import CasePreview from "./CasePreview/CasePreview.tsx";
+import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
 import Tangle from "../../assets/images/tangles/tangle_2.svg"
 import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
 import {Title, Container, SubTitle} from "../ui";
-import {casesPreview} from "./cases.data.ts";
-import {Link} from "react-router-dom";
 import {pickRandomItems} from "../../utility/pickRandomItems.ts";
 import {SlideUp} from "../../utility/animation.ts";
-import {motion} from "framer-motion";
+import CasePreview from "./CasePreview/CasePreview.tsx";
+import {casesPreview} from "./cases.data.ts";
+import styles from "./Cases.module.scss"
 
 const CasesPreview: FC = () => {
   const randomCases = pickRandomItems(casesPreview, 2)
@@ -28,7 +28,7 @@ const CasesPreview: FC = () => {
                           viewport={{once: true}}
                           variants={SlideUp(0.6)}
                           initial="initial"
-                          whileInView={"animate"}>
+                          whileInView="animate">
                 <h3 className={styles.link__title}>смотреть<br/>еще кейсы</h3>
                 <img className={styles.link__image} src={Tangle} alt="Декоративный элемент" loading="lazy" />
                 <img className={styles.link__button} src={ArrowCasePreview} alt="Ссылка на все статьи" loading="lazy" />

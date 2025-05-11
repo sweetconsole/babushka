@@ -1,11 +1,11 @@
 import { FC } from "react"
-import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage } from "./pages/index.js.ts"
-import { Header } from "./components"
 import { Navigate, Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
+import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage } from "./pages/index.js.ts"
+import { Header } from "./components"
+import { ScrollTop } from "./components/ui"
 import { pageConfig } from "./config/pages.config.ts"
 import "./App.scss"
-import { ScrollTop } from "./components/ui"
 
 const App: FC = () => {
 	return (

@@ -2,11 +2,12 @@ import { FC } from "react"
 import { motion } from "framer-motion"
 import { IJarProps } from "./shelf.interface.ts"
 
-const Jar: FC<IJarProps> = ({style, image, alt, delay}) => {
+const Jar: FC<IJarProps> = ({style, image, delay}) => {
 	return (
 		<motion.img className={style}
 								src={image}
-								alt={alt}
+								alt="Баночка"
+								loading="lazy"
 								viewport={{once: true}}
 								initial={{opacity:0, y: -100}}
 								whileInView={{opacity: 1, y: 0}}

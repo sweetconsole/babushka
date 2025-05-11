@@ -1,14 +1,14 @@
 import { FC, useState } from "react"
-import { Container, Title } from "../ui"
-import styles from "./BlogsPreview.module.scss"
-import ArrowDark from "../../assets/images/arrow_dark.svg"
-import Arrow from "../../assets/images/arrow.svg"
-import BlogPreview from "./BlogPreview/BlogPreview.tsx"
-import { blogs } from "./blogs.data.ts"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import ArrowDark from "../../assets/images/arrow_dark.svg"
+import Arrow from "../../assets/images/arrow.svg"
 import { pageConfig } from "../../config/pages.config.ts"
+import { Container, Title } from "../ui"
 import { SlideUp } from "../../utility/animation.ts"
+import BlogPreview from "./BlogPreview/BlogPreview.tsx"
+import { blogs } from "./blogs.data.ts"
+import styles from "./BlogsPreview.module.scss"
 
 const BlogsPreview: FC = () => {
 	const [numberBlog, setNumberBlog] = useState([1, 2])
@@ -61,7 +61,7 @@ const BlogsPreview: FC = () => {
 												viewport={{once: true}}
 												variants={SlideUp(0.8)}
 												initial="initial"
-												whileInView={"animate"}>
+												whileInView="animate">
 							<p className={styles.link__text}>смотреть все статьи</p>
 							<button className={styles.link__button}>
 								<img className={styles.link__arrow} src={Arrow} alt="Перейти" />

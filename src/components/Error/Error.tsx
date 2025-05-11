@@ -1,6 +1,6 @@
 import {FC} from "react"
-import styles from "./Error.module.scss"
 import ErrorImage from "../../assets/images/error.webp"
+import styles from "./Error.module.scss"
 
 const Error: FC = () => {
 	return (

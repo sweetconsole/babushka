@@ -1,6 +1,7 @@
 import {FC} from "react"
-import styles from "./SubTitle.module.scss"
 import {motion} from "framer-motion"
+import styles from "./SubTitle.module.scss"
+
 
 interface SubTitleProps {
 	text: string

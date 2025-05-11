@@ -1,20 +1,20 @@
 import { FC } from "react"
-import styles from "./Footer.module.scss"
-import Hatch from "../../assets/images/hatch.webp"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import Hatch from "../../assets/images/hatch.webp"
 import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
 import { socialConfig } from "../../config/social.config.ts"
 import { pageConfig } from "../../config/pages.config.ts"
 import Shelf from "./Shelf/Shelf.tsx"
 import { SideShelf } from "./Shelf/shelf.interface.ts"
+import styles from "./Footer.module.scss"
 
 const Footer: FC = () => {
 	return (
 		<footer className={styles.footer}>
 			<Container>
 				<div className={styles.content}>
-					<img className={styles.hatch} src={Hatch} alt="" />
+					<img className={styles.hatch} src={Hatch} alt="Подвал" />
 
 					<div className={styles.socials}>
 						<p className={styles.copyright}>© BABUSHKA 2025</p>
@@ -23,11 +23,11 @@ const Footer: FC = () => {
 							<a className={styles.link_phone} href={`tel:${socialConfig.phone.replace(/\s/g, '')}`}>{socialConfig.phone}</a>
 
 							<SocialLink link={socialConfig.telegram}
-													label={"Ссылка на Telegram"}
+													label="Ссылка на Telegram"
 													icon={<TelegramIcon />}
 													style={styles.link_social} />
 							<SocialLink link={socialConfig.whatsapp}
-													label={"Ссылка на WhatsApp"}
+													label="Ссылка на WhatsApp"
 													icon={<WhatsAppIcon />}
 													style={styles.link_social} />
 						</nav>
@@ -38,7 +38,7 @@ const Footer: FC = () => {
 							<Link className={styles.link} to={pageConfig.projects}>Проекты</Link>
 							<Link className={styles.link} to={pageConfig.blog}>Блог</Link>
 
-							<ScrollLink link={"faq"} style={styles.link} text="Частые Вопросы" />
+							<ScrollLink link="faq" style={styles.link} text="Частые Вопросы" />
 						</nav>
 
 						<div className={styles.info}>
@@ -46,8 +46,7 @@ const Footer: FC = () => {
 							<p className={styles.text}>ИНН: {socialConfig.INN}</p>
 						</div>
 
-
-						<ScrollLink link={"feedback"} style={styles.link__write} text="написать бабушке" />
+						<ScrollLink link="feedback" style={styles.link__write} text="написать бабушке" />
 
 						<Link className={styles.processing} to={pageConfig.processing_personal_data}>обработка персональных данных</Link>
 					</div>

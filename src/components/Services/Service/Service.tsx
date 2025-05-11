@@ -1,10 +1,10 @@
 import {FC} from "react"
-import styles from "./Service.module.scss"
+import {motion} from "framer-motion";
 import Arrow from "../../../assets/images/arrow.svg";
 import StrokePanel from "../../../assets/images/stroke_panel.svg"
-import {IServiceProps} from "../services.interface.ts";
 import {ScrollLink} from "../../ui";
-import {motion} from "framer-motion";
+import {IServiceProps} from "../services.interface.ts";
+import styles from "./Service.module.scss"
 
 const Service: FC<IServiceProps> = ({name, countPage, time, price, description, styleBlock, styleLink, styleButton, delay, rotate}) => {
 	return (
@@ -19,7 +19,7 @@ const Service: FC<IServiceProps> = ({name, countPage, time, price, description, 
 
 				<div className={styles.scope}>
 					<p className={[styles.scope__name, styles.scope__time].join(" ")}
-						 title={"Окончательные определяются в зависимости от объема работы\nи технического задания заказчика"}>время на разработку*</p>
+						 title="Окончательные определяются в зависимости от объема работы\nи технического задания заказчика">время на разработку*</p>
 					<p className={styles.scope__count}>{time}</p>
 				</div>
 			</div>

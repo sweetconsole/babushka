@@ -1,13 +1,13 @@
 import {FC} from "react"
-import styles from "./Info.module.scss"
-import InfoItem from "./InfoItem/InfoItem.tsx";
+import {motion} from "framer-motion";
 import Tangle from "../../assets/images/tangles/tangle_1.svg"
 import Thread from "../../assets/images/thread_1.svg"
 import {Container} from "../ui";
+import {SlideLeft} from "../../utility/animation.ts";
 import {services, partners} from "./info.data.ts";
 import {ServiceType, PartnerType} from "./info.type.ts";
-import {motion} from "framer-motion";
-import {SlideLeft} from "../../utility/animation.ts";
+import InfoItem from "./InfoItem/InfoItem.tsx";
+import styles from "./Info.module.scss"
 
 const Info: FC = () => {
 	return (
@@ -36,7 +36,7 @@ const Info: FC = () => {
 																 viewport={{once: true}}
 																 variants={SlideLeft(delay)}
 																 initial="initial"
-																 whileInView={"animate"}
+																 whileInView="animate"
 																 alt={name} />
 						})}
 					</div>

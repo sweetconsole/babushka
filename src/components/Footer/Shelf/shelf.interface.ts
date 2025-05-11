@@ -13,6 +13,5 @@ export interface IShelfProps {
 export interface IJarProps {
 	style: string
 	image: string
-	alt: string
 	delay: number
 }

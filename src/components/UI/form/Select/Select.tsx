@@ -1,6 +1,6 @@
 import {forwardRef} from 'react'
-import styles from "./Select.module.scss"
 import { ISelect } from "./select.interface.ts"
+import styles from "./Select.module.scss"
 
 const Select = forwardRef<HTMLSelectElement, ISelect>(
 	({label, options, ...rest}, ref) => {

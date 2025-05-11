@@ -1,7 +1,7 @@
 import {FC} from "react"
+import {motion} from "framer-motion"
+import {IFeatureProps} from "../features.interface.ts"
 import styles from "./Feature.module.scss"
-import {IFeatureProps} from "../features.interface.ts";
-import {motion} from "framer-motion";
 
 const Feature: FC<IFeatureProps> = ({text, delay}) => {
 	return (

@@ -1,12 +1,12 @@
 import { FC } from "react"
-import styles from "./Menu.module.scss"
-import CloseIcon from "../../../assets/images/menu_close.svg"
-import { IMenuProps } from "./menu.interface.ts"
 import { Link } from "react-router-dom"
+import CloseIcon from "../../../assets/images/menu_close.svg"
 import Logo from "../../../assets/images/logos/logo.svg"
-import { pageConfig } from "../../../config/pages.config.ts"
 import { TelegramIcon, WhatsAppIcon } from "../../ui"
 import { socialConfig } from "../../../config/social.config.ts"
+import { pageConfig } from "../../../config/pages.config.ts"
+import { IMenuProps } from "./menu.interface.ts"
+import styles from "./Menu.module.scss"
 
 const Menu: FC<IMenuProps> = ({active, setActive}) => {
 

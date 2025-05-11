@@ -4,7 +4,7 @@ import autoprefixer from "autoprefixer";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [ react()],
   base: "/babushka/dist/",
   css: {
     postcss: {
@@ -12,5 +12,5 @@ export default defineConfig({
         autoprefixer({})
       ]
     }
-  }
+  },
 })

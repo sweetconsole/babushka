@@ -1,10 +1,9 @@
-import {FC, useState} from "react"
-import styles from "./HowWork.module.scss"
-import {Container, Title, SubTitle} from "../ui";
-import {MouseEvent} from "react";
-import {howWorkType} from "./howWork.type.ts";
+import {FC, useState, MouseEvent} from "react"
+import {motion} from "framer-motion"
+import {Container, Title, SubTitle} from "../ui"
+import {howWorkType} from "./howWork.type.ts"
 import {howWorkList} from "./howWork.data.ts"
-import {motion} from "framer-motion";
+import styles from "./HowWork.module.scss"
 
 const HowWork: FC = () => {
 

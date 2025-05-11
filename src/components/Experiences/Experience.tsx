@@ -1,13 +1,12 @@
 import {FC} from "react"
-import styles from "./Experience.module.scss"
-import {Container, Title, SubTitle} from "../ui";
 import Tangle from "../../assets/images/tangles/tangle_3.svg"
 import Cup from "../../assets/images/cup.webp"
 import Teapot from "../../assets/images/teapot.webp"
+import {Container, Title, SubTitle} from "../ui";
 import ExperienceItem from "./ExperienceItem/ExperienceItem.tsx";
 import {experiences} from "./experience.data.ts";
 import {ExperienceType} from "./experience.type.ts";
-
+import styles from "./Experience.module.scss"
 
 const Experience: FC = () => {
 	return (

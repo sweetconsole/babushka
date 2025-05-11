@@ -1,6 +1,6 @@
 import {FC} from "react"
-import styles from "./Title.module.scss"
 import {motion} from "framer-motion";
+import styles from "./Title.module.scss"
 
 interface TitleProps {
   text: string

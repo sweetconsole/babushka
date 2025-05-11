@@ -5,7 +5,7 @@ import { IAnimatedTitleProps } from "./animatedTitle.interface.ts"
 
 const AnimatedTitle: FC<IAnimatedTitleProps> = ({style, delay, text}) => {
 	return (
-		<motion.h2 className={style} viewport={{once: true}} variants={SlideUp(delay)} initial="initial" whileInView={"animate"}>{text}</motion.h2>
+		<motion.h2 className={style} viewport={{once: true}} variants={SlideUp(delay)} initial="initial" whileInView="animate">{text}</motion.h2>
 	)
 }
 
