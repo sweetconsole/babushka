@@ -1,0 +1,46 @@
+
+.block {
+	width: 585px;
+	height: 317px;
+	position: relative;
+
+	img {
+		position: absolute;
+	}
+}
+
+.shelf {
+	width: 100%;
+	height: 79px;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.jar_1 {
+	width: 103px;
+	height: 128px;
+	left: 22px;
+	bottom: 54px;
+}
+
+.jar_2 {
+	width: 77px;
+	height: 269px;
+	left: 165px;
+	top: 0;
+}
+
+.jar_3 {
+	width: 118px;
+	height: 212px;
+	left: 280px;
+	top: 56px;
+}
+
+.jar_4 {
+	width: 128px;
+	height: 130px;
+	left: 429px;
+	top: 133px;
+}

@@ -1,13 +1,13 @@
 import { FC } from "react"
 import styles from "./Footer.module.scss"
 import Hatch from "../../assets/images/hatch.webp"
-import ShelfLeft from "../../assets/images/shelf_1.webp"
-import ShelfRight from "../../assets/images/shelf_2.webp"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
 import { socialConfig } from "../../config/social.config.ts"
 import { pageConfig } from "../../config/pages.config.ts"
+import Shelf from "./Shelf/Shelf.tsx"
+import { SideShelf } from "./Shelf/shelf.interface.ts"
 
 const Footer: FC = () => {
 	return (
@@ -52,13 +52,14 @@ const Footer: FC = () => {
 						<Link className={styles.processing} to={pageConfig.processing_personal_data}>обработка персональных данных</Link>
 					</div>
 
-					<motion.div className={styles.images}
-											viewport={{once: true}}
-											initial={{opacity: 0}}
-											whileInView={{opacity: 1}}
-											transition={{delay: 0.4, duration: 0.8}}>
-						<img className={styles.image} src={ShelfLeft} alt="Левая полочка с баночками"/>
-						<p className={styles.title}>
+					<div className={styles.images}>
+
+						<Shelf side={SideShelf.LEFT} />
+
+						<motion.p className={styles.title} viewport={{once: true}}
+							 initial={{opacity: 0}}
+							 whileInView={{opacity: 1}}
+							 transition={{delay: 0.4, duration: 0.8}}>
 							здесь о тебе по
 							<motion.span className={styles.title__highlighting}
 													 viewport={{once: true}}
@@ -67,9 +68,10 @@ const Footer: FC = () => {
 													 transition={{delay: 0.8, duration: 1.6}}>
 								заботятся
 							</motion.span>
-						</p>
-						<img className={styles.image} src={ShelfRight} alt="Правая полочка с баночками"/>
-					</motion.div>
+						</motion.p>
+
+						<Shelf side={SideShelf.RIGHT} />
+					</div>
 				</div>
 			</Container>
 		</footer>
