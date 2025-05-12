@@ -1,7 +1,15 @@
-import {Intro, Info, CasesPreview,
-  Experience, Services, AdditionalServices,
-  HowWork, BlogsPreview, Feedback,
-  Features, FAQ, Footer} from "../components";
+import {Intro,
+  Info,
+  CasesPreview,
+  Experience,
+  Services,
+  AdditionalServices,
+  HowWork,
+  BlogsPreview,
+  Feedback,
+  Features,
+  FAQ,
+  Footer } from "../components";
 import {FC} from "react";
 
 const HomePage: FC = () => {

@@ -1,20 +1,20 @@
 import {FC} from "react"
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import Tangle from "../../assets/images/tangles/tangle_2.svg"
-import ArrowCasePreview from "../../assets/images/arrow_case_preview.webp"
-import {Title, Container, SubTitle} from "../ui";
-import {pickRandomItems} from "../../utility/pickRandomItems.ts";
-import {SlideUp} from "../../utility/animation.ts";
-import CasePreview from "./CasePreview/CasePreview.tsx";
-import {casesPreview} from "./cases.data.ts";
-import styles from "./Cases.module.scss"
+import Tangle from "../../../assets/images/tangles/tangle_2.svg"
+import ArrowCasePreview from "../../../assets/images/arrow_case_preview.webp"
+import {Title, Container, SubTitle} from "../../../components/ui";
+import {pickRandomItems} from "../../../utility/pickRandomItems.ts";
+import {SlideUp} from "../../../utility/animation.ts";
+import CasePreview from "../CasePreview/CasePreview.tsx";
+import {casesPreview} from "../cases.data.ts";
+import styles from "./CasesPreview.module.scss"
 
 const CasesPreview: FC = () => {
   const randomCases = pickRandomItems(casesPreview, 2)
 
 	return (
-    <section className={styles.block}>
+    <article className={styles.block}>
       <Container>
         <div className={styles.content}>
           <Title text="Главное — это не только внешний вид, но и удобство" animate />
@@ -37,7 +37,7 @@ const CasesPreview: FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </article>
 	)
 }
 

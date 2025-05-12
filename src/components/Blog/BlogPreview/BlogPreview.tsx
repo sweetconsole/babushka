@@ -7,6 +7,9 @@ import { IBlogProps } from "../blogs.interface.ts"
 import styles from "./BlogPreview.module.scss"
 
 const BlogPreview: FC<IBlogProps> = ({link, image, title, description, date, delay}) => {
+
+	const dateTime = date.replace("/", ".")
+
 	return (
 		<motion.article className={styles.block}
 										viewport={{once: true}}
@@ -16,7 +19,7 @@ const BlogPreview: FC<IBlogProps> = ({link, image, title, description, date, del
 			<img className={styles.image} src={image} alt="Изображение" />
 			<p className={styles.title}>{title}</p>
 			<p className={styles.description}>{description}</p>
-			<p className={styles.date}>{date}</p>
+			<time className={styles.date} dateTime={dateTime}>{date}</time>
 			<Link className={styles.link} to={`./blog/${link}`}>
 					<img className={styles.link__arrow} src={Arrow} alt="Перейти"/>
 			</Link>

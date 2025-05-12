@@ -4,7 +4,7 @@ import ImageThree from "../../assets/images/blogs/blog_preview_3.webp"
 import ImageFour from "../../assets/images/blogs/blog_preview_4.webp"
 import {BlogPreviewType} from "./blogs.type.ts";
 
-export const blogs: Array<BlogPreviewType> = [
+export const blogsPreview: Array<BlogPreviewType> = [
 	{
 		id: 0,
 		link: "260125",

@@ -1,6 +1,7 @@
 export {default as AdditionalServices} from "./AdditionalServices/AdditionalServices.tsx"
 export {default as BlogsPreview} from "./Blog/BlogsPreview.tsx"
-export {default as CasesPreview} from "./Cases/CasesPreview.tsx"
+export {default as CasesPreview} from "./Cases/CasesPreview/CasesPreview.tsx"
+export {default as Cases} from "./Cases/Cases.tsx"
 export {default as Error} from "./Error/Error.tsx"
 export {default as Experience} from "./Experiences/Experience.tsx"
 export {default as FAQ} from "./FAQ/FAQ.tsx"

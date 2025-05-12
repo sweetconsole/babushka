@@ -2,6 +2,10 @@
 
 .block {
 	margin-top: 90px;
+
+	@media (max-width: 1336px) {
+		margin-top: 60px;
+	}
 }
 
 .title {
@@ -11,6 +15,15 @@
 	font-size: 50px;
 	line-height: 120%;
 	text-transform: uppercase;
+	
+	@media (max-width: 1800px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 30px;
+		line-height: 35px;
+	}
 }
 
 .title__highlighting {
@@ -24,8 +37,25 @@
 	justify-content: center;
 	align-items: center;
 	background-image: url("../../assets/images/piece_paper.webp");
+	background-repeat: no-repeat;
 	padding: 0 120px 0 170px;
 	margin-top: 60px;
+
+	@media (max-width: 1800px) {
+		width: 1228px;
+		height: 508px;
+		background-image: url("../../assets/images/piece_paper_tablet.png");
+		padding: 0 120px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
+		height: 528px;
+		flex-direction: column;
+		background-image: url("../../assets/images/piece_paper_mobile.png");
+		margin-top: 15px;
+		padding: 0 45px;
+	}
 }
 
 .form__block {
@@ -41,6 +71,20 @@
 	grid-template-columns: repeat(2, 725px);
 	grid-template-rows: repeat(2, 55px);
 	margin-bottom: 30px;
+	
+	@media (max-width: 1800px) {
+		gap: 20px;
+		grid-template-columns: repeat(2, 485px);
+		grid-template-rows: repeat(2, 43px);
+		margin-bottom: 20px;
+	}
+	
+	@media (max-width: 1336px) {
+		gap: 20px;
+		grid-template-columns: repeat(1, 240px);
+		grid-template-rows: repeat(4, 37px);
+		margin-bottom: 10px;
+	}
 }
 
 .form__label {
@@ -52,6 +96,16 @@
 	font-size: 20px;
 	line-height: 25px;
 	text-transform: uppercase;
+
+	@media (max-width: 1800px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 12px;
+		line-height: 15px;
+	}
 }
 
 .form__input,
@@ -79,31 +133,6 @@
 	text-transform: initial;
 }
 
-.form__input {
-	width: 725px;
-	height: 30px;
-	transition: all .2s ease-in-out;
-
-	&:focus {
-		outline: none;
-	}
-}
-
-.form__select {
-	outline: none;
-	color: variables.$color-dark;
-	line-height: 120%;
-	text-transform: lowercase;
-	border: 1px solid transparent;
-	border-bottom-color: variables.$color-dark;
-	background: transparent;
-
-	option {
-		background-color: red;
-		border: 2px solid yellow;
-	}
-}
-
 .form__select_value {
 	background-color: #F7FAFC;
 
@@ -126,6 +155,12 @@
 		outline: none;
 		border: 1px solid variables.$color-dark;
 	}
+	
+	@media (max-width: 1336px) {
+		font-size: 12px;
+		line-height: 100%;
+		margin-bottom: 10px;
+	}
 }
 
 .form__block_file {
@@ -133,6 +168,10 @@
 	display: flex;
 	align-items: center;
 	margin-top: 13px;
+
+	@media (max-width: 1800px) {
+		margin-top: 10px;
+	}
 }
 
 .form__input_file_name {
@@ -141,6 +180,10 @@
 	color: variables.$color-dark;
 	text-transform: initial;
 	margin-left: 28px;
+
+	@media (max-width: 1800px) {
+		font-size: 14px;
+	}
 }
 
 .form__input_file_button {
@@ -161,12 +204,23 @@
 	&:hover {
 		background-color: variables.$color-accent;
 	}
+
+	@media (max-width: 1800px) {
+		font-size: 14px;
+		padding: 7px 28px;
+	}
 }
+
 
 .form__input_file_button_icon {
 	width: 19px;
 	height: 19px;
 	margin-left: 10px;
+	
+	@media (max-width: 1800px) {
+		width: 10px;
+		height: 10px;
+	}
 }
 
 .form__input_file {
@@ -196,6 +250,18 @@
 	&:hover .button__arrow_block {
 		transform: rotate(45deg);
 	}
+	
+	@media (max-width: 1800px) {
+		width: 546px;
+		height: 65px;
+		margin-top: 30px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
+		height: 30px;
+		margin-top: 10px;
+	}
 }
 
 .button__text {
@@ -210,8 +276,24 @@
 	text-transform: lowercase;
 	background-image: url("../../assets/images/link_background.svg");
 	background-repeat: no-repeat;
+	background-size: cover;
 	padding-left: 40px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 486px;
+		height: 65px;
+		padding-left: 36px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 213px;
+		height: 30px;
+		font-size: 14px;
+		line-height: 120%;
+		background-size: contain;
+		padding-left: 17px;
+	}
 }
 
 .button__arrow_block {
@@ -226,9 +308,29 @@
 	border-radius: 100%;
 	background-color: variables.$color-accent;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 65px;
+		height: 65px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 30px;
+		height: 30px;
+	}
 }
 
 .button__arrow {
 	width: 27px;
 	height: 27px;
+
+	@media (max-width: 1800px) {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 12px;
+		height: 12px;
+	}
 }

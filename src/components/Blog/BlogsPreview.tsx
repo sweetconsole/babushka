@@ -7,7 +7,7 @@ import { pageConfig } from "../../config/pages.config.ts"
 import { Container, Title } from "../ui"
 import { SlideUp } from "../../utility/animation.ts"
 import BlogPreview from "./BlogPreview/BlogPreview.tsx"
-import { blogs } from "./blogs.data.ts"
+import { blogsPreview } from "./blogs.data.ts"
 import styles from "./BlogsPreview.module.scss"
 
 const BlogsPreview: FC = () => {
@@ -43,8 +43,8 @@ const BlogsPreview: FC = () => {
 							<img className={styles.button_arrow} src={ArrowDark} alt="Назад" />
 						</motion.button>
 
-						<BlogPreview {...blogs[numberBlog[0]]} delay={0.2} />
-						<BlogPreview {...blogs[numberBlog[1]]} delay={0.4} />
+						<BlogPreview {...blogsPreview[numberBlog[0]]} delay={0.2} />
+						<BlogPreview {...blogsPreview[numberBlog[1]]} delay={0.4} />
 
 						<motion.button className={[styles.button, styles.button_turn].join(" ")}
 													 onClick={nextBlog}

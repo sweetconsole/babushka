@@ -11,12 +11,16 @@ import { randomName } from "../../utility/randomName.ts"
 import { connections, services } from "./feedback.data.ts"
 import { IFeedbackForm } from "./feedback.interface.ts"
 import styles from "./Feedback.module.scss"
+import { useMediaQuery } from "../../hooks/useMediaQuery.ts"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
 	const {register, handleSubmit, formState} = useForm<IFeedbackForm>({mode: "onChange"})
 
 	const navigate = useNavigate()
+
+	const tablet = useMediaQuery("(max-width: 1800px)")
+	const mobile = useMediaQuery("(max-width: 1336px)")
 
 	const nameError = formState.errors["name"]?.message
 	const phoneError = formState.errors["phone"]?.message
@@ -31,6 +35,12 @@ const Feedback: FC = () => {
 		console.log(data)
 
 		navigate(pageConfig.thanks)
+	}
+
+	const getRows = () => {
+		if (mobile) return 9
+		else if (tablet) return 4
+		else return 3
 	}
 
 	return (
@@ -82,7 +92,7 @@ const Feedback: FC = () => {
 
 							<label className={[styles.form__label, styles.form__label_block].join(" ")}>
 								Опиши задачу, ну или не пиши
-								<textarea className={styles.form__textarea} rows={3}
+								<textarea className={styles.form__textarea} rows={getRows()}
 													placeholder="Мы специализируемся на создании уникального контента для социальных сетей, рекламы, e-commerce и брендов, включая предметную, рекламную и lifestyle-фотографию, а также видеосъемку различной сложности. Наша команда экспертов воплощает идеи в жизнь, от разработки концепции до финальной ретуши и монтажа." />
 							</label>
 

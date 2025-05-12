@@ -2,6 +2,10 @@
 
 .block {
 	margin-top: 90px;
+
+	@media (max-width: 1800px) {
+		margin-top: 60px;
+	}
 }
 
 .content {
@@ -13,6 +17,13 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 60px;
+
+	@media (max-width: 1336px) {
+		width: 100%;
+		position: relative;
+		flex-direction: column-reverse;
+		margin-top: 30px;
+	}
 }
 
 .button {
@@ -25,18 +36,44 @@
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: transform 0.8s ease-in-out,background-color 0.4s ease-in-out;
+	transition: transform 0.8s ease-in-out,
+							background-color 0.4s ease-in-out;
 	margin-left: -22px;
 
 	&:hover {
 		background-color: variables.$color-accent;
 		transform: rotate(360deg);
 	}
+
+	@media (max-width: 1800px) {
+		width: 48px;
+		height: 48px;
+		margin-left: -12px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 56px;
+		height: 56px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
 }
 
 .button_arrow {
 	width: 42px;
 	height: 42px;
+	
+	@media (max-width: 1800px) {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 38px;
+		height: 38px;
+	}
 }
 
 .button_turn {
@@ -46,6 +83,17 @@
 
 	&:hover {
 		transform: rotate(-180deg);
+	}
+
+	@media (max-width: 1800px) {
+		margin-right: -12px;
+	}
+
+	@media (max-width: 1336px) {
+		position: absolute;
+		left: calc(100% - 56px);
+		bottom: 0;
+		margin-right: 0;
 	}
 }
 
@@ -66,6 +114,17 @@
 	&:hover .link__arrow {
 		transform: rotate(45deg);
 	}
+	
+	@media (max-width: 1800px) {
+		width: 546px;
+		height: 65px;
+	}
+	
+	@media (max-width: 1336px) {
+		width: 100%;
+		height: 40px;
+		margin: 30px auto 0;
+	}
 }
 
 .link__text {
@@ -81,9 +140,23 @@
 	line-height: 100%;
 	background-image: url("../../assets/images/link_background.svg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: cover;
 	padding-left: 40px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 486px;
+		height: 65px;
+		padding-left: 30px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 295px;
+		height: 40px;
+		background-size: contain;
+		font-size: 20px;
+		padding-left: 20px;
+	}
 }
 
 .link__button {
@@ -100,10 +173,30 @@
 	cursor: pointer;
 	background-color: variables.$color-dark;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 65px;
+		height: 65px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .link__arrow {
 	width: 31px;
 	height: 31px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 15px;
+		height: 15px;
+	}
 }

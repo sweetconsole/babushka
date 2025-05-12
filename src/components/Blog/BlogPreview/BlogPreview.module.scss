@@ -9,12 +9,42 @@
 	border-radius: 30px;
 	background-color: #FFFED9;
 	padding: 20px;
+	
+	@media (max-width: 1800px) {
+		font-family: variables.$font-family-abel;
+		width: 555px;
+		height: 405px;
+		border-radius: 20px;
+		padding: 14px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
+		height: 288px;
+		border-radius: 14px;
+		padding: 10px;
+		margin-bottom: 64px;
+
+		&:first-of-type {
+			display: none;
+		}
+	}
 }
 
 .image {
 	width: 100%;
 	height: 265px;
 	border-radius: 10px;
+
+	@media (max-width: 1800px) {
+		height: 182px;
+		border-radius: 19px;
+	}
+
+	@media (max-width: 1336px) {
+		height: 108px;
+		border-radius: 11px;
+	}
 }
 
 .title {
@@ -23,6 +53,18 @@
 	line-height: 35px;
 	text-transform: uppercase;
 	margin-top: 30px;
+
+	@media (max-width: 1800px) {
+		font-weight: variables.$regular;
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		line-height: 100%;
+	}
 }
 
 .description {
@@ -30,6 +72,17 @@
 	font-size: 20px;
 	line-height: 120%;
 	margin-top: 20px;
+
+	@media (max-width: 1800px) {
+		font-size: 18px;
+		line-height: 120%;
+		margin-top: 10px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+		line-height: 120%;
+	}
 }
 
 .date {
@@ -37,8 +90,22 @@
 	font-size: 15px;
 	line-height: 120%;
 	position: absolute;
-	bottom: 20px;
 	left: 20px;
+	bottom: 20px;
+
+	@media (max-width: 1800px) {
+		font-weight: variables.$regular;
+		font-size: 14px;
+		left: 14px;
+		bottom: 14px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 12px;
+		line-height: 100%;
+		left: 10px;
+		bottom: 10px;
+	}
 }
 
 .link {
@@ -61,10 +128,34 @@
 	&:hover .link__arrow {
 		transform: rotate(45deg);
 	}
+
+	@media (max-width: 1800px) {
+		width: 50px;
+		height: 50px;
+		bottom: 14px;
+		right: 14px;
+	}
+	
+	@media (max-width: 1336px) {
+		width: 30px;
+		height: 30px;
+		bottom: 10px;
+		right: 10px;
+	}
 }
 
 .link__arrow {
 	width: 31px;
 	height: 31px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 19px;
+		height: 19px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 12px;
+		height: 12px;
+	}
 }

@@ -6,10 +6,6 @@
 	@media (max-width: 1800px) {
 		margin-top: 60px;
 	}
-
-	@media (max-width: 1336px) {
-
-	}
 }
 
 .content {
@@ -31,7 +27,9 @@
 	}
 
 	@media (max-width: 1336px) {
-
+		height: auto;
+		flex-direction: column;
+		margin-top: 30px;
 	}
 }
 
@@ -50,7 +48,9 @@
 	}
 
 	@media (max-width: 1336px) {
-
+		width: 330px;
+		height: 42px;
+		margin-bottom: 11px;
 	}
 }
 
@@ -77,8 +77,29 @@
 	line-height: 35px;
 	text-transform: uppercase;
 	background-image: url("../../assets/images/link_additional_services.svg");
+	background-size: cover;
 	padding-left: 40px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 352px;
+		height: 49px;
+		font-family: variables.$font-family-abel;
+		font-weight: variables.$regular;
+		font-size: 20px;
+		line-height: 24px;
+		padding-left: 30px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 294px;
+		height: 42px;
+		font-family: variables.$font-family-cygre;
+		font-weight: variables.$bold;
+		font-size: 17px;
+		line-height: 20px;
+		padding-left: 20px;
+	}
 }
 
 .service__link {
@@ -94,11 +115,31 @@
 	align-items: center;
 	transform: rotate(135deg);
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 50px;
+		height: 50px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 42px;
+		height: 42px;
+	}
 }
 
 .service__link_arrow {
 	width: 31px;
 	height: 31px;
+
+	@media (max-width: 1800px) {
+		width: 19px;
+		height: 19px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 16px;
+		height: 16px;
+	}
 }
 
 
@@ -111,6 +152,17 @@
 	background-color: variables.$color-dark;
 	padding: 30px;
 	margin-top: 30px;
+
+	@media (max-width: 1800px) {
+		padding: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		flex-direction: column-reverse;
+		border-radius: 14px;
+		padding: 25px 15px;
+		margin-top: 22px;
+	}
 }
 
 .info_active {
@@ -119,6 +171,14 @@
 
 .info__content {
 	width: 1309px;
+
+	@media (max-width: 1800px) {
+		width: 912px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
+	}
 }
 
 .info__description {
@@ -129,12 +189,29 @@
 	line-height: 100%;
 	white-space: pre-line;
 	margin-bottom: 40px;
+
+	@media (max-width: 1800px) {
+		font-family: variables.$font-family-abel;
+		font-size: 18px;
+		line-height: 120%;
+		margin-bottom: 28px;
+	}
 }
 
 .info__tags {
 	display: flex;
 	align-items: center;
 	margin-bottom: 40px;
+
+	@media (max-width: 1800px) {
+		justify-content: space-between;
+		margin-bottom: 28px;
+	}
+
+	@media (max-width: 1336px) {
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
 }
 
 .info__tag {
@@ -147,13 +224,33 @@
 	color: variables.$color-dark;
 	font-size: 18px;
 	line-height: 27px;
+	white-space: nowrap;
 	border-radius: 84px;
 	background-color: white;
 	padding: 10px 30px;
+
+	@media (max-width: 1800px) {
+		height: 27px;
+		font-family: variables.$font-family-abel;
+		line-height: 120%;
+		padding: 7px 21px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
+		font-family: variables.$font-family-cygre;
+		font-size: 12px;
+		line-height: 100%;
+		margin-bottom: 10px;
+	}
 }
 
 .info__tag:not(:first-of-type) {
 	margin-left: 30px;
+
+	@media (max-width: 1800px) {
+		margin-left: 0;
+	}
 }
 
 .info__link {
@@ -162,6 +259,14 @@
 
 	&:hover .info__link_arrow {
 		transform: rotate(135deg);
+	}
+
+	@media (max-width: 1800px) {
+		width: 415px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 100%;
 	}
 }
 
@@ -177,7 +282,25 @@
 	font-size: 30px;
 	line-height: 100%;
 	background-image: url("../../assets/images/service_application_background.svg");
+	background-size: cover;
 	padding-left: 60px;
+
+	@media (max-width: 1800px) {
+		width: 372px;
+		height: 49px;
+		font-size: 25px;
+		padding-left: 30px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 265px;
+		height: 36px;
+		font-size: 20px;
+		line-height: 120%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding-left: 20px;
+	}
 }
 
 .info__link_button {
@@ -191,16 +314,51 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+
+	@media (max-width: 1800px) {
+		width: 49px;
+		height: 49px;
+		border: 3px solid white;
+	}
+
+	@media (max-width: 1336px) {
+		width: 36px;
+		height: 36px;
+		border: 2px solid white;
+	}
 }
 
 .info__link_arrow {
 	width: 31px;
 	height: 31px;
 	transition: all .2s ease-in-out;
+
+	@media (max-width: 1800px) {
+		width: 20px;
+		height: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 15px;
+		height: 15px;
+	}
 }
 
 .info__image {
 	width: 381px;
 	height: 238px;
 	border-radius: 10px;
+	
+	@media (max-width: 1800px) {
+		width: 262px;
+		height: 167px;
+		border-radius: 10px;
+	}
+	
+	@media (max-width: 1336px) {
+		width: 100%;
+		height: auto;
+		border-radius: 14px;
+		margin-bottom: 20px;
+	}
 }
