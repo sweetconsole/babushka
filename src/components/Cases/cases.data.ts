@@ -4,7 +4,7 @@ import CasePreviewThree from "../../assets/images/cases/case_preview_3.webp";
 import CasePreviewFour from "../../assets/images/cases/case_preview_4.webp";
 import CasePreviewFive from "../../assets/images/cases/case_preview_5.webp";
 import CasePreviewSix from "../../assets/images/cases/case_preview_6.webp";
-import {casePreviewType} from "./cases.type.ts";
+import {casePreviewType} from "./cases.types.ts";
 
 export const casesPreview: Array<casePreviewType> = [
 	{

@@ -2,6 +2,7 @@ import { FC } from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import Hatch from "../../assets/images/hatch.webp"
+import HatchMobile from "../../assets/images/hatch_2.png"
 import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
 import { socialConfig } from "../../config/social.config.ts"
 import { pageConfig } from "../../config/pages.config.ts"
@@ -14,7 +15,11 @@ const Footer: FC = () => {
 		<footer className={styles.footer}>
 			<Container>
 				<div className={styles.content}>
-					<img className={styles.hatch} src={Hatch} alt="Подвал" />
+					<picture>
+						<source srcSet={HatchMobile} media="(max-width: 1336px)" />
+						<img className={styles.hatch} src={Hatch} alt="Подвал" />
+					</picture>
+
 
 					<div className={styles.socials}>
 						<p className={styles.copyright}>© BABUSHKA 2025</p>

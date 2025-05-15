@@ -1,3 +1,4 @@
+import { SideBoxCarrots } from "./cases.types.ts"
 
 export interface ICasePreview {
 	icon: string,
@@ -5,4 +6,8 @@ export interface ICasePreview {
 	link: string,
 	color: string,
 	delay: number
+}
+
+export interface IBoxCarrots {
+	side: SideBoxCarrots
 }

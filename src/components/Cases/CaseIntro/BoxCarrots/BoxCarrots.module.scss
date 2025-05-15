@@ -1,0 +1,90 @@
+
+.box_carrots {
+	width: 441px;
+	height: 414px;
+	position: relative;
+	
+	@media (max-width: 1800px) {
+		width: 298px;
+		height: 275px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 281px;
+		height: 260px;
+
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.illustrator {
+	width: 118px;
+	height: 117px;
+	position: absolute;
+	top: 39%;
+	left: 9%;
+
+	@media (max-width: 1800px) {
+		width: 81px;
+		height: 80px;
+	}
+}
+
+.photoshop {
+	width: 71px;
+	height: 70px;
+	position: absolute;
+	top: 68%;
+	left: 54%;
+
+	@media (max-width: 1800px) {
+		width: 49px;
+		height: 49px;
+	}
+}
+
+.cabbage_small {
+	width: 97px;
+	height: 90px;
+	position: absolute;
+	right: 4%;
+	bottom: -4%;
+
+	@media (max-width: 1800px) {
+		width: 66px;
+		height: 62px;
+	}
+}
+
+.cabbage_medium {
+	width: 137px;
+	height: 126px;
+	position: absolute;
+	right: -15%;
+	bottom: -3%;
+
+	@media (max-width: 1800px) {
+		width: 94px;
+		height: 86px;
+	}
+}
+
+.figma {
+	width: 168px;
+	height: 168px;
+	position: absolute;
+	top: 32%;
+	left: 6%;
+
+	@media (max-width: 1800px) {
+		width: 116px;
+		height: 115px;
+	}
+}
