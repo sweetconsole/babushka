@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Navigate, Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
-import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage } from "./pages/index.js.ts"
+import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage } from "./pages/index.js.ts"
 import { Header } from "./components"
 import { ScrollTop } from "./components/ui"
 import { pageConfig } from "./config/pages.config.ts"
@@ -17,7 +17,10 @@ const App: FC = () => {
 				<Route path={pageConfig.home} element={<HomePage />} />
 				<Route path={pageConfig.faq} element={<FaqPage />} />
 				<Route path={pageConfig.projects} element={<CasesPage />} />
-				<Route path={pageConfig.blog} element={<ErrorPage />} />
+
+				<Route path={pageConfig.blogs} element={<ErrorPage />} />
+				<Route path={pageConfig.blog} element={<BlogPage />} />
+
 				<Route path={pageConfig.processing_personal_data} element={<ProcessingPersonalDataPage />} />
 				<Route path={pageConfig.thanks} element={<ThanksPage />} />
 

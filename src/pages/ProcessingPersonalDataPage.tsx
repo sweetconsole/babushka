@@ -6,10 +6,11 @@ const ProcessingPersonalDataPage: FC = () => {
     <>
       <main>
         <ProcessingPersonalData />
-				<Feedback />
-        <FAQ />
+
       </main>
 
+			<Feedback />
+			<FAQ />
       <Footer />
     </>
 	)

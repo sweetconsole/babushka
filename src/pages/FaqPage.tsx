@@ -4,10 +4,7 @@ import {FAQ, Footer} from "../components";
 const FaqPage: FC = () => {
 	return (
 		<>
-      <main>
-        <FAQ />
-      </main>
-
+			<FAQ />
 			<Footer />
     </>
 	)

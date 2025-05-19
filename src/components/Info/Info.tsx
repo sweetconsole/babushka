@@ -20,8 +20,8 @@ const Info: FC = () => {
 						<h2 className={styles.title}>Разработка оригинальных сайтов под ключ для ресторанов, баров, кафе и сервисов доставки</h2>
 
 						<ul className={styles.list}>
-							{services.map(({id, icon, description}: ServiceType) => {
-								return <InfoItem key={id} icon={icon} description={description} />
+							{services.map((data: ServiceType) => {
+								return <InfoItem key={data.id} {...data} />
 							})}
 						</ul>
 

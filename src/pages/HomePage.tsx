@@ -27,10 +27,9 @@ const HomePage: FC = () => {
         <BlogsPreview />
         <Feedback />
         <Features />
-
-        <FAQ />
       </main>
 
+      <FAQ />
       <Footer />
     </>
   )

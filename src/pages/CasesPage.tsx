@@ -7,10 +7,10 @@ const CasesPage: FC = () => {
       <main>
 				<CaseIntro />
 				<Cases />
-				<Feedback />
-				<FAQ />
       </main>
 
+			<Feedback />
+			<FAQ />
 			<Footer />
 		</>
 	)

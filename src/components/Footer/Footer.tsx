@@ -41,7 +41,7 @@ const Footer: FC = () => {
 					<div className={styles.block}>
 						<nav className={styles.links}>
 							<Link className={styles.link} to={pageConfig.projects}>Проекты</Link>
-							<Link className={styles.link} to={pageConfig.blog}>Блог</Link>
+							<Link className={styles.link} to={pageConfig.blogs}>Блог</Link>
 
 							<ScrollLink link="faq" style={styles.link} text="Частые Вопросы" />
 						</nav>

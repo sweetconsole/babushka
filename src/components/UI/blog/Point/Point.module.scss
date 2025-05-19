@@ -1,0 +1,16 @@
+@use "../../../../assets/styles/variables.scss";
+
+.point {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.point_number {
+	margin-right: 30px;
+}

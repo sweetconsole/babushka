@@ -1,0 +1,19 @@
+@use "../../../../assets/styles/variables.scss";
+
+.list {
+	margin: 12px 0 12px 18px;
+}
+
+.item {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+	margin-top: 8px;
+}
+
+.item_highlighting {
+	font-weight: variables.$bold;
+	text-transform: uppercase;
+}

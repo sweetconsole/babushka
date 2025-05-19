@@ -25,7 +25,7 @@ const Menu: FC<IMenuProps> = ({active, setActive}) => {
 			<nav className={styles.navigation}>
 				<Link className={styles.link} to={pageConfig.projects} onClick={CloseMenu}>Проекты</Link>
 
-				<Link className={styles.link} to={pageConfig.blog} onClick={CloseMenu}>Блог</Link>
+				<Link className={styles.link} to={pageConfig.blogs} onClick={CloseMenu}>Блог</Link>
 
 				<ScrollLink className={styles.link} to="#faq" onClick={CloseMenu}>
 					Частые Вопросы

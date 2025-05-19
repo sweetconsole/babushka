@@ -1,7 +1,6 @@
 @font-face {
 	font-family: "Abel";
-	src: url("../fonts/abel.woff2") format("woff2"),
-	url("../fonts/abel.woff") format("woff");
+	src: url("../fonts/abel.ttf") format('truetype');
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
 	font-family: "Cygre";
-	src: url("../fonts/сygre-regular.woff2") format("woff2"),
-	url("../fonts/сygre-regular.woff") format("woff");
+	src: url("../fonts/cygre_regular.ttf") format('truetype');
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
 	font-family: "Cygre";
-	src: url("../fonts/сygre-bold.woff2") format("woff2"),
-	url("../fonts/сygre-bold.woff") format("woff");
+	src: url("../fonts/cygre_bold.ttf") format('truetype');
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
 	font-family: "Cygre";
-	src: url("../fonts/cygre-book.woff2") format("woff2"),
-	url("../fonts/cygre-book.woff") format("woff");
+	src: url("../fonts/cygre_regular.ttf") format('truetype');
 	font-style: normal;
 	font-weight: 100;
 	font-display: swap;
@@ -36,8 +32,7 @@
 
 @font-face {
 	font-family: "Rubik";
-	src: url("../fonts/rubik.woff2") format("woff2"),
-	url("../fonts/rubik.woff") format("woff");
+	src: url("../fonts/rubik.ttf") format('truetype');
 	font-style: normal;
 	font-weight: 100;
 	font-display: swap;

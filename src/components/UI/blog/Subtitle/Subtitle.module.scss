@@ -1,0 +1,11 @@
+@use "../../../../assets/styles/variables.scss";
+
+.subtitle {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	font-size: 50px;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}

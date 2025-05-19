@@ -56,7 +56,7 @@ const BlogsPreview: FC = () => {
 						</motion.button>
 					</div>
 
-					<Link to={pageConfig.blog}>
+					<Link to={pageConfig.blogs}>
 						<motion.div className={styles.link}
 												viewport={{once: true}}
 												variants={SlideUp(0.8)}

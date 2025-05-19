@@ -4,7 +4,8 @@ const baseURL = "/babushka/dist/"
 class PageConfig {
 	home = baseURL
 	projects = baseURL + "projects/"
-	blog = baseURL + "blog/"
+	blogs = baseURL + "blog/"
+	blog = baseURL + "blog/:blogURL/"
 	faq = baseURL + "faq/"
 	processing_personal_data = baseURL + "processing_of_personal_data/"
 	thanks = baseURL + "thanks/"
