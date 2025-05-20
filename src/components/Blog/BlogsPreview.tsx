@@ -8,7 +8,7 @@ import { Container, Title } from "../ui"
 import { SlideUp } from "../../utility/animation.ts"
 import BlogPreview from "./BlogPreview/BlogPreview.tsx"
 import { blogsPreview } from "./blogs.data.ts"
-import styles from "./BlogsPreview.module.scss"
+import styles from "./BlogsPreview/BlogsPreview.module.scss"
 
 const BlogsPreview: FC = () => {
 	const [numberBlog, setNumberBlog] = useState([1, 2])

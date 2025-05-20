@@ -1,4 +1,4 @@
-@use "../../assets/styles/variables.scss";
+@use "../../../assets/styles/variables";
 
 .block {
 	margin-top: 90px;
@@ -104,7 +104,7 @@
 	position: relative;
 
 	&:hover .link__text {
-		background-image: url("../../assets/images/link_background-hover.svg");
+		background-image: url("../../../assets/images/link_background-hover.svg");
 	}
 
 	&:hover .link__button {
@@ -138,7 +138,7 @@
 	color: white;
 	font-size: 30px;
 	line-height: 100%;
-	background-image: url("../../assets/images/link_background.svg");
+	background-image: url("../../../assets/images/link_background.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 40px;

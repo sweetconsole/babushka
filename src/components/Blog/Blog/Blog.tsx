@@ -2,12 +2,13 @@ import { FC } from "react"
 import { motion } from "framer-motion"
 import Tangle from "../../../assets/images/tangles/tangle_5.svg"
 import { Feedback, FAQ, Footer } from "../../../components/"
-import { Container } from "../../ui"
+import { Container, ScrollLink } from "../../ui"
 import { Image, List, Point, Subtitle, Text } from "../../ui/blog"
 import { IBlogProps } from "../blogs.interface.ts"
 import { BlogItemType, BlogItemTypes } from "../blogs.types.ts"
 import styles from "./Blog.module.scss"
 import { SlideLeft } from "../../../utility/animation.ts"
+import Arrow from "../../../assets/images/arrow.svg"
 
 const Blog: FC<IBlogProps> = ({title, image, description, date, result, items}) => {
 	const getElementType = (data: BlogItemType) => {
@@ -51,7 +52,16 @@ const Blog: FC<IBlogProps> = ({title, image, description, date, result, items}) 
 						</div>
 
 						<aside className={styles.send}>
+							<ScrollLink link="feedback">
+								<div className={styles.send__block}>
+									<div className={styles.service__text}>остались вопросы?</div>
+									<div className={styles.service__link}>
+										<img className={styles.service__link_arrow} src={Arrow} alt="Подробнее..."/>
+									</div>
+								</div>
+							</ScrollLink>
 
+							<p className={styles.send_text}>Бабушка всегда на связи, заварим чая, обкашляем вопросики!</p>
 						</aside>
 					</div>
 				</Container>

@@ -9,8 +9,27 @@
 	text-transform: uppercase;
 	margin-top: 60px;
 	margin-bottom: 20px;
+
+	@media (max-width: 1800px) {
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 40px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 20px;
+		line-height: 27px;
+	}
 }
 
 .point_number {
 	margin-right: 30px;
+
+	@media (max-width: 1800px) {
+		margin-right: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		margin-right: 15px;
+	}
 }

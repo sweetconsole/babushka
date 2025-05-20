@@ -5,7 +5,7 @@ export {default as Blog} from "./Blog/Blog/Blog.tsx"
 
 export {default as CaseIntro} from "./Cases/CaseIntro/CaseIntro.tsx"
 export {default as CasesPreview} from "./Cases/CasesPreview/CasesPreview.tsx"
-export {default as Cases} from "./Cases/Cases.tsx"
+export {default as Cases} from "./Cases/Cases/Cases.tsx"
 
 export {default as Error} from "./Error/Error.tsx"
 export {default as Experience} from "./Experiences/Experience.tsx"

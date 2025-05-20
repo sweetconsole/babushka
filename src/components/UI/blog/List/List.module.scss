@@ -1,7 +1,11 @@
 @use "../../../../assets/styles/variables.scss";
 
 .list {
-	margin: 12px 0 12px 18px;
+	margin: 12px 0 12px 32px;
+
+	@media (max-width: 1800px) {
+
+	}
 }
 
 .item {
@@ -11,6 +15,10 @@
 	font-size: 20px;
 	line-height: 120%;
 	margin-top: 8px;
+
+	@media (max-width: 1800px) {
+		font-size: 14px;
+	}
 }
 
 .item_highlighting {

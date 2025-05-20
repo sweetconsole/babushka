@@ -1,8 +1,8 @@
 import { FC } from "react"
-import { Container, SubTitle, Title } from "../../components/ui"
-import {shuffledArray} from "../../utility/shuffledArray.ts"
-import CasePreview from "./CasePreview/CasePreview.tsx"
-import { casesPreview } from "./cases.data.ts"
+import { Container, SubTitle, Title } from "../../ui"
+import {shuffledArray} from "../../../utility/shuffledArray.ts"
+import CasePreview from "../CasePreview/CasePreview.tsx"
+import { casesPreview } from "../cases.data.ts"
 import styles from "./Cases.module.scss"
 
 const Cases: FC = () => {

@@ -15,6 +15,12 @@ import BlogTwoImageFour from "../../assets/images/blogs/blog_2/image_4.png"
 
 import BlogThreeImageIntro from "../../assets/images/blogs/blog_3/intro.png"
 
+import BlogFourImageIntro from "../../assets/images/blogs/blog_4/intro.png"
+import BlogFourImageOne from "../../assets/images/blogs/blog_4/image_1.png"
+import BlogFourImageTwo from "../../assets/images/blogs/blog_4/image_2.png"
+import BlogFourImageThree from "../../assets/images/blogs/blog_4/image_3.png"
+import BlogFourImageFour from "../../assets/images/blogs/blog_4/image_4.png"
+
 import { BlogType, BlogPreviewType, BlogItemTypes } from "./blogs.types.ts"
 
 export const blogsPreview: Array<BlogPreviewType> = [
@@ -225,7 +231,6 @@ export const blogs: Array<BlogType> = [
 			{type: BlogItemTypes.IMAGE, image: BlogTwoImageFour}
 		]
 	},
-
 	{
 		link: "where_find_customers_in_2025",
 		image: BlogThreeImageIntro,
@@ -286,19 +291,85 @@ export const blogs: Array<BlogType> = [
 			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Мы поможем создать систему, которая стимулирует клиентов делиться своим опытом и приводить новых людей в ваш бизнес."},
 		]
 	},
-
 	{
-		link: "",
-		image: BlogTwoImageIntro,
-		title: "",
-		description: "",
-		date: "",
+		link: "web_design_trends_2024_2025_what_does_grandmother_say",
+		image: BlogFourImageIntro,
+		title: "Тренды веб-дизайна 2025:\nчто говорит Бабушка?",
+		description: "Милок, ты же знаешь, у Бабушки глаз наметан. Сама жизнь подсказывает, что в тренде сегодня, а что завтра покроется пылью. Давай-ка разберем, что будет задавать стиль в веб-дизайне в ближайшие годы. Записывай, чтобы быть в курсе, а то потом опять придется бегать за Бабушкой за советом!",
+		date: "16.11.24",
 		result: {
-			title: "",
-			description: ""
+			title: "ИТОГ ОТ БАБУШКИ",
+			description: "Милок, тренды — это не просто о красоте, это о том, как сделать сайт полезным, удобным и современным. Помни, что хороший дизайн — это не только вау-эффект, но и рабочий инструмент. А если хочешь, чтобы твой проект был в тренде, зови Бабушку. Мы сделаем так, чтобы твой сайт был на шаг впереди остальных."
 		},
 		items: [
+			{type: BlogItemTypes.IMAGE, image: BlogFourImageOne},
 
+			{type: BlogItemTypes.POINT, point: {number: 1, text: "САЙТЫ С ХАРАКТЕРОМ"}},
+			{type: BlogItemTypes.TEXT, text: "«Не будь как все», — говорила моя Бабушка, и это правило работает в веб-дизайне как нигде больше. В 2024 году сайты перестают быть просто функциональными и превращаются в брендовых рассказчиков. Это значит:"},
+			{
+				type: BlogItemTypes.LIST,
+				list: [
+					{text: "УНИКАЛЬНАЯ ТИПОГРАФИКА, которая сразу выделяет вас из толпы"},
+					{text: "АНИМАЦИИ, которые рассказывают историю, а не крутятся просто для красоты"},
+					{text: "ПЕРСОНАЛИЗАЦИЯ ПОД ПОЛЬЗОВАТЕЛЯ — от приветствия до кнопки «Купи это срочно!»"},
+				]
+			},
+			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Каждому сайту — свой характер. Хотите, чтобы ваш проект был «с изюминкой»? Бабушка знает, где эту изюминку найти."},
+
+			{type: BlogItemTypes.POINT, point: {number: 2, text: "ЧИСТОТА МИНИМАЛИЗМ С АКЦЕНТОМ"}},
+			{type: BlogItemTypes.TEXT, text: "«Меньше мишуры — больше смысла», — учила нас Бабушка.\nМинимализм продолжает держать планку, но теперь к нему добавляются яркие акценты:"},
+			{
+				type: BlogItemTypes.LIST,
+				list: [
+					{text: "ЦВЕТОВЫЕ ВСПЫШКИ на фоне нейтральной палитры"},
+					{text: "КОНТРАСТНЫЕ ЭЛЕМЕНТЫ, которые привлекают внимание к главному"},
+					{text: "ИСПОЛЬЗОВАНИЕ ПРОСТРАНСТВА, где даже пустота работает на дизайн"},
+				]
+			},
+			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Мы создаем сайты, которые дышат. Никакой перегрузки и ненужных деталей — только красота и смысл."},
+
+			{type: BlogItemTypes.IMAGE, image: BlogFourImageTwo},
+
+			{type: BlogItemTypes.POINT, point: {number: 3, text: "АНИМАЦИИ: ПЛАВНОСТЬ И ИНТЕРАКТИВНОСТЬ"}},
+			{type: BlogItemTypes.TEXT, text: "«Хочешь, чтобы тобой любовались? Двигайся красиво», — любила повторять Бабушка. Веб-дизайн уходит от назойливых вспышек и резких движений. На смену приходят: "},
+			{
+				type: BlogItemTypes.LIST,
+				list: [
+					{text: "Плавные переходы между страницами"},
+					{text: "Микроанимации, которые оживляют кнопки, иконки и меню."},
+					{text: "Анимация прокрутки, которая увлекает, а не раздражает."}
+				]
+			},
+			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Мы подстраиваем каждую анимацию под нужды пользователя. Никакого «лишь бы было красиво» — только функциональная магия."},
+
+			{type: BlogItemTypes.IMAGE, image: BlogFourImageThree},
+
+			{type: BlogItemTypes.POINT, point: {number: 4, text: "3D-ЭЛЕМЕНТЫ И ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ"}},
+			{type: BlogItemTypes.TEXT, text: "«Раньше на ярмарку за красотой ходили, теперь её прямо на сайте увидеть можно», — Бабушка в восторге от технологий. Тренд на 3D-дизайн и элементы VR продолжает набирать обороты. Теперь это: 3D-объекты, которые можно рассмотреть с любого ракурса. Интерактивные элементы, вовлекающие пользователя в процесс. Виртуальные магазины, где можно «примерить» товар. Что делает Бабушка: Делаем сайты, которые впечатляют. 3D — это не просто красиво, это вовлеченность и «вау-эффект»."},
+
+			{type: BlogItemTypes.POINT, point: {number: 5, text: "ТЕМНАЯ ТЕМА И МЯГКИЕ ГРАДИЕНТЫ"}},
+			{type: BlogItemTypes.TEXT, text: "«Побольше тьмы, но не уныния», — Бабушка обожает стильные темные сайты. Темная тема уже полюбилась пользователям, но теперь она обогащается градиентами и мягкими световыми акцентами:"},
+			{
+				type: BlogItemTypes.LIST,
+				list: [
+					{text: "МОНОХРОМНЫЕ ДИЗАЙНЫ с яркими вспышками."},
+					{text: "ГРАДИЕНТЫ, которые создают глубину. Идеально подходящая для глаз палитра."},
+				]
+			},
+			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Подберем цвета так, чтобы ваш сайт смотрелся и днём, и ночью. Главное, чтобы клиенту было удобно."},
+
+			{type: BlogItemTypes.IMAGE, image: BlogFourImageFour},
+
+			{type: BlogItemTypes.POINT, point: {number: 6, text: "УМНЫЕ ИНТЕРФЕЙСЫ С ПОМОЩЬЮ AI"}},
+			{type: BlogItemTypes.TEXT, text: "«Когда умный помощник рядом, даже чайник закипит вовремя», — Бабушка о будущем AI. Сайты становятся умнее и удобнее: Чат-боты, которые понимают запросы с полуслова."},
+			{
+				type: BlogItemTypes.LIST,
+				list: [
+					{highlighting: "Персонализированные рекомендации", text: ""},
+					{highlighting: "Голосовые интерфейсы для полного комфорта", text: ""},
+				]
+			},
+			{type: BlogItemTypes.TEXT, text: "Что делает Бабушка: Мы не только внедряем AI, но и делаем это душевно. Ваш сайт станет другом для клиента, а не просто инструментом."},
 		]
 	},
 ]

@@ -2,5 +2,19 @@
 .image {
 	width: 1177px;
 	height: 700px;
+	border-radius: 30px;
 	margin-top: 60px;
+
+	@media (max-width: 1800px) {
+		width: 807px;
+		height: 480px;
+		border-radius: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 330px;
+		height: 196px;
+		border-radius: 15px;
+		margin-top: 30px;
+	}
 }
