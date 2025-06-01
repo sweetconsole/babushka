@@ -1,0 +1,41 @@
+
+.block {
+	margin-top: 90px;
+	
+	@media (max-width: 1336px) {
+		margin-top: 60px;
+	}
+}
+
+.container {
+	padding: 0 60px;
+	
+	@media (max-width: 1800px) {
+		padding: 0 40px;
+	}
+
+	@media (max-width: 1336px) {
+		padding: 0;
+	}
+}
+
+.blogs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 60px;
+
+	@media (max-width: 1800px) {
+		margin-top: 40px;
+	}
+
+	@media (max-width: 1336px) {
+		gap: 30px;
+		margin-top: 30px;
+
+		article {
+			margin-bottom: 0;
+		}
+	}
+}

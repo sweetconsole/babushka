@@ -1,14 +1,14 @@
 import { FC } from "react"
 import { motion } from "framer-motion"
-import Tangle from "../../../assets/images/tangles/tangle_5.svg"
-import { Feedback, FAQ, Footer } from "../../../components/"
+import Arrow from "../../../assets/images/arrow.svg"
+import { Feedback, FAQ, Footer, Result } from "../../../components/"
 import { Container, ScrollLink } from "../../ui"
+import { SlideLeft } from "../../../utility/animation.ts"
 import { Image, List, Point, Subtitle, Text } from "../../ui/blog"
 import { IBlogProps } from "../blogs.interface.ts"
 import { BlogItemType, BlogItemTypes } from "../blogs.types.ts"
 import styles from "./Blog.module.scss"
-import { SlideLeft } from "../../../utility/animation.ts"
-import Arrow from "../../../assets/images/arrow.svg"
+
 
 const Blog: FC<IBlogProps> = ({title, image, description, date, result, items}) => {
 	const getElementType = (data: BlogItemType) => {
@@ -37,9 +37,7 @@ const Blog: FC<IBlogProps> = ({title, image, description, date, result, items}) 
 						{date}
 					</motion.p>
 
-					<img className={styles.image} src={image} alt="Превью Блога" loading="lazy"/>
-
-
+					<img className={styles.image} src={image} alt="Превью Блога"/>
 					<h1 className={styles.title}>{title}</h1>
 					<p className={styles.description}>{description}</p>
 					<div className={styles.line}></div>
@@ -66,14 +64,7 @@ const Blog: FC<IBlogProps> = ({title, image, description, date, result, items}) 
 					</div>
 				</Container>
 
-				<div className={styles.result_block}>
-					<img className={styles.result_tangle} src={Tangle} alt="" />
-
-					<div className={styles.result}>
-						<h3 className={styles.result_title}>{result.title}</h3>
-						<p className={styles.result_description}>{result.description}</p>
-					</div>
-				</div>
+				<Result {...result} />
 
 			</article>
 

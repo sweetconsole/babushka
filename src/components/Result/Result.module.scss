@@ -1,0 +1,91 @@
+@use "../../assets/styles/variables.scss";
+
+.block {
+	position: relative;
+	margin-top: 110px;
+	
+	@media (max-width: 1800px) {
+		margin-top: 90px;
+	}
+
+	@media (max-width: 1336px) {
+		margin-top: 30px;
+		margin-bottom: 130px;
+	}
+}
+
+.tangle {
+	width: 1700px;
+	height: 266px;
+	position: absolute;
+	z-index: -1;
+	top: -50px;
+	right: 0;
+	
+	@media (max-width: 1336px) {
+		width: 349px;
+		height: 118px;
+		top: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.content {
+	width: 925px;
+	background-color: white;
+	border: 2px solid variables.$color-dark;
+	border-radius: 30px;
+	padding: 40px;
+	margin: 0 auto;
+
+	@media (max-width: 1800px) {
+		width: 645px;
+		padding: 27px;
+		border-radius: 20px;
+	}
+
+	@media (max-width: 1336px) {
+		width: 330px;
+		padding: 20px;
+		border-radius: 14px;
+	}
+}
+
+.title {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 30px;
+	line-height: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: pre-wrap;
+	
+	@media (max-width: 1800px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 20px;
+	}
+}
+
+.description {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 20px;
+	line-height: 120%;
+	text-align: center;
+	white-space: pre-wrap;
+
+	@media (max-width: 1800px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 1336px) {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,57 @@
+@use "../../../assets/styles/variables.scss";
+
+.block {
+	padding-bottom: 45px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	.title_line:first-of-type {
+		padding-right: 25px;
+	}
+
+	margin-bottom: 75px;
+}
+
+.title_line {
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 70px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+
+.line {
+	margin-top: 250px;
+}
+
+.newspaper {
+	width: 814px;
+	height: 569px;
+}
+
+.description {
+	width: 700px;
+	position: absolute;
+	bottom: -45px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+	font-family: variables.$font-family-abel;
+	font-weight: variables.$regular;
+	color: variables.$color-dark;
+	font-size: 30px;
+	line-height: 100%;
+	text-align: center;
+}

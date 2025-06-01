@@ -10,14 +10,14 @@ export const casesPreview: Array<casePreviewType> = [
 	{
 		id: 1,
 		icon: CasePreviewOne,
-		title: "Touche — Перезапуск сайта винного ресторана",
+		title: "Touche — Перезапуск сайта\nвинного ресторана",
 		link: "",
 		color: "#1E1E1E",
 	},
 	{
 		id: 2,
 		icon: CasePreviewTwo,
-		title: "ТУТ БАР — создание сайта для доставки вкусного",
+		title: "ТУТ БАР — создание сайта\nдля доставки вкусного",
 		link: "",
 		color: "#FFFFFF",
 	},

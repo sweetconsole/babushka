@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { useParams, Navigate } from "react-router"
 import { blogs } from "../components/Blog/blogs.data.ts"
-import { Blog } from "../components/"
+import { Blog } from "../components/Blog"
 import { BlogType } from "../components/Blog/blogs.types.ts"
 import { pageConfig } from "../config/pages.config.ts"
 

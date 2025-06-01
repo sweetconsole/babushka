@@ -1,8 +1,5 @@
 export {default as AdditionalServices} from "./AdditionalServices/AdditionalServices.tsx"
 
-export {default as BlogsPreview} from "./Blog/BlogsPreview.tsx"
-export {default as Blog} from "./Blog/Blog/Blog.tsx"
-
 export {default as CaseIntro} from "./Cases/CaseIntro/CaseIntro.tsx"
 export {default as CasesPreview} from "./Cases/CasesPreview/CasesPreview.tsx"
 export {default as Cases} from "./Cases/Cases/Cases.tsx"
@@ -17,6 +14,7 @@ export {default as Header} from "./Header/Header.tsx"
 export {default as HowWork} from "./HowWork/HowWork.tsx"
 export {default as Info} from "./Info/Info.tsx"
 export {default as Intro} from "./Intro/Intro.tsx"
+export {default as Result} from "./Result/Result.tsx"
 export {default as ProcessingPersonalData} from "./ProcessingPersonalData/ProcessingPersonalData.tsx"
 export {default as Services} from "./Services/Services.tsx"
 export {default as Thanks} from "./Thanks/Thanks.tsx"

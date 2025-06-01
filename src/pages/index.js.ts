@@ -1,7 +1,9 @@
+export {default as BlogPage} from "./BlogPage.tsx"
+export {default as BlogsPage} from "./BlogsPage.tsx"
 export {default as ErrorPage} from "./ErrorPage.tsx"
 export {default as FaqPage} from "./FaqPage.tsx"
 export {default as HomePage} from "./HomePage.tsx"
 export {default as ProcessingPersonalDataPage} from "./ProcessingPersonalDataPage.tsx"
 export {default as ThanksPage} from "./ThanksPage.tsx"
 export {default as CasesPage} from "./CasesPage.tsx"
-export {default as BlogPage} from "./BlogPage.tsx"
+

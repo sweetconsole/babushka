@@ -10,7 +10,6 @@ import "./assets/fonts/cygre_book.ttf"
 import "./assets/fonts/cygre_regular.ttf"
 import "./assets/fonts/rubik.ttf"
 
-
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<App />

@@ -1,14 +1,14 @@
 import { FC, useState } from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import ArrowDark from "../../assets/images/arrow_dark.svg"
-import Arrow from "../../assets/images/arrow.svg"
-import { pageConfig } from "../../config/pages.config.ts"
-import { Container, Title } from "../ui"
-import { SlideUp } from "../../utility/animation.ts"
-import BlogPreview from "./BlogPreview/BlogPreview.tsx"
-import { blogsPreview } from "./blogs.data.ts"
-import styles from "./BlogsPreview/BlogsPreview.module.scss"
+import ArrowDark from "../../../assets/images/arrow_dark.svg"
+import Arrow from "../../../assets/images/arrow.svg"
+import { pageConfig } from "../../../config/pages.config.ts"
+import { Container, Title } from "../../ui"
+import { SlideUp } from "../../../utility/animation.ts"
+import BlogPreview from "../BlogPreview/BlogPreview.tsx"
+import { blogsPreview } from "../blogs.data.ts"
+import styles from "./BlogsPreview.module.scss"
 
 const BlogsPreview: FC = () => {
 	const [numberBlog, setNumberBlog] = useState([1, 2])

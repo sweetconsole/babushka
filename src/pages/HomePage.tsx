@@ -1,3 +1,4 @@
+import {FC} from "react";
 import {Intro,
   Info,
   CasesPreview,
@@ -5,12 +6,11 @@ import {Intro,
   Services,
   AdditionalServices,
   HowWork,
-  BlogsPreview,
   Feedback,
   Features,
   FAQ,
   Footer } from "../components";
-import {FC} from "react";
+import { BlogsPreview } from "../components/Blog"
 
 const HomePage: FC = () => {
   return (
