@@ -20,7 +20,6 @@
         "vite": "^6.3.5"
     },
     "browserslist": ["cover 99.5%"],
-    "homepage": "https://sweetconsole.github.io/babushka/dist/",
     "private": true,
     "scripts": {
         "dev": "vite",

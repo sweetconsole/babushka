@@ -1,5 +1,5 @@
 
-const baseURL = "/babushka/dist/"
+const baseURL = "/"
 
 class PageConfig {
 	home = baseURL
