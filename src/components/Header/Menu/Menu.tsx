@@ -1,6 +1,5 @@
 import { FC } from "react"
 import { Link } from "react-router-dom"
-import {Link as ScrollLink} from "react-scroll"
 import CloseIcon from "../../../assets/images/menu_close.svg"
 import Logo from "../../../assets/images/logos/logo.svg"
 import { TelegramIcon, WhatsAppIcon } from "../../ui"
@@ -27,9 +26,9 @@ const Menu: FC<IMenuProps> = ({active, setActive}) => {
 
 				<Link className={styles.link} to={pageConfig.blogs} onClick={CloseMenu}>Блог</Link>
 
-				<ScrollLink className={styles.link} to="#faq" onClick={CloseMenu}>
+				<Link className={styles.link} to={pageConfig.faq} onClick={CloseMenu}>
 					Частые Вопросы
-				</ScrollLink>
+				</Link>
 
 				<Link className={styles.logo} to={pageConfig.home} onClick={CloseMenu}>
 					<img className={styles.logo__icon} src={Logo} alt="BABUSHKA" />
