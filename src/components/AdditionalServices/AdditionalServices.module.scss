@@ -9,7 +9,7 @@
 }
 
 .content {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	color: variables.$color-dark;
 	line-height: 120%;
 }
@@ -70,7 +70,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$bold;
 	color: white;
 	font-size: 30px;
@@ -84,7 +84,7 @@
 	@media (max-width: 1800px) {
 		width: 352px;
 		height: 49px;
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		font-weight: variables.$regular;
 		font-size: 20px;
 		line-height: 24px;
@@ -94,7 +94,7 @@
 	@media (max-width: 1336px) {
 		width: 294px;
 		height: 42px;
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: variables.$bold;
 		font-size: 17px;
 		line-height: 20px;
@@ -182,7 +182,7 @@
 }
 
 .info__description {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 30px;
@@ -191,7 +191,7 @@
 	margin-bottom: 40px;
 
 	@media (max-width: 1800px) {
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		font-size: 18px;
 		line-height: 120%;
 		margin-bottom: 28px;
@@ -219,7 +219,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 18px;
@@ -231,14 +231,14 @@
 
 	@media (max-width: 1800px) {
 		height: 27px;
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		line-height: 120%;
 		padding: 7px 21px;
 	}
 
 	@media (max-width: 1336px) {
 		width: 100%;
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-size: 12px;
 		line-height: 100%;
 		margin-bottom: 10px;
@@ -276,7 +276,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 30px;

@@ -9,7 +9,7 @@
 }
 
 .title {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 50px;
@@ -90,7 +90,7 @@
 .form__label {
 	display: flex;
 	flex-direction: column;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;
@@ -124,7 +124,7 @@
 }
 
 .form__error {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$bold;
 	color: #ff2525;
 	font-size: 15px;
@@ -175,7 +175,7 @@
 }
 
 .form__input_file_name {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	text-transform: initial;
@@ -189,7 +189,7 @@
 .form__input_file_button {
 	display: flex;
 	align-items: center;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 20px;
@@ -236,7 +236,7 @@
 	width: 602px;
 	height: 72px;
 	position: relative;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	background: transparent;
 	border: none;

@@ -153,7 +153,7 @@
 }
 
 .link {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 20px;
@@ -198,7 +198,7 @@
 }
 
 .text {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 20px;
@@ -217,7 +217,7 @@
 	position: absolute;
 	top: 30px;
 	right: 30px;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-accent;
 	font-size: 20px;
@@ -238,7 +238,7 @@
 	@media (max-width: 1800px) {
 		top: 20px;
 		right: 20px;
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: variables.$bold;
 		font-size: 14px;
 		line-height: 26px;
@@ -259,7 +259,7 @@
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 20px;
@@ -278,7 +278,7 @@
 	@media (max-width: 1800px) {
 		bottom: 20px;
 		right: 20px;
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: variables.$bold;
 		font-size: 14px;
 		line-height: 26px;
@@ -317,7 +317,7 @@
 	top: -40px;
 	left: 50%;
 	transform: translateX(-50%);
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: 100;
 	color: variables.$color-dark;
 	font-size: 70px;

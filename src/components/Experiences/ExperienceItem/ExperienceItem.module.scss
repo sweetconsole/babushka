@@ -55,7 +55,7 @@
 }
 
 .title {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-accent;
 	font-size: 30px;
@@ -70,13 +70,13 @@
 	}
 
 	@media (max-width: 1336px) {
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: variables.$bold;
 	}
 }
 
 .description {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;

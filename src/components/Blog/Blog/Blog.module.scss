@@ -13,7 +13,7 @@
 }
 
 .date {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;
@@ -39,7 +39,7 @@
 }
 
 .title {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$bold;
 	color: variables.$color-dark;
 	font-size: 50px;
@@ -50,7 +50,7 @@
 	margin-top: 80px;
 
 	@media (max-width: 1800px) {
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		font-weight: variables.$regular;
 		font-size: 40px;
 		margin-top: 40px;
@@ -64,7 +64,7 @@
 }
 
 .description {
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	font-weight: variables.$regular;
 	font-size: 30px;
 	line-height: 100%;
@@ -73,7 +73,7 @@
 	margin-top: 40px;
 
 	@media (max-width: 1800px) {
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		font-weight: variables.$regular;
 		font-size: 18px;
 		line-height: 120%;
@@ -156,7 +156,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 30px;
@@ -169,7 +169,7 @@
 	@media (max-width: 1800px) {
 		width: 352px;
 		height: 49px;
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		font-weight: variables.$regular;
 		font-size: 20px;
 		line-height: 24px;
@@ -179,7 +179,7 @@
 	@media (max-width: 1336px) {
 		width: 294px;
 		height: 42px;
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: variables.$bold;
 		font-size: 17px;
 		line-height: 20px;
@@ -229,7 +229,7 @@
 
 .send_text {
 	width: 446px;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 20px;

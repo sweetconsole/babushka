@@ -30,7 +30,7 @@
 
 .title {
 	width: 1070px;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	font-size: 70px;
 	line-height: 120%;
@@ -38,7 +38,7 @@
 	position: relative;
 
 	&:after, &:before {
-		font-family: variables.$font-family-cygre;
+		font-family: variables.$font-family-secondary;
 		font-weight: 100;
 		color: variables.$color-accent;
 		display: inline-block;
@@ -144,7 +144,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 30px;

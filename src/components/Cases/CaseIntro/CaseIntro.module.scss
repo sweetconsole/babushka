@@ -15,7 +15,7 @@
 
 .title {
 	width: 1037px;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 70px;
@@ -41,7 +41,7 @@
 }
 
 .description {
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: variables.$color-dark;
 	font-size: 27px;
@@ -94,7 +94,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: variables.$font-family-abel;
+	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
 	color: white;
 	font-size: 30px;

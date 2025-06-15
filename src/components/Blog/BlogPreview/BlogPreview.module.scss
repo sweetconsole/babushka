@@ -4,14 +4,14 @@
 	width: 810px;
 	height: 560px;
 	position: relative;
-	font-family: variables.$font-family-cygre;
+	font-family: variables.$font-family-secondary;
 	color: variables.$color-dark;
 	border-radius: 30px;
 	background-color: #FFFED9;
 	padding: 20px;
 	
 	@media (max-width: 1800px) {
-		font-family: variables.$font-family-abel;
+		font-family: variables.$font-family-primary;
 		width: 555px;
 		height: 405px;
 		border-radius: 20px;
