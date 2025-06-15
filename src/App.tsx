@@ -2,6 +2,7 @@ import { FC } from "react"
 import { Navigate, Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage, BlogsPage } from "./pages/index.js.ts"
 import { Header } from "./components"
 import { ScrollTop } from "./components/ui"
@@ -31,6 +32,7 @@ const App: FC = () => {
 			</Routes>
 
 			<Analytics />
+			<SpeedInsights />
 		</BrowserRouter>
 	)
 }
