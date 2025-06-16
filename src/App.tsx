@@ -3,10 +3,10 @@ import { Navigate, Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
-import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage, BlogsPage } from "./pages/index.js.ts"
+import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage, BlogsPage, CasePage } from "./pages/index.js.ts"
 import { Header } from "./components"
 import { ScrollTop } from "./components/ui"
-import { pageConfig } from "./config/pages.config.ts"
+import { pagesConfig } from "./config/pages.config.ts"
 import "./App.scss"
 
 const App: FC = () => {
@@ -16,19 +16,20 @@ const App: FC = () => {
 			<Header />
 
 			<Routes>
-				<Route path={pageConfig.home} element={<HomePage />} />
-				<Route path={pageConfig.faq} element={<FaqPage />} />
-				<Route path={pageConfig.processing_personal_data} element={<ProcessingPersonalDataPage />} />
-				<Route path={pageConfig.thanks} element={<ThanksPage />} />
+				<Route path={pagesConfig.home} element={<HomePage />} />
+				<Route path={pagesConfig.faq} element={<FaqPage />} />
+				<Route path={pagesConfig.processing_personal_data} element={<ProcessingPersonalDataPage />} />
+				<Route path={pagesConfig.thanks} element={<ThanksPage />} />
 
-				<Route path={pageConfig.projects} element={<CasesPage />} />
+				<Route path={pagesConfig.case} element={<CasePage />} />
+				<Route path={pagesConfig.cases} element={<CasesPage />} />
 
-				<Route path={pageConfig.blog} element={<BlogPage />} />
-				<Route path={pageConfig.blogs} element={<BlogsPage />} />
+				<Route path={pagesConfig.blog} element={<BlogPage />} />
+				<Route path={pagesConfig.blogs} element={<BlogsPage />} />
 
 
-				<Route path={pageConfig.error404} element={<ErrorPage />} />
-				<Route path="*" element={<Navigate to={pageConfig.error404} replace />} />
+				<Route path={pagesConfig.error404} element={<ErrorPage />} />
+				<Route path="*" element={<Navigate to={pagesConfig.error404} replace />} />
 			</Routes>
 
 			<Analytics />

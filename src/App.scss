@@ -10,6 +10,8 @@
 }
 
 body {
+	font-family: variables.$font-family-primary;
+	color: variables.$color-dark;
 	overflow-x: hidden;
 }
 

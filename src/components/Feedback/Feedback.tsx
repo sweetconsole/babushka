@@ -5,13 +5,13 @@ import { SubmitHandler, useForm } from "react-hook-form"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
 import { Container, Field, Select, SubTitle } from "../ui"
-import { pageConfig } from "../../config/pages.config.ts"
+import { pagesConfig } from "../../config/pages.config.ts"
+import { useMediaQuery } from "../../hooks/useMediaQuery.ts"
 import { validName, validPhone } from "../../config/valid.config.ts"
 import { randomName } from "../../utility/randomName.ts"
 import { connections, services } from "./feedback.data.ts"
 import { IFeedbackForm } from "./feedback.interface.ts"
 import styles from "./Feedback.module.scss"
-import { useMediaQuery } from "../../hooks/useMediaQuery.ts"
 
 const Feedback: FC = () => {
 	const [fileName, setFileName] = useState("")
@@ -34,7 +34,7 @@ const Feedback: FC = () => {
 	const onSubmit: SubmitHandler<IFeedbackForm> = data => {
 		console.log(data)
 
-		navigate(pageConfig.thanks)
+		navigate(pagesConfig.thanks)
 	}
 
 	const getRows = () => {

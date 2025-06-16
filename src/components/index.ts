@@ -1,5 +1,6 @@
 export {default as AdditionalServices} from "./AdditionalServices/AdditionalServices.tsx"
 
+export {default as Case} from "./Cases/Case/Case.tsx"
 export {default as CaseIntro} from "./Cases/CaseIntro/CaseIntro.tsx"
 export {default as CasesPreview} from "./Cases/CasesPreview/CasesPreview.tsx"
 export {default as Cases} from "./Cases/Cases/Cases.tsx"

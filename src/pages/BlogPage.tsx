@@ -3,16 +3,16 @@ import { useParams, Navigate } from "react-router"
 import { blogs } from "../components/Blog/blogs.data.ts"
 import { Blog } from "../components/Blog"
 import { BlogType } from "../components/Blog/blogs.types.ts"
-import { pageConfig } from "../config/pages.config.ts"
+import { pagesConfig } from "../config/pages.config.ts"
 
 const BlogPage: FC = () => {
 	const params = useParams()
 	let blog: BlogType = blogs[0]
 
 	const isBlog = () => {
-		for (const item of blogs) {
-			if (item.link == params.blogURL) {
-				blog = item
+		for (const article of blogs) {
+			if (article.link == params.blogURL) {
+				blog = article
 				return true
 			}
 		}
@@ -22,9 +22,9 @@ const BlogPage: FC = () => {
 	return (
 		<>
 			{isBlog() ? (
-					<Blog title={blog.title} image={blog.image} description={blog?.description} date={blog?.date} result={blog?.result} items={blog?.items} />
+					<Blog {...blog} />
 			) : (
-				<Navigate to={pageConfig.error404} />
+				<Navigate to={pagesConfig.error404} />
 			)}
 		</>
 	)

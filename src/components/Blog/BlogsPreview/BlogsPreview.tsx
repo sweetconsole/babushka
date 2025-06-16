@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import ArrowDark from "../../../assets/images/arrow_dark.svg"
 import Arrow from "../../../assets/images/arrow.svg"
-import { pageConfig } from "../../../config/pages.config.ts"
+import { pagesConfig } from "../../../config/pages.config.ts"
 import { Container, Title } from "../../ui"
 import { SlideUp } from "../../../utility/animation.ts"
 import BlogPreview from "../BlogPreview/BlogPreview.tsx"
@@ -56,7 +56,7 @@ const BlogsPreview: FC = () => {
 						</motion.button>
 					</div>
 
-					<Link to={pageConfig.blogs}>
+					<Link to={pagesConfig.blogs}>
 						<motion.div className={styles.link}
 												viewport={{once: true}}
 												variants={SlideUp(0.8)}

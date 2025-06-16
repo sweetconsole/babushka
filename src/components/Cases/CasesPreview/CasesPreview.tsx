@@ -21,7 +21,7 @@ const CasesPreview: FC = () => {
           <SubTitle text="Мы делаем фокус не просто на красоте, а на сайтах, которые «живут» и приносят пользу. Бабушка знает, как это важно, и заботится о каждом сайте, как о своем доме." animate />
 
           <div className={styles.cases}>
-            {randomCases.map((data) => { return <CasePreview key={data.id} {...data} delay={0.2 * (randomCases.indexOf(data) + 1)} /> }) }
+            {randomCases.map((data) => { return <CasePreview key={data.link} {...data} delay={0.2 * (randomCases.indexOf(data) + 1)} /> }) }
 
             <Link to="projects/">
               <motion.div className={styles.link}

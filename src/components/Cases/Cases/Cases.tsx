@@ -14,7 +14,7 @@ const Cases: FC = () => {
 					<SubTitle text="Каждый проект — это результат заботы и опыта. Наши кейсы говорят за нас: от идеи до успешного результата. Мы расскажем, как подходили к задачам, и покажем результаты." animate />
 
 					<div className={styles.cases}>
-						{shuffledArray(casesPreview).map((data) => { return <CasePreview key={data.id} {...data} delay={0.2 * (casesPreview.indexOf(data) + 1)} /> }) }
+						{shuffledArray(casesPreview).map((data) => { return <CasePreview key={data.link} {...data} delay={0.2 * (casesPreview.indexOf(data) + 1)} /> }) }
 					</div>
 				</div>
 			</Container>

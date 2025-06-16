@@ -13,7 +13,7 @@ const Blogs: FC = () => {
 
           <div className={styles.blogs}>
             {blogsPreview.map((data) => (
-              <BlogPreview key={data.id} {...data} link={`../${data.link}`} delay={0.2 * (data.id + 1)}  />
+              <BlogPreview key={data.id} {...data} delay={0.2 * (data.id + 1)}  />
             ))}
           </div>
 				</div>

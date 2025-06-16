@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
 import Logo from "../../assets/images/logos/logo.svg"
 import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
-import { pageConfig } from "../../config/pages.config.ts"
+import { pagesConfig } from "../../config/pages.config.ts"
 import { socialConfig } from "../../config/social.config.ts"
 import { SlideBottom } from "../../utility/animation.ts"
 import Menu from "./Menu/Menu.tsx"
@@ -27,19 +27,19 @@ const Header: FC = () => {
         <Container>
           <div className={styles.block}>
             <nav className={styles.navigation}>
-              <Link className={styles.navigation_link} to={pageConfig.projects}>
+              <Link className={styles.navigation_link} to={pagesConfig.cases}>
                 <motion.div viewport={{once: true}} variants={SlideBottom(0.2)} initial="initial" whileInView="animate">
                   Проекты
                 </motion.div>
               </Link>
-              <Link className={styles.navigation_link} to={pageConfig.blogs}>
+              <Link className={styles.navigation_link} to={pagesConfig.blogs}>
                 <motion.div viewport={{once: true}} variants={SlideBottom(0.4)} initial="initial" whileInView="animate">
                   Блог
                 </motion.div>
               </Link>
 
-              {pathname == pageConfig.error404 ? (
-                  <Link className={styles.navigation_link} to={pageConfig.faq}>
+              {pathname == pagesConfig.error404 ? (
+                  <Link className={styles.navigation_link} to={pagesConfig.faq}>
                     <motion.div  viewport={{once: true}} variants={SlideBottom(0.6)} initial="initial" whileInView="animate">
                       Частые Вопросы
                     </motion.div>
@@ -55,7 +55,7 @@ const Header: FC = () => {
             </nav>
 
 
-              <Link className={styles.logo} to={pageConfig.home} title="С помощью логотипа Вы можете \nпереместиться на главную страницу">
+              <Link className={styles.logo} to={pagesConfig.home} title="С помощью логотипа Вы можете \nпереместиться на главную страницу">
                 <motion.div viewport={{once: true}} variants={SlideBottom(1.0)} initial="initial" whileInView="animate">
                   <img className={styles.logo_icon} src={Logo} alt="BABUSHKA" />
                 </motion.div>
@@ -81,8 +81,8 @@ const Header: FC = () => {
                 </motion.div>
               </SocialLink>
 
-              {pathname == pageConfig.error404 ? (
-                  <Link  to={pageConfig.home}>
+              {pathname == pagesConfig.error404 ? (
+                  <Link  to={pagesConfig.home}>
                     <motion.div className={styles.button} viewport={{once: true}} variants={SlideBottom(1.8)} initial="initial" whileInView="animate">
                       на главную
                     </motion.div>

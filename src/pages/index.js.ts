@@ -6,4 +6,4 @@ export {default as HomePage} from "./HomePage.tsx"
 export {default as ProcessingPersonalDataPage} from "./ProcessingPersonalDataPage.tsx"
 export {default as ThanksPage} from "./ThanksPage.tsx"
 export {default as CasesPage} from "./CasesPage.tsx"
-
+export {default as CasePage} from "./CasePage.tsx"

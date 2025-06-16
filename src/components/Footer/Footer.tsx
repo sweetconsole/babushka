@@ -5,7 +5,7 @@ import Hatch from "../../assets/images/hatch.webp"
 import HatchMobile from "../../assets/images/hatch_2.png"
 import { Container, ScrollLink, SocialLink, TelegramIcon, WhatsAppIcon } from "../ui"
 import { socialConfig } from "../../config/social.config.ts"
-import { pageConfig } from "../../config/pages.config.ts"
+import { pagesConfig } from "../../config/pages.config.ts"
 import Shelf from "./Shelf/Shelf.tsx"
 import { SideShelf } from "./Shelf/shelf.interface.ts"
 import styles from "./Footer.module.scss"
@@ -40,8 +40,8 @@ const Footer: FC = () => {
 
 					<div className={styles.block}>
 						<nav className={styles.links}>
-							<Link className={styles.link} to={pageConfig.projects}>Проекты</Link>
-							<Link className={styles.link} to={pageConfig.blogs}>Блог</Link>
+							<Link className={styles.link} to={pagesConfig.cases}>Проекты</Link>
+							<Link className={styles.link} to={pagesConfig.blogs}>Блог</Link>
 
 							<ScrollLink link="faq" style={styles.link} text="Частые Вопросы" />
 						</nav>
@@ -53,7 +53,7 @@ const Footer: FC = () => {
 
 						<ScrollLink link="feedback" style={styles.link__write} text="написать бабушке" />
 
-						<Link className={styles.processing} to={pageConfig.processing_personal_data}>обработка персональных данных</Link>
+						<Link className={styles.processing} to={pagesConfig.processing_personal_data}>обработка персональных данных</Link>
 					</div>
 
 					<div className={styles.images}>

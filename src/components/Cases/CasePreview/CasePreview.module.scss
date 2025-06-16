@@ -16,12 +16,8 @@
 	&:hover {
 		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 
-		.type {
-			font-size: 23px;
-		}
-
-		.title {
-			font-size: 33px;
+		.info {
+			transform: scale(1.2);
 		}
 	}
 
@@ -42,6 +38,11 @@
 	}
 }
 
+.info {
+	transform-origin: left top;
+	transition: all .2s ease-in-out;
+}
+
 .type {
 	font-family: variables.$font-family-primary;
 	font-weight: variables.$regular;
@@ -49,6 +50,7 @@
 	line-height: 120%;
 	margin-bottom: 5px;
 	transition: all .2s ease-in-out;
+
 
 	@media (max-width: 1800px) {
 		font-size: 14px;

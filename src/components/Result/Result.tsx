@@ -4,7 +4,7 @@ import TangleMobile from "../../assets/images/tangles/tangle_6.svg"
 import { IResultProps } from "./result.interface.ts"
 import styles from "./Result.module.scss"
 
-const Result: FC<IResultProps> = ({title, description}) => {
+const Result: FC<IResultProps> = ({title, subtitle, description, link}) => {
 	return (
 		<div className={styles.block}>
 			<picture>
@@ -15,6 +15,7 @@ const Result: FC<IResultProps> = ({title, description}) => {
 
 			<div className={styles.content}>
 				<h3 className={styles.title}>{title}</h3>
+				<p className={styles.subtitle}>{subtitle}</p>
 				<p className={styles.description}>{description}</p>
 			</div>
 		</div>

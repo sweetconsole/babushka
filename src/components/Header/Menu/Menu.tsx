@@ -4,7 +4,7 @@ import CloseIcon from "../../../assets/images/menu_close.svg"
 import Logo from "../../../assets/images/logos/logo.svg"
 import { TelegramIcon, WhatsAppIcon } from "../../ui"
 import { socialConfig } from "../../../config/social.config.ts"
-import { pageConfig } from "../../../config/pages.config.ts"
+import { pagesConfig } from "../../../config/pages.config.ts"
 import { IMenuProps } from "./menu.interface.ts"
 import styles from "./Menu.module.scss"
 
@@ -22,15 +22,15 @@ const Menu: FC<IMenuProps> = ({active, setActive}) => {
 			</button>
 
 			<nav className={styles.navigation}>
-				<Link className={styles.link} to={pageConfig.projects} onClick={CloseMenu}>Проекты</Link>
+				<Link className={styles.link} to={pagesConfig.cases} onClick={CloseMenu}>Проекты</Link>
 
-				<Link className={styles.link} to={pageConfig.blogs} onClick={CloseMenu}>Блог</Link>
+				<Link className={styles.link} to={pagesConfig.blogs} onClick={CloseMenu}>Блог</Link>
 
-				<Link className={styles.link} to={pageConfig.faq} onClick={CloseMenu}>
+				<Link className={styles.link} to={pagesConfig.faq} onClick={CloseMenu}>
 					Частые Вопросы
 				</Link>
 
-				<Link className={styles.logo} to={pageConfig.home} onClick={CloseMenu}>
+				<Link className={styles.logo} to={pagesConfig.home} onClick={CloseMenu}>
 					<img className={styles.logo__icon} src={Logo} alt="BABUSHKA" />
 				</Link>
 			</nav>

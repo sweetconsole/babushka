@@ -1,11 +1,11 @@
 
 const baseURL = "/"
 
-class PageConfig {
+class PagesConfig {
 	home = baseURL
-	projects = baseURL + "projects/"
-	project = baseURL + "project/:projectId"
-	blogs = baseURL + "blog/"
+	cases = baseURL + "cases/"
+	case = baseURL + "case/:caseURL/"
+	blogs = baseURL + "blogs/"
 	blog = baseURL + "blog/:blogURL/"
 	faq = baseURL + "faq/"
 	processing_personal_data = baseURL + "processing_of_personal_data/"
@@ -13,4 +13,4 @@ class PageConfig {
 	error404 = baseURL + "404/"
 }
 
-export const pageConfig = new PageConfig()
+export const pagesConfig = new PagesConfig()

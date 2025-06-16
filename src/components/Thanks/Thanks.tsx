@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {motion} from "framer-motion"
 import Tangle from "../../assets/images/tangles/tangle_4.svg"
 import Arrow from "../../assets/images/arrow.svg"
-import { pageConfig } from "../../config/pages.config.ts"
+import { pagesConfig } from "../../config/pages.config.ts"
 import { Container } from "../ui"
 import styles from "./Thanks.module.scss"
 
@@ -26,7 +26,7 @@ const Thanks: FC = () => {
 					<motion.div initial={{opacity: 0, y: 100}}
 											animate={{opacity: 1, y: 0, transition: {duration: 0.5, delay: 1.0}}}
 											style={{cursor: "pointer"}}>
-						<Link className={styles.link} to={pageConfig.home}>
+						<Link className={styles.link} to={pagesConfig.home}>
 							<p className={styles.link__text}>на главную</p>
 							<button className={styles.link__button}>
 								<img className={styles.link__button_arrow} src={Arrow} alt="Перейти к заявке" />
