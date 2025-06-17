@@ -1,6 +1,7 @@
 {
     "name": "babushka",
     "version": "0.5.7",
+    "homepage": "https://sweetconsole.github.io/babushka/dist/",
     "devDependencies": {
         "@eslint/js": "^9.29.0",
         "@types/react": "^19.1.8",
