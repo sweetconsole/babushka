@@ -4,7 +4,7 @@ import { useNavigate } from "react-router"
 import { SubmitHandler, useForm } from "react-hook-form"
 import Arrow from "../../assets/images/arrow.svg"
 import ArrowSmall from "../../assets/images/arrow_small.svg"
-import { Container, Field, Select, SubTitle } from "../ui"
+import { Container, Field, Select, SubTitle, Label } from "../ui"
 import { pagesConfig } from "../../config/pages.config.ts"
 import { useMediaQuery } from "../../hooks/useMediaQuery.ts"
 import { validName, validPhone } from "../../config/valid.config.ts"
@@ -90,14 +90,13 @@ const Feedback: FC = () => {
 								<Select label="способ связи" options={connections} />
 							</div>
 
-							<label className={[styles.form__label, styles.form__label_block].join(" ")}>
-								Опиши задачу, ну или не пиши
-								<textarea className={styles.form__textarea} rows={getRows()}
+							<Label text="Опиши задачу, ну или не пиши" style={styles.form__label_block}>
+								<textarea className={styles.form__textarea}
+													rows={getRows()}
 													placeholder="Мы специализируемся на создании уникального контента для социальных сетей, рекламы, e-commerce и брендов, включая предметную, рекламную и lifestyle-фотографию, а также видеосъемку различной сложности. Наша команда экспертов воплощает идеи в жизнь, от разработки концепции до финальной ретуши и монтажа." />
-							</label>
+							</Label>
 
-							<label className={[styles.form__label, styles.form__label_block].join(" ")}>
-								прикрепить файлы
+							<Label text="прикрепить файлы" style={styles.form__label_block}>
 								<div className={styles.form__block_file}>
 									<div className={styles.form__input_file_button}>
 										загрузить
@@ -108,7 +107,7 @@ const Feedback: FC = () => {
 												 onChange={onChangeFile} />
 									<span className={styles.form__input_file_name}>{fileName}</span>
 								</div>
-							</label>
+							</Label>
 
 							<button className={styles.button} type="submit">
 								<div className={styles.button__text}>Получить консультацию</div>

@@ -1,15 +1,16 @@
 import {FC} from "react"
 import {motion} from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import {SlideUp} from "../../../utility/animation.ts";
-import {ICasePreview} from "../cases.interface.ts";
+import { SlideUp } from "../../../utility/animation.ts";
+import { pagesConfig } from "../../../config/pages.config.ts"
+import { ICasePreview } from "../cases.interface.ts";
 import styles from "./CasePreview.module.scss"
 
 const CasePreview: FC<ICasePreview> = ({icon, title, link, color, delay}) => {
 	const location = useLocation().pathname;
 
 	return (
-		<Link to={location == "/" ? `case/${link}` : `../case/${link}`} >
+		<Link to={location == pagesConfig.home ? `${pagesConfig.home}case/${link}` : `../${pagesConfig.home}case/${link}`} >
 			<motion.article className={styles.case}
 											style={{backgroundImage: `url(${icon})`, color: color}}
 											viewport={{once: true}}

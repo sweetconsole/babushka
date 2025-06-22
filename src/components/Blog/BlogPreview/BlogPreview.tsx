@@ -2,6 +2,7 @@ import { FC } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
 import Arrow from "../../../assets/images/arrow.svg"
+import { pagesConfig } from "../../../config/pages.config.ts"
 import { SlideUp } from "../../../utility/animation.ts"
 import { IBlogPreviewProps } from "../blogs.interface.ts"
 import styles from "./BlogPreview.module.scss"
@@ -20,7 +21,7 @@ const BlogPreview: FC<IBlogPreviewProps> = ({link, image, title, description, da
 			<p className={styles.title}>{title}</p>
 			<p className={styles.description}>{description}</p>
 			<time className={styles.date} dateTime={dateTime}>{date}</time>
-			<Link className={styles.link} to={location == "/" ? `blog/${link}` : `../blog/${link}`}>
+			<Link className={styles.link} to={location == pagesConfig.home ? `${pagesConfig.home}blog/${link}` : `../${pagesConfig.home}blog/${link}`}>
 					<img className={styles.link__arrow} src={Arrow} alt="Перейти"/>
 			</Link>
     </motion.article>
