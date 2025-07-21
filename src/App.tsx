@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Navigate, Route, Routes } from "react-router"
 import { BrowserRouter } from "react-router-dom"
-import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage, BlogsPage, CasePage } from "./pages/index.js.ts"
+import { ErrorPage, FaqPage, HomePage, ProcessingPersonalDataPage, ThanksPage, CasesPage, BlogPage, BlogsPage, CasePage } from "./pages"
 import { Header } from "./components"
 import { ScrollTop } from "./components/ui"
 import { pagesConfig } from "./config/pages.config.ts"

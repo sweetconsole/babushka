@@ -5,7 +5,6 @@ class SocialConfig {
 	INN = "327842422"
 	telegram = "https://telegram.org/"
 	whatsapp = "https://web.whatsapp.com/"
-
 }
 
 export const socialConfig = new SocialConfig()
